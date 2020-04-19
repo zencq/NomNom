@@ -2,23 +2,24 @@
 
 ---
 
-## Modes
+## General
 
-### Advanced
-
-* Enables advanced features that can easily destroy a save if you do not know what you are doing.
-
-### Auto Save
-
-* Each change will be immediately saved to the disk.
-
-### Debug
-
-* Show the ID of items in lists and includes them in searches.
-    * Window "Add Item"
-    * Window "Item Details"
-    * Editor-Tab "Discovery"
-* Allow adding a non-procedural technology more than once.
+* Multi language support
+  * English
+  * German
+* Multiple modes to change behavior of the tool:
+    * Advanced
+        * Enables advanced features that can easily destroy a save if you don't
+          know what you are doing.
+    * Auto Save
+        * Each change will be immediately saved to the disk.
+    * Debug
+        * Show IDs in various places and include them in searches.
+        * Allow adding non-procedural technology more than once to an inventory.
+        * Logging includes debug information.
+        * Check for unavailable JSON mapping (included in logging).
+* Automatic backup of your save file when loaded.
+* Logging of value changes.
 
 ---
 
@@ -26,7 +27,7 @@
 
 * Select the slot and file you want to edit.
 * Save the selected file to an human readable JSON file.
-* Restore corrupted saves (if you manually edited the storage file [save*.hg]).
+* Restore corrupted saves (if you manually edited the storage file [save.hg]).
 
 ---
 
@@ -173,6 +174,23 @@
 * Quicksilver Synthesis Companion Products
 * Glyphs
 * Words
+
+### Milestones
+
+* Journey Milestones
+    * Learned words are updated when you change a related value in __Discovery__
+      tab.
+    * Cumulated kills are shown as separate values.
+* The Gek
+* The Vy'keen
+* The Korvax
+* Merchants Guild
+* Mercenaries Guild
+* Explorers Guild
+
+---
+
+## Coordinates
 
 ---
 

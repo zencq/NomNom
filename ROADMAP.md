@@ -7,6 +7,16 @@
 
 ---
 
+## General
+
+* [FET] Undo/Redo
+* [FET] Backup/Restore (of Inventory/Base)
+* [FET] crash report
+* [IMP] change log level when debug mode changed
+* [FET] Check for new version/auto-updater
+
+---
+
 ## Manager
 
 * [FET] SaveAs
@@ -64,6 +74,10 @@
 
 * [FET] Customization (Color)
 
+### Freighter
+
+* [FIX] Directly update UI in Frigates when syncing home seed
+
 ### Frigates
 
 * [FET] Delete
@@ -71,9 +85,14 @@
 
 ### Discovery
 
-* Words
-    * https://github.com/goatfungus/NMSSaveEditor/issues/196 (learned/total and % complete for words for each race)
-* Unlockable Item Tree
+* [IMP] learned/total and % complete for words for each race
+    * https://github.com/goatfungus/NMSSaveEditor/issues/196
+* [FET] Unlockable Item Tree
+* [FIX] Directly update UI in Discovery when changing a word
+
+### Milestones
+
+* [VIS] Add Icons
 
 ### Mission (Log)
 
@@ -90,15 +109,6 @@
 
 ---
 
-## General
-
-* [FET] Undo/Redo
-* [FET] Backup/Restore (of Inventory/Base)
-* [FET] Logging in file
-* [FET] crash report
-
----
-
 ## Coordinates
 
 * [FET] List of all own bases/starbase
@@ -112,7 +122,9 @@
 ## Discovery (useful infos)
 
 * [FET] Starship
-    * [Inventory, Price, count per system
+    * Inventory when purchase
+    * Price (calc by selection, compared to own ships/dif in units to purchase)
+    * count per system
 * [FET] Farming
     * Grow time
 * [FET] Star system
