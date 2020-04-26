@@ -11,16 +11,14 @@
 
 * [FET] Undo/Redo
 * [FET] Backup/Restore (of Inventory/Base)
-* [FET] crash report
-* [IMP] change log level when debug mode changed
-* [FET] Check for new version/auto-updater
 
 ---
 
 ## Manager
 
-* [FET] SaveAs
-* [FET] Save current file to other slot
+* SaveAs
+    * [FET] Save current file to other slot
+    * [IMP] clearer description about "Save As" and "Save To JSON", maybe combine
 * [FET] Backup recovery
 * [FET] Delete slot
 * [VIS] Slot selection: Game Mode icon
@@ -60,7 +58,7 @@
 ### Starship
 
 * [FET] Customization (Color) -> https://github.com/goatfungus/NMSSaveEditor/issues/231
-* [IMP] Show legacy color only if not living ship (debug)
+* [IMP] Allow legacy color for Living ships (no real in-game support as they become pure white).
 * [FET] Select active ship
 * [FET] Generate Seed for all (EditorView)
 
@@ -87,6 +85,7 @@
 
 * [IMP] learned/total and % complete for words for each race
     * https://github.com/goatfungus/NMSSaveEditor/issues/196
+* [IMP] (un)learn all words/Glyphs
 * [FET] Unlockable Item Tree
 * [FIX] Directly update UI in Discovery when changing a word
 
@@ -112,7 +111,7 @@
 ## Coordinates
 
 * [FET] List of all own bases/starbase
-* [FET] Support for all types of input (hex, glyph, "das dritte")
+* [FET] Support for all types of input (hex, glyph, "third one")
 * [FET] Enable/Disable portal interference
 * [FET] Reset space battle encounter values (TimeLastSpaceBatte + WarpsLastSpaceBattle)
 * [FET] Delete TeleportEndpoint
@@ -131,6 +130,7 @@
     * Biomes (incl. search for prefix)
     * Is Anomaly in System
     * No of Planets/Moons in System
+* [FET] additional stats
 
 ---
 

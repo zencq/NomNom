@@ -1,7 +1,3 @@
-<!--<a href="https://github.com/cengelha/NomNom/releases/latest/download/NomNom.zip">
-    <img src="https://img.shields.io/badge/dynamic/json.svg?label=download&url=https://api.github.com/repos/NomNom/NMSCoordinates/releases/latest&query=$.assets[0].name&style=for-the-badge" alt="Download"/>
-</a>-->
-
 # NomNom
 
 <span style="color: red;">__Currently in early development.__ All features are
@@ -17,6 +13,13 @@ or could be improved (beside the UI and the things in the [ROADMAP](ROADMAP.md))
 </span>
 
 Source code will be available with the first stable release.
+
+<!-- [![Donate Patreon](https://img.shields.io/badge/donate-Patreon-brightgreen)](patreon.com/cengelha)
+[![Donate PayPal](https://img.shields.io/badge/donate-PayPal-brightgreen)](paypal.me/cengelha) -->
+![Maintained](https://img.shields.io/maintenance/yes/2020)
+![Release](https://img.shields.io/github/v/release/cengelha/nomnom?include_prereleases)
+![Release Date](https://img.shields.io/github/release-date-pre/cengelha/nomnom)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
 
 ## Introduction
 
@@ -60,12 +63,12 @@ The features can divided into 5 main parts:
 A detailed list can be found [here](FEATURES.md) and a list of things to come
 [here](ROADMAP.md).
 
-<img src="images/editor_suit.png" width="49%"/> <img src="images/editor_starship.png" width="49%"/>
-<img src="images/editor_frigate.png" width="49%"/> <img src="images/editor_base.png" width="49%"/>
+[<img alt="Exosuit" src="images/editor_suit.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_suit.png) [<img alt="Starship" src="images/editor_starship.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_starship.png)
+[<img alt="Frigate" src="images/editor_frigate.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_frigate.png) [<img alt="Base" src="images/editor_base.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_base.png)
 
 The images are from version
-[2.2.0.0-alpha.2](https://github.com/cengelha/NomNom/releases/tag/2.2.0.0-alpha.2)
-. More can be found [here](images).
+[2.2.0.0-alpha.2](https://github.com/cengelha/NomNom/releases/tag/2.2.0.0-alpha.2).
+More can be found [here](https://github.com/cengelha/NomNom/tree/master/images).
 
 ## Getting Started
 

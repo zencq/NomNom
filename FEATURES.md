@@ -4,10 +4,21 @@
 
 ## General
 
-* Multi language support
+* Integrated updater.
+* Custom output path where backups, JSON files, logs, and crash reports are
+  stored.
+* Automatic backup of your save file when loaded.
+* Logging of value changes and other relevant events.
+* Integrated crash reporter.
+    * If you encounter a crash please fill out the form with as much information
+      as possible that will help fixing it.
+    * A report will be automatically stored in your output path.
+    * Create a [GitHub issue](https://github.com/cengelha/NomNom/issues) or send
+      an email with the data attached.
+* Multi language support.
   * English
   * German
-* Multiple modes to change behavior of the tool:
+* Multiple modes to change behavior:
     * Advanced
         * Enables advanced features that can easily destroy a save if you don't
           know what you are doing.
@@ -18,8 +29,6 @@
         * Allow adding non-procedural technology more than once to an inventory.
         * Logging includes debug information.
         * Check for unavailable JSON mapping (included in logging).
-* Automatic backup of your save file when loaded.
-* Logging of value changes.
 
 ---
 
@@ -37,17 +46,20 @@
 
 * Built to mirror the games data as much as possible.
 * Resize width and height.
+* Move items via drag and drop.
 * Toggle slots (Enable/Disable, Fully Installed/Needs Repair/Needs Installation).
 * Add items
     * Filter an item manually via type and category or via free text search.
     * Select the amount you want to add.
     * Select if you want add technology fully installed or not.
-    * Technology that can only be installed once and is already installed will be filtered out.
+    * Technology that can only be installed once and is already installed will
+      be filtered out.
 * Delete items (some items cannot be removed as the game will add them back).
 * Show Details
     * Generic details like name and description.
     * Additional details depending on the actual item:
-        * Procedural properties (incl. min/max for each stat depending on type and class).
+        * Procedural properties (incl. min/max for each stat depending on type
+          and class).
         * How to acquire it.
         * Charge information (what can be used and how much do I need).
         * In which blueprints is it used.
@@ -95,8 +107,8 @@
 * Change Seed
 * Base Stats
     * Showing min/max stats for the type and class beside the actual value.
-    * Type cannot be determined via the save itself and must be selected manually
-      to show the min/max.
+    * Type cannot be determined via the save itself and must be selected
+      manually to show the min/max.
 * Show if important tech is installed:
     * Scanner
     * Analyis Visor
