@@ -23,7 +23,7 @@ Source code will be available with the first stable release.
 
 ## Introduction
 
-NomNom is a savegame editor for __No Man's Sky__, but also shows you a lot of
+NomNom is a savegame editor for [__No Man's Sky__](https://www.nomanssky.com/), but also shows you a lot of
 additional information about the data you're about to change. You can also
 easily look up each item individually to examine its attributes, independently
 of a savegame, or get other useful information that are not related to a

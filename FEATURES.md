@@ -29,6 +29,9 @@
         * Allow adding non-procedural technology more than once to an inventory.
         * Logging includes debug information.
         * Check for unavailable JSON mapping (included in logging).
+        * Allow legacy colors for living ships.
+            * No real in-game support as they become pure white.
+            * Editor view needs to be reloaded to apply the changed state.
 
 ---
 
@@ -44,10 +47,15 @@
 
 ### Inventory
 
-* Built to mirror the games data as much as possible.
-* Resize width and height.
+* Keyboard controls.
 * Move items via drag and drop.
-* Toggle slots (Enable/Disable, Fully Installed/Needs Repair/Needs Installation).
+* Resize width and height.
+* Enable/Repair/Fill slots individually or all at once.
+* Multi-Tool protection (if you save one without anything in the inventory it
+  will be deleted by the game).
+* Toggle slots (Enable/Disable, Repair/Installation).
+* Shows if a procedural tech is overloaded.
+* Shows adjacent bonus colors.
 * Add items
     * Filter an item manually via type and category or via free text search.
     * Select the amount you want to add.
@@ -82,6 +90,7 @@
 ### Starship
 
 * Toggle 3rd-person cam
+* Change selected Starship
 * Delete Starship
 * Change Name
 * Change Class
@@ -99,9 +108,10 @@
     * Economy Scanner
 * [Inventory](#inventory)
 
-### Multitool
+### Multi-Tool
 
-* Delete Multitool
+* Change selected Multi-Tool
+* Delete Multi-Tool
 * Change Name
 * Change Class
 * Change Seed
@@ -111,7 +121,7 @@
       manually to show the min/max.
 * Show if important tech is installed:
     * Scanner
-    * Analyis Visor
+    * Analysis Visor
     * Survey Device
     * Advanced Mining Laser
 * [Inventory](#inventory)
@@ -119,6 +129,7 @@
 ### Exocraft
 
 * Toggle 3rd-person cam
+* Change Name
 * [Inventory](#inventory)
 
 ### Freighter
@@ -132,12 +143,12 @@
 * Base Stats
     * Showing min/max stats for the type and class beside the actual value.
 * Show if important tech is installed:
-    * Amplified Warp Shieldung
-    * Chromatic Warp Shieldung
+    * Amplified Warp Shielding
+    * Chromatic Warp Shielding
     * Temporal Warp Computer
 * [Inventory](#inventory)
 
-### Frigates
+### Frigates (Manage Fleet)
 
 * Change Name
 * Change Class
@@ -181,9 +192,13 @@
 
 ### Discovery
 
+
+
+### Knowledge
+
 * Technology
 * Products
-* Quicksilver Synthesis Companion Products
+* Quicksilver Synthesis Companion
 * Glyphs
 * Words
 
@@ -199,10 +214,6 @@
 * Merchants Guild
 * Mercenaries Guild
 * Explorers Guild
-
----
-
-## Coordinates
 
 ---
 

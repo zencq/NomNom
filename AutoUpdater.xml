@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <version>2.2.0.3</version>
-  <url>https://github.com/cengelha/NomNom/releases/download/2.2.0.3-alpha.3/NomNom.zip</url>
+  <version>2.2.0.4</version>
+  <url>https://github.com/cengelha/NomNom/releases/download/2.2.0.4-alpha.4/NomNom.zip</url>
   <changelog>https://cengelha.github.io/NomNom/CHANGELOG.html</changelog>
-  <checksum algorithm="SHA256">9e1520d1aa60a329342fae53bae9afb3efd154f3ac2c0d418eebcb940c73bf21</checksum>
+  <checksum algorithm="SHA256">68b73b216268f63adf00dc8d4822a0ee02778bb54a1b85b4eec7fd5c7f549fa4</checksum>
 </item>

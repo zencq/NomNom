@@ -11,6 +11,9 @@
 
 * [FET] Undo/Redo
 * [FET] Backup/Restore (of Inventory/Base)
+* [IMP] Left/Right sidebars collapsible
+* [IMP] Integrate both paths in menu
+* [IMP] Reset output path
 
 ---
 
@@ -33,13 +36,7 @@
 * Add Items
     * [FET] Ctrl+C, Ctrl+V to copy inventory slots.
     * [FET] Remember last added item
-* [FET] Fill chargeable item via right-click
-* [FET] Fill all button, etc at the top.
 * [FET] Move between Inventories
-* [VIS] Tech overloaded
-* [VIS] Adjacent bonus color
-* [IMP] Rename inventory (for storage container/base)
-* [IMP] Select next/previous
 * Item Details
     * [IMP] Creation-Group: Rewards (Consumable, Mission, etc.)
     * [FET] Base Building-Group
@@ -58,35 +55,38 @@
 ### Starship
 
 * [FET] Customization (Color) -> https://github.com/goatfungus/NMSSaveEditor/issues/231
-* [IMP] Allow legacy color for Living ships (no real in-game support as they become pure white).
-* [FET] Select active ship
 * [FET] Generate Seed for all (EditorView)
 
 ### Multitool
 
 * [FET] Customization (Color)
-* [FET] Select active weapon
 * [FET] Generate Seed for all (EditorView)
+* [FET] store Type selection (of seed)
 
 ### Exocraft
 
 * [FET] Customization (Color)
+* [FET] "Delete" (aka reset position to zero)
 
 ### Freighter
 
 * [FIX] Directly update UI in Frigates when syncing home seed
+
+### Base
+
+* [FET] Delete Base
 
 ### Frigates
 
 * [FET] Delete
 * [FET] Copy
 
-### Discovery
+### Knowledge
 
 * [IMP] learned/total and % complete for words for each race
     * https://github.com/goatfungus/NMSSaveEditor/issues/196
 * [IMP] (un)learn all words/Glyphs
-* [FET] Unlockable Item Tree
+* [FET] Unlockable Item Tree (+total of CostType to unlock all)
 * [FIX] Directly update UI in Discovery when changing a word
 
 ### Milestones
@@ -115,6 +115,7 @@
 * [FET] Enable/Disable portal interference
 * [FET] Reset space battle encounter values (TimeLastSpaceBatte + WarpsLastSpaceBattle)
 * [FET] Delete TeleportEndpoint
+* [FET] Delete TerrainEdit of any planet
 
 ---
 
