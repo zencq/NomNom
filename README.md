@@ -14,8 +14,9 @@ or could be improved (beside the UI and the things in the [ROADMAP](ROADMAP.md))
 
 Source code will be available with the first stable release.
 
-<!-- [![Donate Patreon](https://img.shields.io/badge/donate-Patreon-brightgreen)](patreon.com/cengelha)
-[![Donate PayPal](https://img.shields.io/badge/donate-PayPal-brightgreen)](paypal.me/cengelha) -->
+[![Support Patreon](https://img.shields.io/badge/support-Patreon-brightgreen)](https://www.patreon.com/cengelha)
+[![Support PayPal](https://img.shields.io/badge/support-PayPal-brightgreen)](https://www.paypal.me/cengelha)
+
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
 ![Release](https://img.shields.io/github/v/release/cengelha/nomnom?include_prereleases)
 ![Release Date](https://img.shields.io/github/release-date-pre/cengelha/nomnom)
@@ -23,40 +24,43 @@ Source code will be available with the first stable release.
 
 ## Introduction
 
-NomNom is a savegame editor for [__No Man's Sky__](https://www.nomanssky.com/), but also shows you a lot of
-additional information about the data you're about to change. You can also
-easily look up each item individually to examine its attributes, independently
-of a savegame, or get other useful information that are not related to a
-specific savegame (but enhanced if one is loaded).
+NomNom is a savegame editor for [__No Man's Sky__](https://www.nomanssky.com/),
+but also shows you a lot of additional information around the data you're about
+to change. You can also easily look up each item individually to examine its
+attributes, independently of a savegame, or get other useful information that
+are not related to a specific savegame (but enhanced if one is loaded).
 
-If you known the
-[NMSSE by goatfungus](https://github.com/goatfungus/NMSSaveEditor) you will
-most certainly notice the similarity but there are things missing that I'd like
-to have or just not implemented as I like to have it. I also wanted to have a
-place where I can directly see how good my stats are, without searching through
-an online wiki or such. Therefore I started my own project for fun and here we
-are.
+If you known the [NMSSE by goatfungus](https://github.com/goatfungus/NMSSaveEditor)
+you will most certainly notice the similarity but his tool has things missing
+that I'd like to have or just not implemented as I like to have it. I also
+wanted to have a place where I can directly see how good my stats are, without
+searching through an online wiki or such. Therefore I started my own project for
+fun and here we are.
+
+If you're interested in some technical insights in general, you can get some in
+the [NMS Community Developers & Designers](https://nmscd.github.io/) DevTalks
+that I join regularly.
+
+There is a [Patreon page](https://www.patreon.com/cengelha) in case you want to
+support me, but I will also use it as developer diary to keep you updated.
 
 ## Features
 
-The features can divided into 5 main parts:
+The features can divided into different main parts:
 * __Manager__ Manage your saves!
   * Automatic backup and recovery (in case you screw something up).
   * Copy a save to another slot.
-  * Save your save as human readable JSON.
+  * Save your save as human-readable JSON.
   * Delete your save.
 * __Editor__ Edit your save for your needs!
-  * Ability to change data values and organize inventories.
-  * Ability to manage your fleet of frigates including expeditions.
+  * Ability to manage fleets, change data values, and organize inventories.
+  * Ability to fast travel to any system you like, trigger space battles, and
+    clear portal interference.
   * Ability to customize appearances.
   * Ability to edit your knowledge and recorded experiences.
-  * Ability to edit the raw JSON (for advanced users only)!
-* __Coordinates__ Travel around the galaxy!
-  * Fast travel to any system you like.
-  * Trigger space battles.
-  * Clear portal interference.
-* __Discovery__ Useful tips!
-  * What to expect in system with specific races, wealth, etc.
+  * Ability to edit the raw JSON (for advanced users only).
+* __Guide__ Useful tips!
+  * What to expect in systems with specific races, wealth, etc.
 * __Catalogue__ Explore all the items!
   * Just as in-game, look up items and get additional information about it.
 
@@ -74,9 +78,18 @@ More can be found [here](https://github.com/cengelha/NomNom/tree/master/images).
 
 ### Requirements
 
-* The newest version of NomNom is built for __No Man's Sky Synthesis (2.2)__.
-  If you use it with a game version branch below (e.g. __Beyond 2.0__) or above
-  (e.g. __2.3__), things may not work correctly.
+* NomNom is compatible with the following platforms:
+  Platform             | Compatible              | Note
+  -------------------- | ----------------------- | ----
+  PC - GOG             | <ul><li> [X] </li></ul> |
+  PC - Microsoft Store | <ul><li> [ ] </li></ul> | investigating
+  PC - Steam           | <ul><li> [X] </li></ul> |
+  PlayStation          | <ul><li> [ ] </li></ul> |
+  Xbox                 | <ul><li> [ ] </li></ul> |
+* The latest version of NomNom is built for
+  __No Man's Sky Exo Mech/Crossplay (2.4-2.5)__. If you use it with a game
+  version branch below (e.g. __Beyond 2.0__) or above (e.g. __3.0__), things may
+  not work correctly.
 * You need .NET Framework 4.7.2.
   * It's included in the Windows 10 April 2018 Update and above.
   * Otherwise you can download it
@@ -97,8 +110,6 @@ More can be found [here](https://github.com/cengelha/NomNom/tree/master/images).
 * Restrictions that are enforced by the game, even if you changed it manually
   will not be possible to disable. If you can't do something, that's probably
   the reason why.
-* Items _"Foundation Strut"_ and _"Foundation Strut Quad"_ are not listed as
-  they cannot be used in-game even though they are unlockable in the Nexus.
 
 ## Versioning
 
@@ -109,6 +120,7 @@ The versioning is oriented on the game version itself:
   (e.g. NEXT 1.5 or Synthesis 2.2).
 * _Patch_ includes new features, bug fixes, updated game assets an such beside
   the named game updates.
+* _Revision_ serves as public release counter.
 
 ## Changelog
 
@@ -116,7 +128,7 @@ The complete history can be found in the [CHANGELOG](CHANGELOG.md) file.
 
 ## Authors
 
-* __Christian Engelhardt__ - [GitHub](https://github.com/cengelha) - [Reddit](https://www.reddit.com/user/zencq)
+* __Christian Engelhardt__ - [GitHub](https://github.com/cengelha) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048) - [Patreon](https://www.patreon.com/cengelha) - [Reddit](https://www.reddit.com/user/zencq)
 
 ## License
 
@@ -125,10 +137,10 @@ This project is licensed under the GNU GPLv3 license - see the
 
 ## Credits
 
-* [goatfungus](https://github.com/goatfungus/NMSSaveEditor)
-* [hbouma](https://github.com/goatfungus/NMSSaveEditor/issues/158)
-* [jeffswt](https://github.com/goatfungus/NMSSaveEditor/issues/200)
-* [Kevin0M16](https://github.com/Kevin0M16/NMSCoordinates)
-* [matthew-humphrey](https://github.com/matthew-humphrey/nmssavetool)
-* [u/_lmonk](https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/)
-* [u/Artimec_w](https://www.reddit.com/r/NoMansSkyMods/comments/6fr5td/tutorial_convert_signal_booster_coordinates_to/)
+* [goatfungus](https://github.com/goatfungus/NMSSaveEditor) - [Kevin0M16](https://github.com/Kevin0M16/NMSCoordinates) - Inspiration and verifying my own implementation
+* [hbouma](https://github.com/goatfungus/NMSSaveEditor/issues/158) - Explaining how clearing TerrainEdit works
+* [jaszhix](https://github.com/jaszhix/NoMansConnect) - [rogerhnn](https://github.com/nmsportals/nmsportals.github.io) - Coordinate conversion
+* [jeffswt](https://github.com/goatfungus/NMSSaveEditor/issues/200) - Algorithm for proper base computer moving
+* [matthew-humphrey](https://github.com/matthew-humphrey/nmssavetool) - Decrypt and encrypt save files
+* [monkeyman192](https://github.com/monkeyman192/MBINCompiler) - Extract data from the game files
+* [u/_lmonk](https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/) - Explaining how color customization for Starship and Multi-Tool works

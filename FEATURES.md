@@ -4,20 +4,9 @@
 
 ## General
 
-* Integrated updater.
-* Custom output path where backups, JSON files, logs, and crash reports are
-  stored.
-* Automatic backup of your save file when loaded.
-* Logging of value changes and other relevant events.
-* Integrated crash reporter.
-    * If you encounter a crash please fill out the form with as much information
-      as possible that will help fixing it.
-    * A report will be automatically stored in your output path.
-    * Create a [GitHub issue](https://github.com/cengelha/NomNom/issues) or send
-      an email with the data attached.
-* Multi language support.
+* Multi language support and changeable at runtime.
   * English
-  * German
+  * German (Deutsch)
 * Multiple modes to change behavior:
     * Advanced
         * Enables advanced features that can easily destroy a save if you don't
@@ -27,19 +16,29 @@
     * Debug
         * Show IDs in various places and include them in searches.
         * Allow adding non-procedural technology more than once to an inventory.
+        * Allow legacy colors for living ships (no real in-game support as they
+          become pure white).
         * Logging includes debug information.
         * Check for unavailable JSON mapping (included in logging).
-        * Allow legacy colors for living ships.
-            * No real in-game support as they become pure white.
-            * Editor view needs to be reloaded to apply the changed state.
+* Custom output path where backups, human-readable JSON files, logs, and
+  crash reports are stored.
+* Automatic backup of your save file when loaded.
+* Logging of value changes and other relevant events.
+* Integrated crash reporter.
+    * If you encounter a crash please fill out the form with as much information
+      as possible that will help fixing it.
+    * A report will be automatically stored in your output path.
+    * Send me the created data via one of the shown channels (there is a
+      button for each one).
+* Integrated updater.
 
 ---
 
 ## Manager
 
 * Select the slot and file you want to edit.
-* Save the selected file to an human readable JSON file.
-* Restore corrupted saves (if you manually edited the storage file [save.hg]).
+* Save the selected file to an human-readable JSON file.
+* Restore corrupted saves (if you manually edited a storage file [save.hg]).
 
 ---
 
@@ -47,59 +46,59 @@
 
 ### Inventory
 
-* Keyboard controls.
-* Move items via drag and drop.
 * Resize width and height.
-* Enable/Repair/Fill slots individually or all at once.
-* Multi-Tool protection (if you save one without anything in the inventory it
-  will be deleted by the game).
-* Toggle slots (Enable/Disable, Repair/Installation).
-* Shows if a procedural tech is overloaded.
-* Shows adjacent bonus colors.
-* Add items
-    * Filter an item manually via type and category or via free text search.
+* Enable/Fill/Repair slots individually or all at once.
+* Keyboard controls and drag and drop support.
+* Visually close to the game itself:
+    * Image/Badges and border/background color depending on the item in a slot.
+    * Adjacent bonus colors.
+    * Indications for not fully installed, damaged, and overloaded tech.
+* Lock state indicator to visualize whether an item can be deleted in-game.
+* Toggle slot states (enabled, installed, and repaired).
+* Add items:
+    * Filter via type and category or via free text search.
     * Select the amount you want to add.
-    * Select if you want add technology fully installed or not.
+    * Select if you want to add technology fully installed or not.
     * Technology that can only be installed once and is already installed will
       be filtered out.
-* Delete items (some items cannot be removed as the game will add them back).
-* Show Details
-    * Generic details like name and description.
+* Show Details:
+    * Generic details like name, description, and image.
     * Additional details depending on the actual item:
-        * Procedural properties (incl. min/max for each stat depending on type
-          and class).
         * How to acquire it.
-        * Charge information (what can be used and how much do I need).
         * In which blueprints is it used.
-        * Technology information (ammo, deploying into, modified stats, etc).
-        * Trade/Worth information (from single value over the current inventory
-          to all inventories).
+        * Procedural properties depending on type and class.
+        * Charging information about what can be used and how much do you need,
+          based on the current amount.
+        * Technology information like ammo usage, and modifying stats.
+        * Trade/Worth information from single value to all inventories.
     * Everything listed in tables can be opened (except the list is disabled)
-      to view the details directly.
+      to view the details of that item directly.
     * Opened via inventory, the amount and procedural seed can be changed here.
+* Delete items (some items cannot be removed as the game will add them back).
 
 ### Exosuit
 
 * Toggle 3rd-person cam
 * Modify health
 * Modify currencies
-* Show if important tech is installed:
+* Shows if important tech is installed:
     * Haz-Mat Gauntlet
 * [Inventory](#inventory)
 
 ### Starship
 
 * Toggle 3rd-person cam
-* Change selected Starship
-* Delete Starship
+* Manage your starfleet:
+    * Select your current Starship
+    * Delete Starship
 * Change Name
 * Change Class
 * Change Type
 * Change Seed
-* Use Legacy Colors
-* Base Stats
-    * Showing min/max stats for the type and class beside the actual value.
-* Show if important tech is installed:
+* Change legacy color usage
+* Change Base Stats
+    * Showing min/max depending on type and class beside the actual value.
+* Shows if important tech is installed:
     * Hyperdrive
     * Cadmium Drive
     * Iridium Drive
@@ -110,25 +109,31 @@
 
 ### Multi-Tool
 
-* Change selected Multi-Tool
-* Delete Multi-Tool
+* Manage your arsenal:
+    * Select your current Multi-Tool
+    * Delete Multi-Tool
 * Change Name
 * Change Class
 * Change Seed
-* Base Stats
-    * Showing min/max stats for the type and class beside the actual value.
+* Change Base Stats
+    * Showing min/max depending on type and class beside the actual value.
     * Type cannot be determined via the save itself and must be selected
       manually to show the min/max.
-* Show if important tech is installed:
+* Shows if important tech is installed:
     * Scanner
     * Analysis Visor
     * Survey Device
     * Advanced Mining Laser
 * [Inventory](#inventory)
+* Protection against unintended deletion (if you have one without anything in
+  the inventory, it will be saved as deleted by the game the next time you save).
 
 ### Exocraft
 
 * Toggle 3rd-person cam
+* Manage your vehicle fleet:
+    * Select your current Exocraft
+    * Delete Exocraft (actually resets the location as it cannot be deleted).
 * Change Name
 * [Inventory](#inventory)
 
@@ -137,27 +142,27 @@
 * Change Name
 * Change Class
 * Change Type
-* Change Home/Model Seed
-    * Sync Freighter Home-Seed to all frigates.
+* Change Home System/Model Seed
+* Sync home system seed to all frigates
 * Change NPC Race/Seed
-* Base Stats
-    * Showing min/max stats for the type and class beside the actual value.
-* Show if important tech is installed:
+* Change Base Stats
+    * Showing min/max depending on type and class beside the actual value.
+* Shows if important tech is installed:
     * Amplified Warp Shielding
     * Chromatic Warp Shielding
     * Temporal Warp Computer
 * [Inventory](#inventory)
 
-### Frigates (Manage Fleet)
+### Manage Fleet (Frigates)
 
 * Change Name
 * Change Class
 * Change Type
-* Change Home/Model Seed
+* Change Home System/Model Seed
 * Change NPC Race
 * Change Stats
 * Change Traits
-* Expedition Details
+* Expedition Details:
     * Total of finished expeditions.
         * Fast forward so next expedition will trigger a level-up.
         * How much expeditions are necessary for the next level-up.
@@ -170,43 +175,54 @@
         * Repair frigate.
     * Information about an ongoing expedition
         * Type of expedition.
-        * Frigates participating on same expedition (incl. it's condition).
+        * Frigates participating on same expedition incl. its condition.
         * Expedition progress.
         * Number of successful events during this expedition.
         * Number of failed events during this expedition.
 
 ### Base
 
+* Manage your NPC Worker:
+    * Hire
+    * Change Seed
 * Change Name
-* NPC Worker
-    * Change seed.
-    * Summon to current base.
+    * Also changes name of the related Teleport Terminus.
+* Summon NPC Worker to current base.
 * Show item count and upload-limit.
-* Clear TerrainEdit (of whole planet).
-* Toggle cylindrical rooms (Room <-> Frame) as you can't place ladders in frames
-  but still move through them if a ladder is inside.
+* Toggle cylindrical rooms (Room <-> Frame).
+    * You cannot place ladders in frames in-game but still move through them if
+      a ladder is inside.
+* Clear Terrain edits (of the whole planet).
 * Move Base Computer
-    * Delete or rename old TeleportEndpoint.
-    * New TeleportEndpoint will be added as soon as you visit the base.
-* Storage Container [Inventory](#inventory)
+    * Delete or rename the related Teleport Terminus.
+    * A new Teleport Terminus entry will be added as soon as you visit the base.
+* [Storage Container](#inventory)
+    * Change Name
 
-### Discovery
+### Discoveries
 
-
+* Manage your Teleport Terminus:
+    * Delete
+* Change Name of Teleport Terminus
+* Show galaxy, coordinates, glyphs and distances
+* Fast travel to a Teleport Terminus or any custom location with or without your
+  fleet
+* Toggle Portal Interference
+* Trigger a Freighter battle and show when it would occur naturally
 
 ### Knowledge
 
 * Technology
 * Products
 * Quicksilver Synthesis Companion
-* Glyphs
 * Words
+* Glyphs
 
 ### Milestones
 
 * Journey Milestones
-    * Learned words are updated when you change a related value in __Discovery__
-      tab.
+    * Learned words are updated when you change a related value in
+      [Knowledge](#knowledge) tab.
     * Cumulated kills are shown as separate values.
 * The Gek
 * The Vy'keen

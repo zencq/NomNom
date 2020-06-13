@@ -1,129 +1,119 @@
 # ROADMAP
 
+This order could be changed due to new game updates.
+
+### Legend
+* [FET] = New features
 * [FIX] = Bugfix
+* [IMP] = Improvements for existing features
 * [VIS] = Visual enhancement
-* [FET] = Features
-* [IMP] = Improvement of existing feature
 
 ---
 
-## General
+# alpha.6
 
-* [FET] Undo/Redo
-* [FET] Backup/Restore (of Inventory/Base)
-* [IMP] Left/Right sidebars collapsible
-* [IMP] Integrate both paths in menu
-* [IMP] Reset output path
+#### General
+* [IMP] Handling of customization technology
 
----
+#### Editor - Exosuit
+* [FET] Customization
 
-## Manager
+#### Editor - Starship
+* [FET] Customization (https://github.com/goatfungus/NMSSaveEditor/issues/231)
 
-* SaveAs
-    * [FET] Save current file to other slot
-    * [IMP] clearer description about "Save As" and "Save To JSON", maybe combine
-* [FET] Backup recovery
-* [FET] Delete slot
-* [VIS] Slot selection: Game Mode icon
+#### Editor - Multi-Tool
+* [FET] Customization
+
+#### Editor - Exocraft
+* [FET] Customization
 
 ---
 
-## Editor
+# alpha.7
 
-### Inventory
+#### General
+* [IMP] some UI changes
 
-* [IMP] Unknown Item Handling (Disabled Repair/Install/Details/...)
-* Add Items
-    * [FET] Ctrl+C, Ctrl+V to copy inventory slots.
-    * [FET] Remember last added item
+#### Editor - Inventory
 * [FET] Move between Inventories
 * Item Details
     * [IMP] Creation-Group: Rewards (Consumable, Mission, etc.)
     * [FET] Base Building-Group
     * [IMP] Collapse "Dismantle Return" for maintenance items
+    * [IMP] show time to make in refiner list
     * [FET] Frigate-Group
     * [FET] Learnable-group
-    * [FIX] Min/Max Stats for procedural technology seems switched but has a technical background.
 
-### Exosuit
-
-* [FET] Customization
-* [VIS] Health/Currency icons
-* [FET] in-game upgrade cost
+#### Editor - Exosuit
 * [IMP] show max health
 
-### Starship
+#### Editor - Starship
+* [FET] Generate Seed for all
 
-* [FET] Customization (Color) -> https://github.com/goatfungus/NMSSaveEditor/issues/231
-* [FET] Generate Seed for all (EditorView)
+#### Editor - Multi-Tool
+* [FET] Generate Seed for all
+* [FET] Set current weapon mode
 
-### Multitool
-
-* [FET] Customization (Color)
-* [FET] Generate Seed for all (EditorView)
-* [FET] store Type selection (of seed)
-
-### Exocraft
-
-* [FET] Customization (Color)
-* [FET] "Delete" (aka reset position to zero)
-
-### Freighter
-
-* [FIX] Directly update UI in Frigates when syncing home seed
-
-### Base
-
+#### Editor - Base
 * [FET] Delete Base
 
-### Frigates
-
-* [FET] Delete
+#### Editor - Frigates
 * [FET] Copy
+* [FET] Delete
 
-### Knowledge
+#### Editor - Discoveries
+* [FET] Delete TerrainEdit of any planet
 
-* [IMP] learned/total and % complete for words for each race
-    * https://github.com/goatfungus/NMSSaveEditor/issues/196
-* [IMP] (un)learn all words/Glyphs
+#### Editor - Knowledge
+* [IMP] learned/total and % complete for words for each race (https://github.com/goatfungus/NMSSaveEditor/issues/)196
+* [IMP] (un)learn all
+
+---
+
+# alpha.8
+
+#### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
-* [FIX] Directly update UI in Discovery when changing a word
 
-### Milestones
-
-* [VIS] Add Icons
-
-### Mission (Log)
-
+#### Editor - Mission
 * [FET] "^BASE_UPGRADE6" BASE_UPGRADE-Missions have a 1:30h timer.
 * [FET] "^BASE_UPGRADE11"-12 (+?) BASE_UPGRADE-Missions have a 6:00h timer.
 * [FET] "^???" Living Ship-Missions have a max timer of 24:00h.
 
 ---
 
-## JSON Editor
+# alpha.9
 
-* [FET] Performant TreeView
-* [FIX] Proper return of modified JSON
+#### General
+* [IMP] Integrate both paths in menu
 
----
-
-## Coordinates
-
-* [FET] List of all own bases/starbase
-* [FET] Support for all types of input (hex, glyph, "third one")
-* [FET] Enable/Disable portal interference
-* [FET] Reset space battle encounter values (TimeLastSpaceBatte + WarpsLastSpaceBattle)
-* [FET] Delete TeleportEndpoint
-* [FET] Delete TerrainEdit of any planet
+#### Manager
+* SaveAs
+    * [FET] Save current file to other slot
+    * [IMP] clearer description about "Save As" and "Save To JSON", maybe combine
+* [FET] Backup recovery
+* [FET] Swap save slots
+* [FET] Delete slot
+* [FIX] Changes in files detection
 
 ---
 
-## Discovery (useful infos)
+# alpha.10
 
+#### Catalogue
+* [FET] Add Recipe tab
+* [IMP] Group DataGrids
+
+---
+
+# alpha.11
+
+#### Guide
+* [FET] Exosuit
+    * in-game upgrade cost
 * [FET] Starship
     * Inventory when purchase
-    * Price (calc by selection, compared to own ships/dif in units to purchase)
+    * Price (calc by selection, compared to own ships/diff in units to purchase)
     * count per system
 * [FET] Farming
     * Grow time
@@ -135,7 +125,64 @@
 
 ---
 
-## Catalogue
+# alpha.12
 
-* Add Recipe tab
-* Group DataGrids
+#### General
+* [FET] Undo/Redo
+* [IMP] Left/Right sidebars collapsible
+* [FET] remember various tool states (last added item [inventory], sidebars collapsed, selected tab, etc)
+* [FET] new mode to select if the various states above should be remember across multiple sessions
+
+#### Editor - Inventory
+* [FET] Ctrl+C, Ctrl+V to copy inventory slots.
+
+#### Editor - Multi-Tool
+* [FET] store Type selection (of seed)
+
+#### Editor - Discoveries
+* [FET] Store manual TeleportEndpoint
+* [FET] remember last enter ly distance for jumps to center
+
+---
+
+# alpha.13
+
+#### General
+* [FET] Backup/Restore (of Inventory/Starship/Base/etc)
+
+#### JSON Editor
+* [FET] Unlock
+* [FET] Performant TreeView
+* [FIX] Proper return of modified JSON
+
+---
+
+# beta
+
+#### General
+* [IMP] Code cleanup
+* [IMP] UI cleanup
+
+#### Manager
+* [VIS] Slot selection: Game Mode icon
+
+#### Editor - Inventory
+* [FIX] Item Details: Min/Max Stats for procedural technology seems switched but has a technical background.
+
+#### Editor - Exosuit
+* [VIS] Health/Currency icons
+
+#### Editor - Starship
+* [FIX] Editor view needs to be reloaded to apply the changed debug mode to the legacy color UI.
+
+#### Editor - Exocraft
+* [FIX] Disable+change tab when last one is delete
+
+#### Editor - Freighter
+* [FIX] Directly update UI in Frigates when syncing home seed
+
+#### Editor - Knowledge
+* [FIX] Directly update UI in Discovery when changing a word
+
+#### Editor - Milestones
+* [VIS] Add Icons
