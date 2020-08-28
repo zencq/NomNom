@@ -4,9 +4,30 @@
 
 ## General
 
+* Multi platform support with automatic detection and indicator.
+    * GOG.com (PC)
+    * PlayStation 4 (with SaveWizard)
+    * Steam (PC)
 * Multi language support and changeable at runtime.
-  * English
-  * German (Deutsch)
+    * English
+    * German (Deutsch) - currently disabled/derzeit deaktiviert
+* Automatic backup of your save file when loaded.
+* Save the current save as human-readable JSON.
+* Restore a corrupted save if the save data itself are valid by simply saving it
+  again.
+* Edit multiple saves simultaneously. Select another save without the need to
+  save your unsaved changes before.
+* Integrated updater.
+    * Indicator if you choose to update later.
+* Integrated crash reporter.
+    * If you encounter a crash please fill out the form with as much information
+      as possible that will help fixing it.
+    * A report will be automatically stored in your output path.
+    * Send me the created data via one of the shown channels (there is a
+      button for each one).
+* Logging of value changes and other relevant events.
+* Custom output path where backups, human-readable JSON files, logs, and
+  crash reports are stored. Content will be moved then changed.
 * Multiple modes to change behavior:
     * Advanced
         * Enables advanced features that can easily destroy a save if you don't
@@ -14,31 +35,34 @@
     * Auto Save
         * Each change will be immediately saved to the disk.
     * Debug
-        * Show IDs in various places and include them in searches.
         * Allow adding non-procedural technology more than once to an inventory.
         * Allow legacy colors for living ships (no real in-game support as they
           become pure white).
+        * Show save file name in selection.
+        * Show IDs in various places and include them in searches.
         * Logging includes debug information.
         * Check for unavailable JSON mapping (included in logging).
-* Custom output path where backups, human-readable JSON files, logs, and
-  crash reports are stored.
-* Automatic backup of your save file when loaded.
-* Logging of value changes and other relevant events.
-* Integrated crash reporter.
-    * If you encounter a crash please fill out the form with as much information
-      as possible that will help fixing it.
-    * A report will be automatically stored in your output path.
-    * Send me the created data via one of the shown channels (there is a
-      button for each one).
-* Integrated updater.
 
 ---
 
 ## Manager
 
-* Select the slot and file you want to edit.
-* Save the selected file to an human-readable JSON file.
-* Restore corrupted saves (if you manually edited a storage file [save.hg]).
+* Select slot and save you want to edit.
+    * Slot selection displays play time and last save timestamp of most recent
+      save.
+    * Save selection displays further details like the type, its game version,
+      and some states.
+        * **Compatible**: The save is fully compatible and can be loaded for use
+          in Editor and Guide pages.
+        * **Corrupted**: The save might be compatible but at least the related
+          meta information does not match the actual save data. If a save is
+          corrupted, it cannot be loaded by the game. In order to fix this, you
+          just need to save it with NomNom (even if you haven't changed
+          anything). But if the save is also compatible, you can edit it before
+          saving if you want to.
+        * **Synced**: Indicates whether the current state of the save is the
+          same as on the disk.
+* Delete, copy, move, or swap your slots (unlocked platform dependent).
 
 ---
 
