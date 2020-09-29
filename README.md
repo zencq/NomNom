@@ -21,7 +21,7 @@ know with as much information as possible.</span>
 ![Maintained](https://img.shields.io/maintenance/yes/2020)
 [![Support Patreon](https://img.shields.io/badge/support-Patreon-brightgreen)](https://www.patreon.com/cengelha)
 [![Support PayPal](https://img.shields.io/badge/support-PayPal-brightgreen)](https://www.paypal.me/cengelha)
-![Release Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
 
 <!-- ![Release](https://img.shields.io/github/v/release/cengelha/nomnom)
 ![Release Date](https://img.shields.io/github/release-date/cengelha/nomnom) -->
@@ -49,8 +49,8 @@ the [NMS Community Developers & Designers](https://nmscd.github.io/) DevTalks
 that I join regularly.
 
 There is a [Patreon page](https://www.patreon.com/cengelha) in case you want to
-support me (no paywall), but I will also use it as developer diary to keep you
-updated.
+support me (no paywall though), but I will also use it as developer diary to
+keep you updated.
 
 ## Features
 
@@ -87,21 +87,27 @@ More can be found [here](https://github.com/cengelha/NomNom/tree/master/images).
 ### Requirements
 
 * NomNom is compatible with the following platforms of the game:
-  Platform                                                                                   | Detect                  | Read                    | Write                   | File Pattern    | Note
-  ------------------------------------------------------------------------------------------ | :---------------------: | :---------------------: | :---------------------: | --------------- | ----
-  [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)                                       | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg        | Same file format as Steam. Even though everything in NomNom is labeled with Steam, you can still use it for GOG.com without restrictions.
-  [PlayStation](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | memory.dat      | Tested with [SaveWizard](https://www.savewizard.net/) dumps. Results of other tools will probably not work.
-  [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)                       | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg        |
-  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                 | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | container.index | Pending. Will be added in alpha.7
-  Xbox                                                                                       | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                 |
+  Platform                                                                                   | Detect                  | Read                    | Write                   | File Pattern     | Note
+  ------------------------------------------------------------------------------------------ | :---------------------: | :---------------------: | :---------------------: | ---------------- | ----
+  [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)                                       | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         | Same file format as Steam. Even though everything in NomNom is labeled with Steam, you can still use it for GOG.com without restrictions.
+  [PlayStation](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | memory.dat       | Tested with [SaveWizard](https://www.savewizard.net/) and [PS4 Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter). Results of other tools may or may not work.
+  [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)                       | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         |
+  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                 | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | containers.index | Unlike Steam, reloading of modified saves in a loaded game does not always work, and the timestamp is never updated. If you do not see the changes you made, you can try reloading your game from the mode selection, but if they still do not appear or a new game is started, close the whole game without saving (otherwise you will overwrite your existing save) and restart it. You will then see the updated timestamp and the game will load with your changes.
+  Xbox                                                                                       | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported but it can be achieved with cloud sync of the Windows Store version. After modifying a save you may need to re-save it in-game to trigger the upload.
 
   Each platform has a anchor file pattern to check whether it's worth to search
   a directory or not. This must be in or one directory below the selected one.
-* The latest version of NomNom is built with __Exo Mech/Crossplay (2.4-2.5)__ in
-  mind but is compatible with __Synthesis (2.2)__ and up. If you use it with a game
-  version branch above (e.g. __3.0__), things should work as usual in most cases
-  but there can always be breaking changes. Watch out for notices about new
-  game updates on the [Patreon page](https://www.patreon.com/cengelha).
+* For PlayStation and Windows Store you get the best result if you start the
+  game **AFTER** applying your changes. Otherwise you may not see them and need
+  to restart the game anyway.
+* The latest version of NomNom is built with **Desolation (2.6)** in
+  mind but is compatible with **Beyond (2.14)** and up. If you use it with a
+  game version branch above (e.g. **3.0**), things should work as usual in most
+  cases but there can always be breaking changes. Watch out for notices about
+  new game updates on the [Patreon page](https://www.patreon.com/cengelha).
+* NomNom uses a database of the latest game version. If you use an older version
+  be careful with the data you enter as some items and other things may not be
+  available in your version and may mess with your save if you load it.
 * You need .NET Framework 4.8.
     * It's included in the Windows 10 May 2019 Update (1903) and above.
     * Otherwise you can download it [here](https://dotnet.microsoft.com/download/dotnet-framework/net48).
@@ -145,7 +151,7 @@ This project is licensed under the GNU GPLv3 license - see the
 
 ## Authors
 
-* __Christian Engelhardt__ - [GitHub](https://github.com/cengelha) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048) - [Patreon](https://www.patreon.com/cengelha) - [Reddit](https://www.reddit.com/user/zencq)
+* __Christian Engelhardt__ - [Discord](zencq#7276) - [GitHub](https://github.com/cengelha) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048) - [Patreon](https://www.patreon.com/cengelha) - [Reddit](https://www.reddit.com/user/zencq)
 
 ## Credits
 
@@ -157,4 +163,4 @@ This project is licensed under the GNU GPLv3 license - see the
 * [monkeyman192](https://github.com/monkeyman192/MBINCompiler) - MBINCompiler to extract data from the game files
 * [u/_lmonk](https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/) - Explaining how color customization for Starship and Multi-Tool works
 * [u/MegaGold_Fighter](https://www.reddit.com/r/NoMansSkyMods/comments/hhe2he/ps4_nms_save_editing_general_guide/) - Providing valuable data to make the PlayStation support possible
-* [Moo#6953](https://discord.com/) - Helping and verifying the Windows Store encryption
+* [Moo#6953](https://discord.com/) - Helping and verifying for the Windows Store

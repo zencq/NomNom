@@ -6,8 +6,15 @@
 
 * Multi platform support with automatic detection and indicator.
     * GOG.com (PC)
-    * PlayStation 4 (with SaveWizard)
+    * PlayStation
+        * Save Mounter
+        * SaveWizard
     * Steam (PC)
+    * Windows Store (PC)
+        * You will get a notification if the game is running as there is a high
+          chance that you need to restart it to see the changes.
+    * Xbox
+        * Only via cloud sync and the Windows Store version.
 * Multi language support and changeable at runtime.
     * English
     * German (Deutsch) - currently disabled/derzeit deaktiviert
