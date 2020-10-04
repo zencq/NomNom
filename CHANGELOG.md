@@ -4,12 +4,18 @@ All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
+## 3.0.0.10-alpha.10 (2020-10-04)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.10-alpha.10/total)
+
+### Fixed
+* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#17](https://github.com/cengelha/NomNom/issues/17)
+
 ## 3.0.0.9-alpha.9 (2020-10-04)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.9-alpha.9/total)
 
 ### Fixed
 * A few incompatibility issues
-* A crash that you occur on startup
+* A crash that could occur on startup
 * [GitHub issues](https://github.com/cengelha/NomNom/issues) [#13](https://github.com/cengelha/NomNom/issues/13) [#16](https://github.com/cengelha/NomNom/issues/16)
 
 ## 3.0.0.8-alpha.8 (2020-10-04)

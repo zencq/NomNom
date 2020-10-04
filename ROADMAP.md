@@ -13,7 +13,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.10 - Feature Polishing
+# alpha.11 - Feature Polishing
 
 #### General
 * [IMP] Windows Store Platform
@@ -95,7 +95,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.11 - Customization
+# alpha.12 - Customization
 
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
 
@@ -120,7 +120,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.12 - More Editor
+# alpha.13 - More Editor
 
 #### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
@@ -132,7 +132,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.13 - Guide
+# alpha.14 - Guide
 
 #### Guide
 * [FET] Exosuit
@@ -151,7 +151,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.14 - Clipboard, Store preferences and manually added stats
+# alpha.15 - Clipboard, Store preferences and manually added stats
 
 #### General
 * [FET] Undo/Redo
@@ -181,7 +181,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.15 - Import/Export, Raw JSON
+# alpha.16 - Import/Export, Raw JSON
 
 #### General
 * [FET] Backup/Restore (of Inventory/Starship/Base/etc) incl screenshot of NomNom
