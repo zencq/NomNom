@@ -13,54 +13,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.8 - Origins Update
-
-* [IMP] New Mappings
-???
-    "ux@": {
-???
-    "CYJ": [],
-???
-    "6Ws": 0,
-PhotoModeSettings
-    "wKU": 0,
-    "RUO": 2.0,
-    "yuu": 200.0,
-    "n0h": 5.0,
-    ">xF": 200.0,
-???
-    "ym>": [
-    "uK6": [
-    "2jw": 0,
-    "J3C": [
-    "OYB": false
-
-* [INF] New cooking products have been added, reflecting the range of novel meats and other sustainably harvested ingredients made possible by the new creature types.
-
-* [INF] During storms, the Exosuit can now take advantage of the extreme conditions: superheated temperatures can be processed into improved jetpack efficiency; freezing temperatures prevent Mining Beam overheating; high radioactivity increases mining yield; dense toxic gases can be recirculated for additional stamina.
-
-* [INF] These traders sell a range of exotic goods, including black-market upgrade modules.
-* [INF] The scrap dealer found about space stations will now exchange pugneum for rare or exotic contraband items.
-
-* [INF] The number of items in an inventory stack is now displayed in the popup header.
-
-* [INF] A number of lesser-used crafting products have been removed from the game.
-* [INF] A smaller number of new crafting products have been added to replace them.
-* [INF] The number of specialist survival products have been reduced. The stack size for the remaining survival products has been increased.
-* [INF] The stack size for Glass has been increased.
-* [INF] A range of new buried items have been added to planets. These can be found and processed to reveal a range of exotic and interesting new items.
-
-* [INF] Multi-Tools can now be upgraded at the Multi-Tool technology merchant aboard most Space Stations.
-* [INF] New inventory slots can be added, up to a maximum size for the current class. These slots cost a large number of units.
-* [INF] Multi-Tool class can also be upgraded for a significant amount of nanites.
-* [INF] Multi-Tool Expansion Slots allow the addition of an inventory slot for free. Find these upgrade circuits while exploring planets.
-
-* [INF] Portal interference for conventional portals has been removed. Players may explore freely.
-* [INF] After going through a portal, the return portal will remain active until you leave the planet. Your previous system is added to the list of available destinations at the space station teleporter.
-
----
-
-# alpha.9 - Editor Feature Polishing
+# alpha.9 - Feature Polishing
 
 #### General
 * [IMP] Windows Store Platform
@@ -76,6 +29,11 @@ PhotoModeSettings
     * METADATA/GAMESTATE/PLAYERDATA/THRUSTERCUSTOMISATIONDATA.EXML
 * [IMP] Seed mode to set seed as name too (or separate button)
 * [IMP] Naming and handling of procedural items
+* [IMP] Code cleanup
+* [IMP] UI cleanup
+
+#### Manager
+* [VIS] Slot selection: Game Mode icon
 
 #### Editor - Inventory
 * [FET] Move between Inventories
@@ -93,18 +51,26 @@ PhotoModeSettings
 #### Editor - Exosuit
 * [IMP] show max health
 * [FET] clear space station exosuit interaction
+* [VIS] Health/Currency icons
 
 #### Editor - Starship
 * [FET] Generate Seed for all
+* [FIX] Editor view needs to be reloaded to apply the changed debug mode to the legacy color UI.
 
 #### Editor - Multi-Tool
 * [FET] Generate Seed for all
 * [FET] Set current weapon mode
 
+#### Editor - Exocraft
+* [FIX] Disable+change tab when last one is delete
+
 #### Editor - Base
 * [FET] Delete Base
 * [IMP] Disable tab if now base or freighter / storage container to freighter ?
 * [FET] Change model of hired NPCSs
+
+#### Editor - Freighter
+* [FIX] Directly update UI in Frigates when syncing home seed
 
 #### Editor - Frigates
 * [FET] Copy
@@ -114,10 +80,18 @@ PhotoModeSettings
 * [FET] Delete TerrainEdit of any planet
 
 #### Editor - Knowledge
+* [FIX] Directly update UI in Discovery when changing a word
 * [IMP] learned/total and % complete for words for each race (https://github.com/goatfungus/NMSSaveEditor/issues/196)
 * [IMP] (un)learn all
 * [IMP] improve performance and fix oversized images
 * [FIX] "Is Known" checkbox not working
+
+#### Editor - Milestones
+* [VIS] Add Icons
+
+#### Catalogue
+* [FET] Add Recipe tab
+* [IMP] Group DataGrids
 
 ---
 
@@ -155,14 +129,6 @@ PhotoModeSettings
 * [FET] "^BASE_UPGRADE6" BASE_UPGRADE-Missions have a 1:30h timer.
 * [FET] "^BASE_UPGRADE11"-12 (+?) BASE_UPGRADE-Missions have a 6:00h timer.
 * [FET] "^???" Living Ship-Missions have a max timer of 24:00h.
-
----
-
-# alpha.12 - Catalogue Polishing
-
-#### Catalogue
-* [FET] Add Recipe tab
-* [IMP] Group DataGrids
 
 ---
 
@@ -228,7 +194,8 @@ PhotoModeSettings
 * [FET] Telemetry?
 * [FET] Transfer base to other save
 * [FET] Transfer save to other platform
-    * Not complete but the most relevant data
+    * Not complete but the most relevant data?
+* [FET] Change gamemode of a save
 
 #### JSON Editor
 * [FET] Unlock
@@ -243,26 +210,5 @@ PhotoModeSettings
 * [IMP] Code cleanup
 * [IMP] UI cleanup
 
-#### Manager
-* [VIS] Slot selection: Game Mode icon
-
 #### Editor - Inventory
 * [FIX] Item Details: Min/Max Stats for procedural technology seems switched but has a technical background.
-
-#### Editor - Exosuit
-* [VIS] Health/Currency icons
-
-#### Editor - Starship
-* [FIX] Editor view needs to be reloaded to apply the changed debug mode to the legacy color UI.
-
-#### Editor - Exocraft
-* [FIX] Disable+change tab when last one is delete
-
-#### Editor - Freighter
-* [FIX] Directly update UI in Frigates when syncing home seed
-
-#### Editor - Knowledge
-* [FIX] Directly update UI in Discovery when changing a word
-
-#### Editor - Milestones
-* [VIS] Add Icons

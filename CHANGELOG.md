@@ -4,14 +4,16 @@ All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
-<!-- ## 3.0.0.8-alpha.8 (2020-10-??)
+## 3.0.0.8-alpha.8 (2020-10-03)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.8-alpha.8/total)
 
 ### Changed
-* Updated the internal database to game version 3.01
+* Updated the internal database to game version 3.02
+* Toggle for portal interference only visible for game versions below 3.0
 
-### Removed
-* Toggle for portal interference for game version 3.0 and up -->
+### Fixed
+* A few bugs that caused a crash when adding a new item to an inventory
+* Changing starship type to Living now works properly
 
 ## 2.6.0.7-alpha.7 (2020-09-29)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/2.6.0.7-alpha.7/total)

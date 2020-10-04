@@ -58,7 +58,7 @@ The features can divided into different main parts:
 * __Manager__ Manage your saves!
     * Automatic backup and recovery (in case you screw something up).
     * Save your save as human-readable JSON.
-    * Copy or move a save to another slot.
+    * Copy, move, and swap slots to another.
     * Delete your save.
 * __Editor__ Edit your save for your needs!
     * Ability to manage fleets, change data values, and organize inventories.
@@ -75,12 +75,12 @@ The features can divided into different main parts:
 A detailed list can be found [here](FEATURES.md) and a list of things to come
 [here](ROADMAP.md).
 
-[<img alt="Exosuit" src="images/editor_suit.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_suit.png) [<img alt="Starship" src="images/editor_starship.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_starship.png)
-[<img alt="Frigate" src="images/editor_frigate.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_frigate.png) [<img alt="Base" src="images/editor_base.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/master/images/editor_base.png)
+[<img alt="Manager" src="images/manager.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/3.0.0.8-alpha.8/images/manager.png) [<img alt="Starship" src="images/editor_starship.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/3.0.0.8-alpha.8/images/editor_starship.png)
+[<img alt="Manage Fleet" src="images/editor_fleet.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/3.0.0.8-alpha.8/images/editor_fleet.png) [<img alt="Base" src="images/editor_base.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/3.0.0.8-alpha.8/images/editor_base.png)
 
 The images are from version
-[2.2.0.0-alpha.2](https://github.com/cengelha/NomNom/releases/tag/2.2.0.0-alpha.2).
-More can be found [here](https://github.com/cengelha/NomNom/tree/master/images).
+[3.0.0.8-alpha.8](https://github.com/cengelha/NomNom/releases/tag/3.0.0.8-alpha.8).
+More can be found [here](https://github.com/cengelha/NomNom/tree/3.0.0.8-alpha.8/images).
 
 ## Getting Started
 
@@ -100,17 +100,23 @@ More can be found [here](https://github.com/cengelha/NomNom/tree/master/images).
 * For PlayStation and Windows Store you get the best result if you start the
   game **AFTER** applying your changes. Otherwise you may not see them and need
   to restart the game anyway.
-* The latest version of NomNom is built with **Desolation (2.6)** in
+* The latest version of NomNom is built with **Origins (3.0)** in
   mind but is compatible with **Beyond (2.14)** and up. If you use it with a
-  game version branch above (e.g. **3.0**), things should work as usual in most
+  game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be breaking changes. Watch out for notices about
-  new game updates on the [Patreon page](https://www.patreon.com/cengelha).
+  new game updates on the [Patreon page](https://www.patreon.com/cengelha) (no
+  need to become a patreon to read them).
 * NomNom uses a database of the latest game version. If you use an older version
   be careful with the data you enter as some items and other things may not be
   available in your version and may mess with your save if you load it.
 * You need .NET Framework 4.8.
     * It's included in the Windows 10 May 2019 Update (1903) and above.
     * Otherwise you can download it [here](https://dotnet.microsoft.com/download/dotnet-framework/net48).
+
+### Download
+
+* [GitHub](https://github.com/cengelha/NomNom/releases)
+* [Nexus Mods](https://www.nexusmods.com/nomanssky/mods/1566?tab=files)
 
 ### Instructions
 
@@ -151,7 +157,7 @@ This project is licensed under the GNU GPLv3 license - see the
 
 ## Authors
 
-* __Christian Engelhardt__ - [Discord](zencq#7276) - [GitHub](https://github.com/cengelha) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048) - [Patreon](https://www.patreon.com/cengelha) - [Reddit](https://www.reddit.com/user/zencq)
+* __Christian Engelhardt__ - [Discord](zencq#7276) - [GitHub](https://github.com/cengelha) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048) - [Patreon](https://www.patreon.com/cengelha) - [psXtools.de Community](https://psxtools.de/index.php?user/71527-zencq/) - [Reddit](https://www.reddit.com/user/zencq)
 
 ## Credits
 
@@ -162,5 +168,5 @@ This project is licensed under the GNU GPLv3 license - see the
 * [matthew-humphrey](https://github.com/matthew-humphrey/nmssavetool) - Decrypt and encrypt Steam saves
 * [monkeyman192](https://github.com/monkeyman192/MBINCompiler) - MBINCompiler to extract data from the game files
 * [u/_lmonk](https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/) - Explaining how color customization for Starship and Multi-Tool works
-* [u/MegaGold_Fighter](https://www.reddit.com/r/NoMansSkyMods/comments/hhe2he/ps4_nms_save_editing_general_guide/) - Providing valuable data to make the PlayStation support possible
+* [u/MegaGold_Fighter](https://www.reddit.com/r/NoMansSkyMods/comments/hhe2he/ps4_nms_save_editing_general_guide/) - [Storm21](https://github.com/Storm21CH) - Providing valuable data to make the PlayStation support possible
 * [Moo#6953](https://discord.com/) - Helping and verifying for the Windows Store
