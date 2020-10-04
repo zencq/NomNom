@@ -13,7 +13,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.9 - Feature Polishing
+# alpha.10 - Feature Polishing
 
 #### General
 * [IMP] Windows Store Platform
@@ -95,7 +95,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.10 - Customization
+# alpha.11 - Customization
 
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
 
@@ -120,7 +120,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.11 - More Editor
+# alpha.12 - More Editor
 
 #### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
