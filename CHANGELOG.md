@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
+## 3.0.0.11-alpha.11 (2020-10-07)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.11-alpha.11/total)
+
+### Fixed
+* Some incompatibility issues
+* A bug that could cause PS4 saves to become corrupted while saving
+* [GitHub issues](https://github.com/cengelha/NomNom/issues) [#18](https://github.com/cengelha/NomNom/issues/18) [#19](https://github.com/cengelha/NomNom/issues/19) [#20](https://github.com/cengelha/NomNom/issues/20) [#23](https://github.com/cengelha/NomNom/issues/23)
+
 ## 3.0.0.10-alpha.10 (2020-10-04)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.10-alpha.10/total)
 

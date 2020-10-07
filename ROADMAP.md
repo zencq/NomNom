@@ -13,14 +13,13 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.11 - Feature Polishing
+# alpha.12 - Feature Polishing
 
 #### General
 * [IMP] Windows Store Platform
     * File Action
     * Trigger Cloud Sync (update containers.index, container.X)
 * [IMP] Notification is saving finished
-* [IMP] Info why an archive is not compatible
 * [IMP] Integration of libMBIN
 * [IMP] some UI changes
 * [IMP] Handling of customization technology
@@ -31,9 +30,12 @@ of them might disappear unimplemented.
 * [IMP] Naming and handling of procedural items
 * [IMP] Code cleanup
 * [IMP] UI cleanup
+* [IMP] remove stack limit in debug/new mod mode (useful for modded games)
+* [IMP] add platform to crash report
 
 #### Manager
 * [VIS] Slot selection: Game Mode icon
+* [IMP] Info why an archive is not compatible
 
 #### Editor - Inventory
 * [FET] Move between Inventories
@@ -47,6 +49,7 @@ of them might disappear unimplemented.
     * [IMP] show time to make in refiner list
     * [FET] Frigate-Group
     * [FET] Learnable-group
+    * [IMP] personal refiner fuel?
 
 #### Editor - Exosuit
 * [IMP] show max health
@@ -95,7 +98,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.12 - Customization
+# alpha.13 - Customization
 
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
 
@@ -120,7 +123,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.13 - More Editor
+# alpha.14 - More Editor
 
 #### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
@@ -132,7 +135,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.14 - Guide
+# alpha.15 - Guide
 
 #### Guide
 * [FET] Exosuit
@@ -151,7 +154,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.15 - Clipboard, Store preferences and manually added stats
+# alpha.16 - Clipboard, Store preferences and manually added stats
 
 #### General
 * [FET] Undo/Redo
@@ -181,7 +184,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.16 - Import/Export, Raw JSON
+# alpha.17 - Import/Export, Raw JSON
 
 #### General
 * [FET] Backup/Restore (of Inventory/Starship/Base/etc) incl screenshot of NomNom
