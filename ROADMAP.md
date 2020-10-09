@@ -13,7 +13,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.12 - Feature Polishing
+# alpha.13 - Feature Polishing
 
 #### General
 * [IMP] Windows Store Platform
@@ -31,17 +31,23 @@ of them might disappear unimplemented.
 * [IMP] Code cleanup
 * [IMP] UI cleanup
 * [IMP] remove stack limit in debug/new mod mode (useful for modded games)
+    * only for Steam as other platforms don't support modding
 * [IMP] add platform to crash report
+* [IMP] overall improvements and more failsafe
+* [IMP] create a first crash report before opening the window. update as before in case there is a user comment
+* [IMP] hide unimplemented features instead of disabling them
 
 #### Manager
 * [VIS] Slot selection: Game Mode icon
 * [IMP] Info why an archive is not compatible
+* [FET] Add channels to right down corner (Patreon, discord, etc.)
 
 #### Editor - Inventory
 * [FET] Move between Inventories
 * [FIX] ingredient-only restriction to Ingredient Storage container (check current state)
     * not restricted in debug
 * [FET] change product multiplier
+* [VIS] item name in slot move at the same speed and only move in one direction -> https://forums.nexusmods.com/index.php?/topic/8786978-nomnom/page-4#entry85873748
 * Item Details
     * [IMP] Creation-Group: Rewards (Consumable, Mission, etc.)
     * [FET] Base Building-Group
@@ -66,6 +72,7 @@ of them might disappear unimplemented.
 
 #### Editor - Exocraft
 * [FIX] Disable+change tab when last one is delete
+* [FIX] Disable context menu enable/disable option
 
 #### Editor - Base
 * [FET] Delete Base
@@ -98,7 +105,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.13 - Customization
+# alpha.14 - Customization
 
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
 
@@ -123,7 +130,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.14 - More Editor
+# alpha.15 - More Editor
 
 #### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
@@ -135,7 +142,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.15 - Guide
+# alpha.16 - Guide
 
 #### Guide
 * [FET] Exosuit
@@ -154,7 +161,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.16 - Clipboard, Store preferences and manually added stats
+# alpha.17 - Clipboard, Store preferences and manually added stats
 
 #### General
 * [FET] Undo/Redo
@@ -184,7 +191,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.17 - Import/Export, Raw JSON
+# alpha.18 - Import/Export, Raw JSON
 
 #### General
 * [FET] Backup/Restore (of Inventory/Starship/Base/etc) incl screenshot of NomNom

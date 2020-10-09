@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <version>3.0.0.11</version>
-  <url>https://github.com/cengelha/NomNom/releases/download/3.0.0.11-alpha.11/NomNom.zip</url>
+  <version>3.0.0.12</version>
+  <url>https://github.com/cengelha/NomNom/releases/download/3.0.0.12-alpha.12/NomNom.zip</url>
   <changelog>https://github.com/cengelha/NomNom/releases</changelog>
-  <checksum algorithm="SHA256">E98215C09C999A4C0768FD0FE2B4815F34606F6BBF14FC2B03862B57592F0007</checksum>
+  <checksum algorithm="SHA256">2A2F4B21EFE53F66595F3E8C22101F90E535028E211B8E53E434E7C084C61243</checksum>
 </item>
