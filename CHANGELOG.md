@@ -4,12 +4,20 @@ All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
+## 3.0.0.13-alpha.13 (2020-10-13)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.13-alpha.13/total)
+
+### Fixed
+* Some incompatibility issues for PS4 SaveWizard
+* A bug that caused procedural tech to be added as not fully installed
+* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#28](https://github.com/cengelha/NomNom/issues/28)
+
 ## 3.0.0.12-alpha.12 (2020-10-09)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.12-alpha.12/total)
 
 ### Fixed
-* Some incompatibilities for older versions and some saves which have newly the added PlanetaryMappingData key in it
-* [GitHub issues](https://github.com/cengelha/NomNom/issues) [#26](https://github.com/cengelha/NomNom/issues/26)
+* Some incompatibilities for older versions and some saves which have the newly added PlanetaryMappingData key in it
+* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#26](https://github.com/cengelha/NomNom/issues/26)
 
 ## 3.0.0.11-alpha.11 (2020-10-07)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.11-alpha.11/total)
