@@ -30,17 +30,22 @@ of them might disappear unimplemented.
 * [IMP] Naming and handling of procedural items
 * [IMP] Code cleanup
 * [IMP] UI cleanup
-* [IMP] remove stack limit in debug/new mod mode (useful for modded games)
+* [IMP] new mod mode (useful for modded games)
     * only for Steam as other platforms don't support modding
+    * remove stack size limit
+    * skip tech overload check
 * [IMP] add platform to crash report
 * [IMP] overall improvements and more failsafe
 * [IMP] create a first crash report before opening the window. update as before in case there is a user comment
 * [IMP] hide unimplemented features instead of disabling them
+* [IMP] exception always english
+* [IMP] switch back to manager-view (or if possible reload current view on-the-fly)
 
 #### Manager
 * [VIS] Slot selection: Game Mode icon
 * [IMP] Info why an archive is not compatible
 * [FET] Add channels to right down corner (Patreon, discord, etc.)
+* [FIX] crash when clicking MS reset
 
 #### Editor - Inventory
 * [FET] Move between Inventories
@@ -56,6 +61,9 @@ of them might disappear unimplemented.
     * [FET] Frigate-Group
     * [FET] Learnable-group
     * [IMP] personal refiner fuel?
+    * [IMP] Product tech module unlock cost in nanites
+* [FIX] some resources when you add to a ships inventory (or the base inventory) only lets you set 2 for example the gold.. it should be stacking to 500 in the ship
+
 
 #### Editor - Exosuit
 * [IMP] show max health
@@ -88,6 +96,7 @@ of them might disappear unimplemented.
 
 #### Editor - Discoveries
 * [FET] Delete TerrainEdit of any planet
+* [FIX] Only rename own base endpoints
 
 #### Editor - Knowledge
 * [FIX] Directly update UI in Discovery when changing a word

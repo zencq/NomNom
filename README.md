@@ -49,7 +49,7 @@ the [NMS Community Developers & Designers](https://nmscd.github.io/) DevTalks
 that I join regularly.
 
 There is a [Patreon page](https://www.patreon.com/cengelha) in case you want to
-support me (no paywall though), but I will also use it as developer diary to
+support me (no paywall though), but I will also use it as developer diary and to
 keep you updated.
 
 ## Features
@@ -168,5 +168,5 @@ This project is licensed under the GNU GPLv3 license - see the
 * [matthew-humphrey](https://github.com/matthew-humphrey/nmssavetool) - Decrypt and encrypt Steam saves
 * [monkeyman192](https://github.com/monkeyman192/MBINCompiler) - MBINCompiler to extract data from the game files
 * [u/_lmonk](https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/) - Explaining how color customization for Starship and Multi-Tool works
-* [u/MegaGold_Fighter](https://www.reddit.com/r/NoMansSkyMods/comments/hhe2he/ps4_nms_save_editing_general_guide/) - [Storm21](https://github.com/Storm21CH) - Providing valuable data to make the PlayStation support possible
+* [u/MegaGold_Fighter](https://www.reddit.com/r/NoMansSkyMods/comments/hhe2he/ps4_nms_save_editing_general_guide/) - [Storm21](https://psxtools.de/index.php?user/38756-storm21/) - Providing valuable data to make the PlayStation support possible
 * [Moo#6953](https://discord.com/) - Helping and verifying for the Windows Store

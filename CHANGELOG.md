@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file. The format
 is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
+## Unreleased
+<!-- ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.15-beta.1/total) -->
+
+### Added
+### Changed
+### Fixed
+
+## 3.0.0.14-alpha.14 (2020-10-29)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.14-alpha.14/total)
+
+### Changed
+* Updated the internal database to game version 3.05
+
 ## 3.0.0.13-alpha.13 (2020-10-13)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.13-alpha.13/total)
 
