@@ -5,11 +5,17 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
 ## Unreleased
-<!-- ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.15-beta.1/total) -->
+<!-- ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.1.0.16-beta.1/total) -->
 
 ### Added
 ### Changed
 ### Fixed
+
+## 3.1.0.15-alpha.15 (2020-11-12)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.1.0.15-alpha.15/total)
+
+### Changed
+* Updated the internal database to game version 3.10
 
 ## 3.0.0.14-alpha.14 (2020-10-29)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.14-alpha.14/total)

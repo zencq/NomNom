@@ -13,7 +13,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.14 - Feature Polishing
+# beta.1 - Feature Polishing
 
 #### General
 * [IMP] Windows Store Platform
@@ -40,6 +40,7 @@ of them might disappear unimplemented.
 * [IMP] hide unimplemented features instead of disabling them
 * [IMP] exception always english
 * [IMP] switch back to manager-view (or if possible reload current view on-the-fly)
+* [IMP] upgrade to .NET 5
 
 #### Manager
 * [VIS] Slot selection: Game Mode icon
@@ -52,6 +53,7 @@ of them might disappear unimplemented.
 * [FIX] ingredient-only restriction to Ingredient Storage container (check current state)
     * not restricted in debug
 * [FET] change product multiplier
+* [IMP] cache last added item
 * [VIS] item name in slot move at the same speed and only move in one direction -> https://forums.nexusmods.com/index.php?/topic/8786978-nomnom/page-4#entry85873748
 * Item Details
     * [IMP] Creation-Group: Rewards (Consumable, Mission, etc.)
@@ -114,7 +116,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.15 - Customization
+# beta.2 - Customization
 
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
 
@@ -139,7 +141,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.16 - More Editor
+# beta.3 - More Editor
 
 #### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
@@ -151,7 +153,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.17 - Guide
+# beta.4 - Guide
 
 #### Guide
 * [FET] Exosuit
@@ -170,7 +172,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.18 - Clipboard, Store preferences and manually added stats
+# beta.5 - Clipboard, Store preferences and manually added stats
 
 #### General
 * [FET] Undo/Redo
@@ -200,7 +202,7 @@ of them might disappear unimplemented.
 
 ---
 
-# alpha.19 - Import/Export, Raw JSON
+# beta.6 - Import/Export, Raw JSON
 
 #### General
 * [FET] Backup/Restore (of Inventory/Starship/Base/etc) incl screenshot of NomNom
@@ -223,7 +225,7 @@ of them might disappear unimplemented.
 
 ---
 
-# beta
+# beta.7 - Finshing
 
 #### General
 * [IMP] Code cleanup

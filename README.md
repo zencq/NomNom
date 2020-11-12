@@ -87,20 +87,21 @@ More can be found [here](https://github.com/cengelha/NomNom/tree/3.0.0.8-alpha.8
 ### Requirements
 
 * NomNom is compatible with the following platforms of the game:
-  Platform                                                                                   | Detect                  | Read                    | Write                   | File Pattern     | Note
-  ------------------------------------------------------------------------------------------ | :---------------------: | :---------------------: | :---------------------: | ---------------- | ----
-  [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)                                       | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         | Same file format as Steam. Even though everything in NomNom is labeled with Steam, you can still use it for GOG.com without restrictions.
-  [PlayStation](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | memory.dat       | Tested with [SaveWizard](https://www.savewizard.net/) and [PS4 Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter). Results of other tools may or may not work.
-  [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)                       | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         |
-  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                 | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | containers.index | Unlike Steam, reloading of modified saves in a loaded game does not always work, and the timestamp is never updated. If you do not see the changes you made, you can try reloading your game from the mode selection, but if they still do not appear or a new game is started, close the whole game without saving (otherwise you will overwrite your existing save) and restart it. You will then see the updated timestamp and the game will load with your changes.
-  Xbox                                                                                       | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported but it can be achieved with cloud sync of the Windows Store version. After modifying a save you may need to re-save it in-game to trigger the upload.
+  Platform                                                                                     | Detect                  | Read                    | Write                   | File Pattern     | Note
+  -------------------------------------------------------------------------------------------- | :---------------------: | :---------------------: | :---------------------: | ---------------- | ----
+  [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)                                         | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         | Same file format as Steam. Even though everything in NomNom is labeled with Steam, you can still use it for GOG.com without restrictions.
+  [PlayStation 4](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | memory.dat       | Tested with [SaveWizard](https://www.savewizard.net/) and [Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter). Results of other tools may or may not work.
+  [PlayStation 5](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  |
+  [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)                         | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         |
+  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                   | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | containers.index | Unlike Steam, reloading of modified saves in a loaded game does not always work, and the timestamp is never updated. If you do not see the changes you made, you can try reloading your game from the mode selection, but if they still do not appear or a new game is started, close the whole game without saving (otherwise you will overwrite your existing save) and restart it. You will then see the updated timestamp and the game will load with your changes.
+  [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)                 | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported but it can be achieved with cloud sync via the Windows Store. After modifying a save you may need to re-save it in-game to trigger the upload.
 
   Each platform has a anchor file pattern to check whether it's worth to search
   a directory or not. This must be in or one directory below the selected one.
 * For PlayStation and Windows Store you get the best result if you start the
   game **AFTER** applying your changes. Otherwise you may not see them and need
   to restart the game anyway.
-* The latest version of NomNom is built with **Origins (3.0)** in
+* The latest version of NomNom is built with **Next Generation (3.10)** in
   mind but is compatible with **Beyond (2.14)** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be breaking changes. Watch out for notices about
