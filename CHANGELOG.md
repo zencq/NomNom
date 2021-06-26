@@ -5,11 +5,29 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 [own versioning](README.md#versioning).
 
 ## Unreleased
-<!-- ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.1.0.16-beta.1/total) -->
 
 ### Added
 ### Changed
 ### Fixed
+
+## 3.1.0.16-alpha.16 (2021-06-26)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.1.0.16-alpha.16/total)
+
+### Added
+* Create/Delete operations for Windows Store saves
+* Windows Store cloud sync can be triggered now at any time. No need to load and save a savegame anymore.
+* Links to different channels to find help or to support the development of NomNom.
+
+### Changed
+* Mapping matches [MBINCompiler](https://github.com/monkeyman192/MBINCompiler) naming again
+* Copy/Move/Swap is still triggered on slots but the actual action is decided for each save
+* Redefined version checking and now officially supporting 2.11 an up
+* Settings are now stored portable right next to the executable
+* Removed "Corrupted" checkbox as it is now merged into the "Compatible" one.
+
+### Fixed
+* Some crashes that mostly occurred on startup ([#31](https://github.com/cengelha/NomNom/issues/31) [32](https://github.com/cengelha/NomNom/issues/32) [#34](https://github.com/cengelha/NomNom/issues/34) [#43](https://github.com/cengelha/NomNom/issues/43) [#45](https://github.com/cengelha/NomNom/issues/45) [#50](https://github.com/cengelha/NomNom/issues/50))
+* Vanishing data and other incompatibility issues ([#35](https://github.com/cengelha/NomNom/issues/35) [#41](https://github.com/cengelha/NomNom/issues/41) [#44](https://github.com/cengelha/NomNom/issues/44) [#49](https://github.com/cengelha/NomNom/issues/49))
 
 ## 3.1.0.15-alpha.15 (2020-11-12)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.1.0.15-alpha.15/total)
@@ -27,38 +45,35 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.13-alpha.13/total)
 
 ### Fixed
-* Some incompatibility issues for PS4 SaveWizard
+* Even more incompatibility issues ([#28](https://github.com/cengelha/NomNom/issues/28))
 * A bug that caused procedural tech to be added as not fully installed
-* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#28](https://github.com/cengelha/NomNom/issues/28)
 
 ## 3.0.0.12-alpha.12 (2020-10-09)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.12-alpha.12/total)
 
 ### Fixed
-* Some incompatibilities for older versions and some saves which have the newly added PlanetaryMappingData key in it
-* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#26](https://github.com/cengelha/NomNom/issues/26)
+* Some incompatibilities for older versions and some saves which have the newly added PlanetaryMappingData key in it ([#26](https://github.com/cengelha/NomNom/issues/26))
 
 ## 3.0.0.11-alpha.11 (2020-10-07)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.11-alpha.11/total)
 
 ### Fixed
-* Some incompatibility issues
+* More incompatibility issues ([#18](https://github.com/cengelha/NomNom/issues/18) [#19](https://github.com/cengelha/NomNom/issues/19) [#20](https://github.com/cengelha/NomNom/issues/20))
 * A bug that could cause PS4 saves to become corrupted while saving
-* [GitHub issues](https://github.com/cengelha/NomNom/issues) [#18](https://github.com/cengelha/NomNom/issues/18) [#19](https://github.com/cengelha/NomNom/issues/19) [#20](https://github.com/cengelha/NomNom/issues/20) [#23](https://github.com/cengelha/NomNom/issues/23)
+* A crash when viewing item details ([#23](https://github.com/cengelha/NomNom/issues/23))
 
 ## 3.0.0.10-alpha.10 (2020-10-04)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.10-alpha.10/total)
 
 ### Fixed
-* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#17](https://github.com/cengelha/NomNom/issues/17)
+* A bug introduced while fixing the previous incompatibility issues ([#17](https://github.com/cengelha/NomNom/issues/17))
 
 ## 3.0.0.9-alpha.9 (2020-10-04)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.9-alpha.9/total)
 
 ### Fixed
-* A few incompatibility issues
+* Incompatibility issues ([#13](https://github.com/cengelha/NomNom/issues/13) [#16](https://github.com/cengelha/NomNom/issues/16))
 * A crash that could occur on startup
-* [GitHub issues](https://github.com/cengelha/NomNom/issues) [#13](https://github.com/cengelha/NomNom/issues/13) [#16](https://github.com/cengelha/NomNom/issues/16)
 
 ## 3.0.0.8-alpha.8 (2020-10-04)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.0.0.8-alpha.8/total)
@@ -77,7 +92,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Added
 * Support for the following platforms (see [README](README.md#requirements) for
   details):
-    * PlayStation (Save Mounter) ([#8](https://github.com/cengelha/NomNom/issues/8))
+    * PlayStation 4 (Save Mounter) ([#8](https://github.com/cengelha/NomNom/issues/8))
     * Windows Store
     * Xbox (via Windows Store cloud sync)
 * New fleet stat for freighter for 2.6 and up
@@ -91,8 +106,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 * NomNom now supports Beyond (2.14) and up
 
 ### Fixed
-* Loading unsupported files should no longer crash
-* [GitHub issue](https://github.com/cengelha/NomNom/issues) [#9](https://github.com/cengelha/NomNom/issues/9)
+* Loading unsupported files should no longer crash ([#9](https://github.com/cengelha/NomNom/issues/9))
 
 ## 2.4.0.6-alpha.6 (2020-08-28)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/2.4.0.6-alpha.6/total)
@@ -102,7 +116,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 * Navigation area can be collapsed and you can select a default landing page
 * Support for the following platforms of the game (see
   [README](README.md#requirements) for details):
-    * PlayStation (SaveWizard)
+    * PlayStation 4 (SaveWizard)
 * Platform indicator
 * Reset buttons to the default save path of each PC platform
 * Slot management: delete, copy, move, and swap (unlocked platform dependent)
@@ -119,7 +133,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Fixed
 * Detection of external changes
 * Debug logging switch works without restart now
-* [GitHub issues](https://github.com/cengelha/NomNom/issues) [#1](https://github.com/cengelha/NomNom/issues/1) [#2](https://github.com/cengelha/NomNom/issues/2) [#3](https://github.com/cengelha/NomNom/issues/3) [#5](https://github.com/cengelha/NomNom/issues/5)
+* Crashes on startup or when opening the editor ([#1](https://github.com/cengelha/NomNom/issues/1) [#2](https://github.com/cengelha/NomNom/issues/2) [#3](https://github.com/cengelha/NomNom/issues/3) [#5](https://github.com/cengelha/NomNom/issues/5))
 
 ## 2.4.0.5-alpha.5 (2020-06-13)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/2.4.0.5-alpha.5/total)
@@ -131,7 +145,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
       location with or without your fleet
     * Toggle portal interference
     * Trigger a Freighter battle and show when it would occur naturally
-* "Delete Exocraft"
+* For Exocrafts "Delete"
 * Nexus Mods/Patreon/Reddit as channels in the crash reporter
 * Display of release notes in the notification about new releases
 * Button to reset save path to default
@@ -143,10 +157,10 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/2.2.0.4-alpha.4/total)
 
 ### Added
-* "Set as current Starship" and "Delete Starship"
-* "Set as current Multi-Tool" and "Delete Multi-Tool"
-* Protection against unintended deletion for Multi-Tools
-* "Set as current Exocraft" and renaming of Exocrafts
+* For Starships "Set as current" and "Delete"
+* For Multi-Tools "Set as current" and "Delete"
+* Protection against unintended deletion of Multi-Tools
+* Renaming for Exocrafts and "Set as current"
 * Renaming for Storage Container
 * Buttons to select the previous/next inventory with a single click
 * Buttons to enable/repair/fill all slots at once
@@ -155,7 +169,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 * Moved content of **Discoveries** tab to new **Knowledge** tab
 * Changed legacy colors for living ships to be only available in debug mode
 * Improved visuals to be even closer to the game:
-    * Indication for enforced items and those who cannot be deleted in-game
+    * Indication for enforced items and those who cannot be deleted in game
     * Indication for overloaded procedural technology
     * Show adjacent bonus colors
 
@@ -171,21 +185,19 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Changed
 * Improved compatibility for additional Starships, Exocrafts, etc. in future
   game updates which also fixes crashes related to the new Exo Mech when loading
-  a save and it's the active Exocraft
+  a save and it is the active Exocraft
 
 ### Fixed
-* Not updating "Ships Destroyed" milestone when changing its separated
-  values
-* A bunch of data type mismatches and other mapping issues in the
-  (auto-generated) save file objects that
-  [could corrupt a save](https://www.reddit.com/r/NoMansSkyMods/comments/g4e3zv/new_savegame_editor/fo60ja1/)
+* Not updating "Ships Destroyed" milestone when changing its separated values
+* A bunch of data type mismatches and other mapping issues in the (auto-generated)
+  save file objects that [could corrupt a save](https://www.reddit.com/r/NoMansSkyMods/comments/g4e3zv/new_savegame_editor/fo60ja1/)
 
 ## 2.2.0.0-alpha.2 (2020-04-19)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/2.2.0.0-alpha.2/total)
 
 ### Added
 * Logging
-* **Milestone** tab with all milestones you see in-game
+* **Milestone** tab with all milestones you see in game
 
 ## 2.2.0.0-alpha.1 (2020-04-12)
 

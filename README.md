@@ -4,14 +4,14 @@
 ![Pre-release](https://img.shields.io/github/v/release/cengelha/nomnom?include_prereleases)
 ![Pre-release Date](https://img.shields.io/github/release-date-pre/cengelha/nomnom)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
-![License](https://img.shields.io/github/license/cengelha/nomnom)
 
 [![Platform](https://img.shields.io/badge/platform-windows-lightgrey)](https://www.patreon.com/cengelha)
 [![.NET](https://img.shields.io/badge/.net-framework_4.8-lightgrey)](https://www.patreon.com/cengelha)
 
-[![Discord Server](https://img.shields.io/discord/762409407488720918?color=7289da&label=discord)](https://discord.gg/3VrAhJVGn7)
-[![Donate Patreon](https://img.shields.io/badge/donate-Patreon-f96854)](https://www.patreon.com/cengelha)
-[![Donate PayPal](https://img.shields.io/badge/donate-PayPal-00457c)](https://www.paypal.me/cengelha)
+[![Discord Server](https://img.shields.io/discord/762409407488720918?color=5865F2&label=discord)](https://discord.gg/3VrAhJVGn7)
+[![Donate Buy Me a Coffee](https://img.shields.io/badge/donate-Buy%20Me%20a%20Coffee-FFDD00)](https://www.buymeacoffee.com/cengelha)
+[![Donate Patreon](https://img.shields.io/badge/donate-Patreon-FF424D)](https://www.patreon.com/cengelha)
+[![Donate PayPal](https://img.shields.io/badge/donate-PayPal-00457C)](https://www.paypal.me/cengelha)
 
 ## Introduction
 
@@ -35,7 +35,7 @@ online wiki or such. Therefore I started my own project for fun and here we are.
 <span style="color: orange;">**NomNom is currently in a alpha state.** This means
 for your that things may be a little buggy and the UI is definitely not final. If you
 encountered bugs or when you think something doesn't work as expected or could
-be improved, [let me know](#contact-support)!</span>
+be improved, [let me know](#contact--support)!</span>
 
 <span style="color: red;">All available features are tested while implemented but
 mistakes can happen, so be aware of that and backup your saves!</span>
@@ -89,31 +89,27 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
   -------------------------------------------------------------------------------------------- | :---------------------: | :---------------------: | :---------------------: | ---------------- | ----
   [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)                                         | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         | Same file format as Steam. Even though everything in NomNom is labeled with Steam, you can still use it for GOG.com without restrictions.
   [PlayStation 4](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | memory.dat       | Tested with [SaveWizard](https://www.savewizard.net/) and [Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter). Results of other tools may or may not work.
-  [PlayStation 5](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported and the only way to achieve it (currently) is by modifying at PS4 and then transfer it to PS5.
+  [PlayStation 5](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported. It can be achieved by modifying at PS4 and then transfering it to PS5.
   [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)                         | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         |
-  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                   | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | containers.index | Unlike Steam, reloading of modified saves in a loaded game does not always work, and the timestamp is never updated. If you do not see the changes you made, you can try reloading your game from the mode selection, but if they still do not appear or a new game is started, close the whole game without saving (otherwise you will overwrite your existing save) and restart it. You will then see the updated timestamp and the game will load with your changes.
-  [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)                 | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported but it can be achieved with cloud sync via the Windows Store. After modifying a save you may need to re-save it in game to trigger the upload.
+  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                   | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | containers.index | Reloading of modified saves while the game is running does not work and you do not see an updated timestamp.
+  [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)                 | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported. It can be achieved with cloud sync via the Windows Store. The synchronisation is triggered short after you close the game.
 
   Each platform has a anchor file pattern to check whether it's worth to look
   further into the default directory of a platform (or a selected one) or not.
   This must be in or one directory below the selected one.
-* For PlayStation and Windows Store you get the best result if you start the
-  game **AFTER** applying your changes. Otherwise you may not see them and need
-  to restart the game anyway.
 * The latest version of NomNom is built with **Next Generation (3.10)** in
   mind but is compatible with **Beyond (2.11)** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
-  cases but there can always be breaking changes. Watch out for notices about
+  cases but there can always be a breaking change. Watch out for notices about
   new game updates.
 * You need .NET Framework 4.8.
-    * It's included in the Windows 10 May 2019 Update (1903) and above.
-    * Otherwise you can download it [here](https://dotnet.microsoft.com/download/dotnet-framework/net48).
-    * There will be an upgrade to .NET 5.0 with a future release. You can
-      already download the desktop runtime [here](https://dotnet.microsoft.com/download/dotnet/5.0).
+    * It is included in the Windows 10 May 2019 Update (1903) and above, otherwise you have to [download](https://dotnet.microsoft.com/download/dotnet-framework/net48) it.
+    * There will be an upgrade to .NET 5 in the future but you can
+      already download the required [**.NET Desktop Runtime**](https://dotnet.microsoft.com/download/dotnet/5.0).
 
 ### Download
 
-* [GitHub](CHANGELOG.md)
+* [GitHub](https://github.com/cengelha/NomNom/releases) (NomNom.zip)
 * [Nexus Mods](https://www.nexusmods.com/nomanssky/mods/1566?tab=files)
 
 ### Instructions
@@ -151,7 +147,7 @@ The versioning is oriented on the game version itself:
 
 The complete history can be found in the [CHANGELOG](CHANGELOG.md) file.
 
-There is also a [ROADMAP](ROADMAP.md) with things planned for the future. It's
+There is also a [ROADMAP](ROADMAP.md) file with things planned for the future. It's
 not set in stone but you will get an idea what is coming next.
 
 ## License
@@ -162,9 +158,11 @@ file for details.
 ## Contact & Support
 
 If you like NomNom and want to support me in its further development, you can do
-so via [__PayPal__](https://www.paypal.me/cengelha) or on [__Patreon__](https://www.patreon.com/cengelha). I will appreciate it!
-There won't be a paywall though. Patreon will also be used to keep you updated
-in case you don't want to (or can't) join on Discord.
+so on [__Buy Me a Coffee__](https://www.buymeacoffee.com/cengelha) or [__Patreon__](https://www.patreon.com/cengelha) or via [__PayPal__](https://www.paypal.me/cengelha).
+I will appreciate it!
+
+There won't be a paywall though. Buy Me a Coffee and Patreon will also be used to
+keep you updated.
 
 The official [__Discord__](https://discord.gg/3VrAhJVGn7) server will be the
 place where you will find all information at one place, first hand. If you need

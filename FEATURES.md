@@ -4,24 +4,23 @@
 
 ## General
 
-* Multi platform support with automatic detection and indicator.
+* Support for all possible platforms No Man's Sky can be played on.
     * GOG.com (PC)
     * PlayStation 4
         * Save Mounter
         * SaveWizard
+    * PlayStation 5
+        * By transfering it from PS**4** to PS**5**.
     * Steam (PC)
     * Windows Store (PC)
-        * You will get a notification if the game is running as there is a high
-          chance that you need to restart it to see the changes.
+        * You need to start the game after you made your changes, otherwise
+          it will not load in majority of cases.
     * Xbox One/Series X|S
-        * Only via cloud sync and the Windows Store version.
-* Multi language support and changeable at runtime.
+        * By using cloud sync and the Windows Store version.
+* Support for multiple languages that are changeable at runtime.
     * English
-    * German (Deutsch) - currently disabled/derzeit deaktiviert
-* Automatic backup of your save file when loaded.
+* Automatic backup of your save when selected.
 * Save the current save as human-readable JSON.
-* Restore a corrupted save if the save data itself are valid by simply saving it
-  again.
 * Edit multiple saves simultaneously. Select another save without the need to
   save your unsaved changes before.
 * Integrated updater.
@@ -36,9 +35,6 @@
 * Custom output path where backups, human-readable JSON files, logs, and
   crash reports are stored. Content will be moved then changed.
 * Multiple modes to change behavior:
-    * Advanced
-        * Enables advanced features that can easily destroy a save if you don't
-          know what you are doing.
     * Auto Save
         * Each change will be immediately saved to the disk.
     * Debug
