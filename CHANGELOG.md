@@ -10,23 +10,44 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Changed
 ### Fixed
 
+## 3.5.0.17-alpha.17 (2021-08-25)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.5.0.17-alpha.17/total)
+
+### Added
+* Button to remove all external/visited bases from your save
+* Raw JSON editor in a plain version without tree
+* Hint for procedural item repo (https://github.com/zencq/Pi)
+* Saves can be transferred to another platform (from any to any) or to a different account within the same platform
+
+### Changed
+* Updated database to game version 3.53
+* Forced suit tech is now locked if there is only one in all suit inventories (was always locked before)
+
+### Fixed
+* A multi-threading issue when loading the saves
+* A bug when saving a Micorsoft platform save if a deleted but unsynced save is present
+* A crash when the `containers.index` of Microsoft platform contains wrong data for a single save
+* Not being in ship after teleportation
+* When switching between regular/living ship types not being asked for confirmation, tech not being replacement, and listing the wrong tech if you want to add some directly afterwards
+* Wrong max amount when adding an item to an inventory
+
 ## 3.1.0.16-alpha.16 (2021-06-26)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.1.0.16-alpha.16/total)
 
 ### Added
 * Create/Delete operations for Windows Store saves
-* Windows Store cloud sync can be triggered now at any time. No need to load and save a savegame anymore.
-* Links to different channels to find help or to support the development of NomNom.
+* Windows Store cloud sync can be triggered now at any time by closing the game. No need to load and save a savegame anymore.
+* Links to different channels to find help or to support the development of NomNom
 
 ### Changed
 * Mapping matches [MBINCompiler](https://github.com/monkeyman192/MBINCompiler) naming again
 * Copy/Move/Swap is still triggered on slots but the actual action is decided for each save
 * Redefined version checking and now officially supporting 2.11 an up
 * Settings are now stored portable right next to the executable
-* Removed "Corrupted" checkbox as it is now merged into the "Compatible" one.
+* Removed "Corrupted" checkbox as it is now merged into the "Compatible" one
 
 ### Fixed
-* Some crashes that mostly occurred on startup ([#31](https://github.com/cengelha/NomNom/issues/31) [32](https://github.com/cengelha/NomNom/issues/32) [#34](https://github.com/cengelha/NomNom/issues/34) [#43](https://github.com/cengelha/NomNom/issues/43) [#45](https://github.com/cengelha/NomNom/issues/45) [#50](https://github.com/cengelha/NomNom/issues/50))
+* Crashes that mostly occurred on startup ([#31](https://github.com/cengelha/NomNom/issues/31) [32](https://github.com/cengelha/NomNom/issues/32) [#34](https://github.com/cengelha/NomNom/issues/34) [#43](https://github.com/cengelha/NomNom/issues/43) [#45](https://github.com/cengelha/NomNom/issues/45) [#50](https://github.com/cengelha/NomNom/issues/50))
 * Vanishing data and other incompatibility issues ([#35](https://github.com/cengelha/NomNom/issues/35) [#41](https://github.com/cengelha/NomNom/issues/41) [#44](https://github.com/cengelha/NomNom/issues/44) [#49](https://github.com/cengelha/NomNom/issues/49))
 
 ## 3.1.0.15-alpha.15 (2020-11-12)

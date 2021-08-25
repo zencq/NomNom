@@ -10,7 +10,7 @@
         * Save Mounter
         * SaveWizard
     * PlayStation 5
-        * By transfering it from PS**4** to PS**5**.
+        * By transfering between PS**4** and PS**5**.
     * Steam (PC)
     * Windows Store (PC)
         * You need to start the game after you made your changes, otherwise
@@ -35,6 +35,9 @@
 * Custom output path where backups, human-readable JSON files, logs, and
   crash reports are stored. Content will be moved then changed.
 * Multiple modes to change behavior:
+    * Advanced
+        * Enables advanced features that can easily destroy a save if you don't
+          know what you are doing.
     * Auto Save
         * Each change will be immediately saved to the disk.
     * Debug
@@ -45,6 +48,7 @@
         * Show IDs in various places and include them in searches.
         * Logging includes debug information.
         * Check for unavailable JSON mapping (included in logging).
+* Raw JSON editor for things that cannot be done via UI.
 
 ---
 
@@ -66,6 +70,7 @@
         * **Synced**: Indicates whether the current state of the save is the
           same as on the disk.
 * Delete, copy, move, or swap your slots (unlocked platform dependent).
+* Transfer saves from any to any platform.
 
 ---
 

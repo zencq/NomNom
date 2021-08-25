@@ -5,11 +5,12 @@
 ![Pre-release Date](https://img.shields.io/github/release-date-pre/cengelha/nomnom)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
 
-[![Platform](https://img.shields.io/badge/platform-windows-lightgrey)](https://www.patreon.com/cengelha)
-[![.NET](https://img.shields.io/badge/.net-framework_4.8-lightgrey)](https://www.patreon.com/cengelha)
+![Platform](https://img.shields.io/badge/platform-windows-lightgrey)
+![.NET](https://img.shields.io/badge/.net-framework_4.8-lightgrey)
 
 [![Discord Server](https://img.shields.io/discord/762409407488720918?color=5865F2&label=discord)](https://discord.gg/3VrAhJVGn7)
 [![Donate Buy Me a Coffee](https://img.shields.io/badge/donate-Buy%20Me%20a%20Coffee-FFDD00)](https://www.buymeacoffee.com/cengelha)
+[![Donate GitHub](https://img.shields.io/badge/donate-GitHub%20Sponsors-EA4AAA)](https://github.com/sponsors/cengelha)
 [![Donate Patreon](https://img.shields.io/badge/donate-Patreon-FF424D)](https://www.patreon.com/cengelha)
 [![Donate PayPal](https://img.shields.io/badge/donate-PayPal-00457C)](https://www.paypal.me/cengelha)
 
@@ -40,11 +41,9 @@ be improved, [let me know](#contact--support)!</span>
 <span style="color: red;">All available features are tested while implemented but
 mistakes can happen, so be aware of that and backup your saves!</span>
 
-The current roadmap is that there will be now a feature polishing first. They will be
-fixed where broken, extended where possible or needed, and of course the UI updated.
-Some new feature might be added though. The [ROADMAP](ROADMAP.md) file shows a lot for
-`beta.1` but it will not be published in one big release but multiple smaller ones and
-when everything is done eventually move to beta state.
+The current roadmap is a mix of feature polishing and some new features. The polishing
+will be fixes where something is broken, extensions where possible or needed, and
+of course the UI updated.
 
 Parts of this README might be designed for the final product, so have a look at
 the [FEATURES](FEATURES.md) file if you want to know exactly what's already implemented.
@@ -97,7 +96,7 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
   Each platform has a anchor file pattern to check whether it's worth to look
   further into the default directory of a platform (or a selected one) or not.
   This must be in or one directory below the selected one.
-* The latest version of NomNom is built with **Next Generation (3.10)** in
+* The latest version of NomNom is built with **Prisms (3.50)** in
   mind but is compatible with **Beyond (2.11)** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be a breaking change. Watch out for notices about
@@ -126,12 +125,6 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
 1. Start tinkering!
 1. Guide and Catalogue will work without loading a save.
 
-## Notes
-
-* Restrictions that are enforced by the game, even if you changed it manually
-  will not be possible to disable. If you can't do something, that's probably
-  the reason why. Some might be lifted if `Modding Mode` is enabled though.
-
 ## Versioning
 
 The versioning is oriented on the game version itself:
@@ -158,7 +151,7 @@ file for details.
 ## Contact & Support
 
 If you like NomNom and want to support me in its further development, you can do
-so on [__Buy Me a Coffee__](https://www.buymeacoffee.com/cengelha) or [__Patreon__](https://www.patreon.com/cengelha) or via [__PayPal__](https://www.paypal.me/cengelha).
+so here on [__GitHub__](https://github.com/sponsors/cengelha), on [__Buy Me a Coffee__](https://www.buymeacoffee.com/cengelha) or [__Patreon__](https://www.patreon.com/cengelha) or via [__PayPal__](https://www.paypal.me/cengelha).
 I will appreciate it!
 
 There won't be a paywall though. Buy Me a Coffee and Patreon will also be used to
