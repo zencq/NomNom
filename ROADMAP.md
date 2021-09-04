@@ -13,7 +13,7 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# alpha.18 - Cross-save & Knowledge
+# Cross-save & Knowledge
 
 #### Cross-Save
 * [FET] Enable cross-save reward editing (#46)
@@ -31,6 +31,9 @@ of them might disappear unimplemented.
 
 #### General
 * [FET] Change gamemode of a save (#12)
+* [FIX] check path crash. `#` or in NMS install dir or different drive
+* [FIX] check settings to be kept es is abd not modified
+    * https://discord.com/channels/762409407488720918/767096981897347075/881737453956898876
 
 #### Editor - Knowledge
 * [FIX] Directly update UI in Discovery when changing a word
@@ -41,10 +44,12 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# alpha.19 - Technical Maintenance
+# Technical Maintenance
 
 #### General
-* [IMP] cli for decompression, etc
+* [IMP] cli options
+    * decompression
+    * save as json
 * [IMP] upgrade to .NET 5/6 (#51)
 * [FET] multi-game version-database
 * [IMP] Use libMBIN JSON mapping when available (incl download of new ones) https://discord.com/channels/215514623384748034/215569790801018880/856544044392644608
@@ -63,7 +68,7 @@ of them might disappear unimplemented.
 * [IMP] start multi language support again
     * German
     * Korean
-* [FET] show supporters in a special window
+* [FET] ~~show supporters in a special window~~ add thanks to about
 * [FET] start for help database for all feature
 * [IMP] exception always english
 * [FIX] Proper message when selection an invalid path/catch excpetion
@@ -95,9 +100,25 @@ of them might disappear unimplemented.
 * [IMP] re-check various limitions
     * stats limit
 * [IMP] switch back to manager-view (or if possible reload current view on-the-fly)
+* [FET] add settings window to edit things at one place without multiple steps through menus
+    * paths
+    * modes
+    * language
+    * landing page
+* [FET] add welcome/first-start window
+    * supported platforms
+* [FET] remove output path setting and add "open in explorer" menu
+    * crash
+    * log
+    * backup
+    * json
+    * collection
+* [IMP] transform "Save as json" to "import/export json"
+* [FET] consider lite version with just manager page + json editor
 
 #### Manager
 * [VIS] Slot selection: Game Mode icon
+* [VIS] show GOG icon if "DefaultUser" in save path
 * [IMP] Info why an archive is not compatible
     * show all existing archives, not only valid ones (SaveSlot/Refresh)
 * [FET] Backup recovery
@@ -105,9 +126,12 @@ of them might disappear unimplemented.
     * additional list for backups of slot and platform
     * button for additional list to load data in backup to current archive
     * button to restore backup to any archive (like move)
-* [IMP] platform transfer
+* [IMP] platform transfer (#61)
     * add default steam/ms selection to platform transfer
     * add selection which bases you want to keep (to avoid duplication/conflicts with uploaded bases)
+    * check for same location in both save paths
+    * add "done" pop-up
+* [IMP] add catch for failing platforms: https://discord.com/channels/762409407488720918/767096981897347075/883122385367232522
 
 #### Editor - Inventory
 * [IMP] add remaining images
@@ -116,7 +140,7 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# alpha.20 - Collections
+# Collections
 
 #### General
 * [FET] select/display screenshot/image of Starship/multi-tool/(exocraft)/freighter
@@ -175,6 +199,7 @@ of them might disappear unimplemented.
 
 #### Editor - Base
 * [FET] Seed of interactions -> base npc
+* [FET] import/export
 
 #### Editor - Discoveries
 * [FET] Unique locations
@@ -182,15 +207,22 @@ of them might disappear unimplemented.
 * [FET] Store manual TeleportEndpoint -> file
 * [FET] remember ly distance for jumps to center per ship -> file
 
+#### Editor - PLANETARY SETTLEMENTS
+* [FET] Evaluate possibilities
+    * https://discord.com/channels/627059745160953866/720411261019619399/883365755914182687
+* [FET] add new tab to modify your SETTLEMENTS
+
 --------------------------------------------------------------------------------
 
-# beta.1 - Feature Polishing
+# Feature Polishing
 
 #### General
 * [IMP] separate button to set seed as name too
 
 #### Editor - Inventory
 * [FET] Move between Inventories
+* [FET] copy ship inventories and technologies to other ships
+* [FET] integrate inventory backup into collections but also for exosuit
 * [FIX] ingredient-only restriction to Ingredient Storage container (check current state)
     * not restricted in debug
 * [FET] change product multiplier
@@ -247,6 +279,8 @@ of them might disappear unimplemented.
 * [FIX] move base comuputer selection is empty
 * [FET] Add single base objects to list of teleport destination
 * [FET] show "featured", "reported" flags
+* [IMP] Base part count information display (#56)
+* [FET] move container/switch position
 
 #### Editor - Freighter
 * [FIX] Directly update UI in Frigates when syncing home seed
@@ -273,7 +307,7 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# beta.2 - More Editor
+# Missions
 
 #### Editor - Expeditions
 * [FET] new tab do modify the expeditions progress https://www.reddit.com/r/NoMansSkyMods/comments/mp8qi3/how_to_get_golden_vector_plus_other_rewards_save/gv0jibr/
@@ -283,10 +317,12 @@ of them might disappear unimplemented.
 * [FET] "^BASE_UPGRADE6" BASE_UPGRADE-Missions have a 1:30h timer.
 * [FET] "^BASE_UPGRADE11"-12 (+?) BASE_UPGRADE-Missions have a 6:00h timer.
 * [FET] "^???" Living Ship-Missions have a max timer of 24:00h.
+* [FET] show Community Mission progress (https://api.nmsassistant.com/index.html)
+    * GET "​/HelloGames​/CommunityMission" Get Latest Community Mission.
 
 --------------------------------------------------------------------------------
 
-# beta.3 - Customization
+# Customization
 
 #### General
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
@@ -324,7 +360,7 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# beta.4 - Guide
+# Guide
 
 #### Guide
 * [FET] Exosuit
@@ -343,7 +379,7 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# beta.5 - Finish Line
+# Finish Line
 
 #### Editor - Knowledge
 * [FET] Unlockable Item Tree (+total of CostType to unlock all)
@@ -352,9 +388,3 @@ of them might disappear unimplemented.
 * [FET] Performant TreeView
 
 --------------------------------------------------------------------------------
-
-# Future
-
-* [FET] Integration of NMS Mod Helper (https://github.com/gurrenm3/NMS-ModHelper)?
-    * Editing in-memory, not just saves
-    * New Mode for that

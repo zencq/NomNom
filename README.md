@@ -10,7 +10,7 @@
 
 [![Discord Server](https://img.shields.io/discord/762409407488720918?color=5865F2&label=discord)](https://discord.gg/3VrAhJVGn7)
 [![Donate Buy Me a Coffee](https://img.shields.io/badge/donate-Buy%20Me%20a%20Coffee-FFDD00)](https://www.buymeacoffee.com/cengelha)
-[![Donate GitHub](https://img.shields.io/badge/donate-GitHub%20Sponsors-EA4AAA)](https://github.com/sponsors/cengelha)
+[![Donate GitHub](https://img.shields.io/badge/donate-GitHub%20Sponsor-EA4AAA)](https://github.com/sponsors/cengelha)
 [![Donate Patreon](https://img.shields.io/badge/donate-Patreon-FF424D)](https://www.patreon.com/cengelha)
 [![Donate PayPal](https://img.shields.io/badge/donate-PayPal-00457C)](https://www.paypal.me/cengelha)
 
@@ -96,15 +96,15 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
   Each platform has a anchor file pattern to check whether it's worth to look
   further into the default directory of a platform (or a selected one) or not.
   This must be in or one directory below the selected one.
-* The latest version of NomNom is built with **Prisms (3.50)** in
+* The latest version of NomNom is built with **Frontiers (3.6)** in
   mind but is compatible with **Beyond (2.11)** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be a breaking change. Watch out for notices about
   new game updates.
 * You need .NET Framework 4.8.
     * It is included in the Windows 10 May 2019 Update (1903) and above, otherwise you have to [download](https://dotnet.microsoft.com/download/dotnet-framework/net48) it.
-    * There will be an upgrade to .NET 5 in the future but you can
-      already download the required [**.NET Desktop Runtime**](https://dotnet.microsoft.com/download/dotnet/5.0).
+    * There will be an upgrade to [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0) and [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+      in the future but you can already download the required **.NET Desktop Runtime**.
 
 ### Download
 

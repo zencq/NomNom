@@ -10,6 +10,15 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Changed
 ### Fixed
 
+## 3.6.0.18-alpha.18 (2021-09-04)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.6.0.18-alpha.18/total)
+
+### Added
+* Compatibility with the new save streaming system on Steam
+
+### Fixed
+* Not changing ship seed
+
 ## 3.5.0.17-alpha.17 (2021-08-25)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.5.0.17-alpha.17/total)
 
@@ -17,7 +26,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 * Button to remove all external/visited bases from your save
 * Raw JSON editor in a plain version without tree
 * Hint for procedural item repo (https://github.com/zencq/Pi)
-* Saves can be transferred to another platform (from any to any) or to a different account within the same platform
+* Saves can be transferred to another platform (between any supported) or to a different account within the same platform
 
 ### Changed
 * Updated database to game version 3.53
