@@ -32,8 +32,20 @@ of them might disappear unimplemented.
 #### General
 * [FET] Change gamemode of a save (#12)
 * [FIX] check path crash. `#` or in NMS install dir or different drive
-* [FIX] check settings to be kept es is abd not modified
+* [FIX] check settings to be kept as is and not modified
     * https://discord.com/channels/762409407488720918/767096981897347075/881737453956898876
+* [FIX] no meta file = crash
+* [FIX] move save transfer platofrm to destionation column
+
+#### Editor - Ship
+* [FIX] Add Golden Vector
+
+#### Editor - Companions
+* [FET] Unlock slots
+* [FET] basic edit feature
+
+#### Editor - Settlement
+* [FET] basic edit feature
 
 #### Editor - Knowledge
 * [FIX] Directly update UI in Discovery when changing a word
@@ -48,10 +60,11 @@ of them might disappear unimplemented.
 
 #### General
 * [IMP] cli options
-    * decompression
-    * save as json
+    * decompression save/meta
+    * import/export json
 * [IMP] upgrade to .NET 5/6 (#51)
 * [FET] multi-game version-database
+    * downloadable
 * [IMP] Use libMBIN JSON mapping when available (incl download of new ones) https://discord.com/channels/215514623384748034/215569790801018880/856544044392644608
 * [IMP] code cleanup and optimization
 * [FIX] not correctly updating UI (at least for ship and bases)
@@ -72,6 +85,7 @@ of them might disappear unimplemented.
 * [FET] start for help database for all feature
 * [IMP] exception always english
 * [FIX] Proper message when selection an invalid path/catch excpetion
+    * System.UnauthorizedAccessException (Access to the path '...' is denied.)
 * [FIX] Check if valid json for single saves
 * [FET] new mode to select if the various states above should be remember across multiple sessions
 * [FET] remember various tool states
@@ -99,6 +113,7 @@ of them might disappear unimplemented.
 * [IMP] Left/Right sidebars collapsible
 * [IMP] re-check various limitions
     * stats limit
+    * freighter hyperdrive is much higher than 1k
 * [IMP] switch back to manager-view (or if possible reload current view on-the-fly)
 * [FET] add settings window to edit things at one place without multiple steps through menus
     * paths
@@ -107,6 +122,8 @@ of them might disappear unimplemented.
     * landing page
 * [FET] add welcome/first-start window
     * supported platforms
+    * select platform to start with
+        * pre-analysis with what is available
 * [FET] remove output path setting and add "open in explorer" menu
     * crash
     * log
@@ -115,8 +132,13 @@ of them might disappear unimplemented.
     * collection
 * [IMP] transform "Save as json" to "import/export json"
 * [FET] consider lite version with just manager page + json editor
+* [IMP] cycle through dropdown by key press (eg "A" cycles throug galaxies starting with "A")
+    * https://discord.com/channels/215514623384748034/215514674869829633/887440399600328756
+
 
 #### Manager
+* [IMP] pre-analysis with what is available
+    * show those as button in path display
 * [VIS] Slot selection: Game Mode icon
 * [VIS] show GOG icon if "DefaultUser" in save path
 * [IMP] Info why an archive is not compatible
@@ -130,7 +152,9 @@ of them might disappear unimplemented.
     * add default steam/ms selection to platform transfer
     * add selection which bases you want to keep (to avoid duplication/conflicts with uploaded bases)
     * check for same location in both save paths
-    * add "done" pop-up
+    * check overwriting existing slots not working
+    * show both platform icons in area
+    * show done confirmation with asking for reloading of target platform
 * [IMP] add catch for failing platforms: https://discord.com/channels/762409407488720918/767096981897347075/883122385367232522
 
 #### Editor - Inventory
@@ -172,6 +196,13 @@ of them might disappear unimplemented.
     * Nemesis of the Kudama, Day3 Twitch Drops (Fighter): 0xBCEF59E1A64E28DC
     * Ultimate Pride JB2, Day4 Twitch Drops (Hauler): 0x9557186C7D37C2EC
     * Prime Song JZ4, Day5 Twitch Drops (Shuttle): 0x9E58062EEDC436B
+    * ---
+    * Hiwamiha of Destiny (Fighter), Day- Twitch Drops: 0x19036EFEDEA6E86D
+    * VV5 Ariyaz (Shuttle), Day- Twitch Drops: 0xEACE5BEA27F0A3CC
+    * Jirishi's Prospect (Explorer), Day- Twitch Drops: 0xAB8668AAA38F66CF
+    * Hadach's Discovery KH3 (Fighter), Day- Twitch Drops: 0x94B00527B67F46EF
+    * Ultimate Sleep LO1 (Hauler), Day- Twitch Drops: 0x3A8B8466974433AA
+
 
 #### Editor - Multi-Tool
 * [FET] Choose from list of unique seeds (Pre-order/starter/expedition/twitch drops, https://discord.com/channels/627059745160953866/627143858094080030/820073927295762492)
@@ -192,10 +223,7 @@ of them might disappear unimplemented.
 
 
 #### Editor - Companions
-* [FET] Evaluate possibilities
-* [FET] Unlock slots
-* [FET] add new tab to modify your pets
-* [FET] Is it possible to pull discovered creature seeds from your save without adopting said creature first? https://discord.com/channels/627059745160953866/720411261019619399/853772131736748053
+* [FET] Choose from list of unique pets (twitch drops, etc)
 
 #### Editor - Base
 * [FET] Seed of interactions -> base npc
@@ -240,6 +268,7 @@ of them might disappear unimplemented.
     * [FET] for proc items downloadable CSV per item with all visible stats (#24)
         * add versioning to Pi repo for downloading updates
         * get list of class of seed for UP_FRCOM, UP_FREXP, UP_FRFUE, UP_FRHYP, UP_FRMIN, UP_FRSPE, UP_FRTRA
+        * search Pi data with weighting
     * [IMP] refiner limits https://discord.com/channels/215514623384748034/215569912121262080/863293366794715136
 * [FIX] some resources when you add to a ships inventory (or the base inventory) only lets you set 2 for example the gold.. it should be stacking to 500 in the ship
 * [IMP] Naming and handling of procedural items
@@ -258,15 +287,22 @@ of them might disappear unimplemented.
 * [FET] Generate Seed for all
 * [FIX] Editor view needs to be reloaded to apply the changed debug mode to the legacy color UI.
 * [FET] copy inventory to other ship
+* [FET] re-order
 
 #### Editor - Multi-Tool
 * [FET] Generate Seed for all
 * [FET] Set current weapon mode
 * [FET] Legacy Color (3.3+)
+* [FET] re-order
 
 #### Editor - Exocraft
 * [FIX] Disable+change tab when last one is delete
 * [FIX] Disable context menu enable/disable option
+
+#### Editor - Companions
+* [FET] Evaluate possibilities
+* [FET] re-order
+* [FET] Is it possible to pull discovered creature seeds from your save without adopting said creature first? https://discord.com/channels/627059745160953866/720411261019619399/853772131736748053
 
 #### Editor - Base
 * [FET] Delete Base
@@ -281,6 +317,12 @@ of them might disappear unimplemented.
 * [FET] show "featured", "reported" flags
 * [IMP] Base part count information display (#56)
 * [FET] move container/switch position
+* [INF] 400 is max bases you can have
+* [FET] re-order
+
+#### Editor - Settlement
+* [FET] Evaluate possibilities
+* [FET] re-order
 
 #### Editor - Freighter
 * [FIX] Directly update UI in Frigates when syncing home seed
@@ -291,6 +333,7 @@ of them might disappear unimplemented.
 * [FET] Delete
 * [FET] tooltips for stats
 * [FET] max out expeditions
+* [FET] re-order
 
 #### Editor - Discoveries
 * [FET] Delete TerrainEdit of any planet/all
@@ -369,6 +412,13 @@ of them might disappear unimplemented.
     * Inventory when purchase
     * Price (calc by selection, compared to own ships/diff in units to purchase)
     * count per system
+    * GCSPACESHIPGLOBALS.GLOBAL.MBIN
+        *   <Property name="HaulerTakeOffMod" value="1" />
+        *   <Property name="FighterTakeOffMod" value="1" />
+        *   <Property name="ShuttleTakeOffMod" value="0.66" />
+        *   <Property name="ExplorerTakeOffMod" value="0.5" />
+        *   <Property name="RoyalTakeOffMod" value="1" />
+
 * [FET] Farming
     * Grow time
 * [FET] Star system

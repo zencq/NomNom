@@ -10,6 +10,20 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Changed
 ### Fixed
 
+## 3.6.0.19-alpha.19 (2021-10-28)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.6.0.19-alpha.19/total)
+
+### Added
+* Compatibility with the new save format on PlayStation
+
+### Changed
+* Updated name mapping to game version 3.6
+* Manager now shows from which expedition a save is
+
+### Fixed
+* An issue with expeditions saves and the new save format
+* An issue on Microsoft platform with a high slot count
+
 ## 3.6.0.18-alpha.18 (2021-09-04)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.6.0.18-alpha.18/total)
 

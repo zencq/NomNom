@@ -83,19 +83,32 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
 
 ### Requirements
 
-* NomNom is compatible with the following platforms of the game:
-  Platform                                                                                     | Detect                  | Read                    | Write                   | File Pattern     | Note
-  -------------------------------------------------------------------------------------------- | :---------------------: | :---------------------: | :---------------------: | ---------------- | ----
-  [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)                                         | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         | Same file format as Steam. Even though everything in NomNom is labeled with Steam, you can still use it for GOG.com without restrictions.
-  [PlayStation 4](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | memory.dat       | Tested with [SaveWizard](https://www.savewizard.net/) and [Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter). Results of other tools may or may not work.
-  [PlayStation 5](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001) | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported. It can be achieved by modifying at PS4 and then transfering it to PS5.
-  [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)                         | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | save*.hg         |
-  [Windows Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)                   | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | <ul><li> [X] </li></ul> | containers.index | Reloading of modified saves while the game is running does not work and you do not see an updated timestamp.
-  [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)                 | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> | <ul><li> [ ] </li></ul> |                  | Not directly supported. It can be achieved with cloud sync via the Windows Store. The synchronisation is triggered short after you close the game.
-
-  Each platform has a anchor file pattern to check whether it's worth to look
+* Each platform has anchor file patterns to check whether it's worth to look
   further into the default directory of a platform (or a selected one) or not.
   This must be in or one directory below the selected one.
+* NomNom is compatible with almost every platform of the game:
+    * [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)
+        * File Pattern: __save*.hg__
+        * Same file format as Steam. Even though everything in NomNom is labeled with
+          Steam, you can use it without restrictions.
+    * [PlayStation 4](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001)
+        * File Pattern: __memory.dat__, __savedata*.hg__
+        * The new save streaming system is only supported by [SaveWizard](https://www.savewizard.net)!
+          If you still use an older version of the game, SaveWizard and [Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter)
+          are supported. Results of other tools may or may not work.
+    * [PlayStation 5](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001)
+        * This version of the game is not supported due to restrictions on the console
+          itself. By playing the PlayStation 4 version on it, you can still save edit
+          with [a few additional steps](https://docs.google.com/document/d/1QoD2-PNlX-HeR5K1zuPGLMLBcX4_wknkhzc43-9bEq4/edit?usp=sharing).
+    * [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)
+        * File Pattern: __save*.hg__
+    * [Microsoft Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)
+        * File Pattern: __containers.index__
+        * Reloading of modified saves while the game is running does not work and you
+          do not see an updated timestamp.
+    * [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)
+        * Not directly supported but can easily achieved with cloud sync via the
+          Microsoft Store. The synchronisation is triggered short after you close the game.
 * The latest version of NomNom is built with **Frontiers (3.6)** in
   mind but is compatible with **Beyond (2.11)** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
@@ -103,7 +116,7 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
   new game updates.
 * You need .NET Framework 4.8.
     * It is included in the Windows 10 May 2019 Update (1903) and above, otherwise you have to [download](https://dotnet.microsoft.com/download/dotnet-framework/net48) it.
-    * There will be an upgrade to [.NET 5](https://dotnet.microsoft.com/download/dotnet/5.0) and [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
+    * There will be an upgrade to [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0)
       in the future but you can already download the required **.NET Desktop Runtime**.
 
 ### Download
