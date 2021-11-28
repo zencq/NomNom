@@ -10,7 +10,7 @@
 
 [![Discord Server](https://img.shields.io/discord/762409407488720918?color=5865F2&label=discord)](https://discord.gg/3VrAhJVGn7)
 [![Donate Buy Me a Coffee](https://img.shields.io/badge/donate-Buy%20Me%20a%20Coffee-FFDD00)](https://www.buymeacoffee.com/cengelha)
-[![Donate GitHub](https://img.shields.io/badge/donate-GitHub%20Sponsor-EA4AAA)](https://github.com/sponsors/cengelha)
+[![Donate GitHub](https://img.shields.io/badge/donate-GitHub%20Sponsors-EA4AAA)](https://github.com/sponsors/cengelha)
 [![Donate Patreon](https://img.shields.io/badge/donate-Patreon-FF424D)](https://www.patreon.com/cengelha)
 [![Donate PayPal](https://img.shields.io/badge/donate-PayPal-00457C)](https://www.paypal.me/cengelha)
 
@@ -59,14 +59,14 @@ below. A detailed list can be found in the [FEATURES](FEATURES.md) file.
     * Transfer your save to another platform you own the game on.
     * Delete your save.
 * __Editor__ Edit your save for your needs!
-    * Ability to edit cross-save rewards from Expeditions, Twitch Drops, and Titles.
+    * Ability to edit cross-save rewards from Expeditions, Twitch Drops, Titles
+      and more.
     * Ability to manage fleets, change data values like currencies and stats,
       and organize inventories.
-    * Ability to fast travel to any system you like, trigger space battles, and
-      clear portal interference.
+    * Ability to fast travel to any system you like and trigger space battles.
     * Ability to customize appearances.
     * Ability to edit your knowledge and recorded experiences.
-    * Ability to edit the raw JSON (for advanced users only).
+    * Ability to edit the raw JSON (for advanced users).
 * __Guide__ Useful tips!
     * What to expect in systems with specific races, wealth, etc.
 * __Catalogue__ Explore all the items!
@@ -88,28 +88,28 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
   This must be in or one directory below the selected one.
 * NomNom is compatible with almost every platform of the game:
     * [GOG.com](https://www.gog.com/game/no_mans_sky) (PC)
-        * File Pattern: __save*.hg__
-        * Same file format as Steam. Even though everything in NomNom is labeled with
+        * File Patterns: __save*.hg__
+        * Notes: Same file format as Steam. Even though everything in NomNom is labeled with
           Steam, you can use it without restrictions.
     * [PlayStation 4](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001)
-        * File Pattern: __memory.dat__, __savedata*.hg__
-        * The new save streaming system is only supported by [SaveWizard](https://www.savewizard.net)!
+        * File Patterns: __memory.dat__, __savedata*.hg__
+        * Notes: The new save streaming system is only supported by [SaveWizard](https://www.savewizard.net)!
           If you still use an older version of the game, SaveWizard and [Save Mounter](https://github.com/ChendoChap/Playstation-4-Save-Mounter)
           are supported. Results of other tools may or may not work.
     * [PlayStation 5](https://store.playstation.com/?resolve=EP2034-CUSA03952_00-NOMANSSKYHG00001)
-        * This version of the game is not supported due to restrictions on the console
+        * Notes: This version of the game is not supported due to restrictions on the console
           itself. By playing the PlayStation 4 version on it, you can still save edit
           with [a few additional steps](https://docs.google.com/document/d/1QoD2-PNlX-HeR5K1zuPGLMLBcX4_wknkhzc43-9bEq4/edit?usp=sharing).
     * [Steam](https://store.steampowered.com/app/275850/No_Mans_Sky/) (PC)
-        * File Pattern: __save*.hg__
+        * File Patterns: __save*.hg__
     * [Microsoft Store](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05) (PC)
-        * File Pattern: __containers.index__
-        * Reloading of modified saves while the game is running does not work and you
+        * File Patterns: __containers.index__
+        * Notes: Reloading of modified saves while the game is running does not work and you
           do not see an updated timestamp.
     * [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)
-        * Not directly supported but can easily achieved with cloud sync via the
+        * Notes: Not directly supported but can easily achieved with cloud sync via the
           Microsoft Store. The synchronisation is triggered short after you close the game.
-* The latest version of NomNom is built with **Frontiers (3.6)** in
+* The latest version of NomNom is built with **Expeditions Revisited (3.74)** in
   mind but is compatible with **Beyond (2.11)** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be a breaking change. Watch out for notices about

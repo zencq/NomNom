@@ -9,12 +9,36 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Added
 ### Changed
 ### Fixed
+### Regression
+
+## 3.7.0.20-alpha.20 (2021-11-28)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.20-alpha.20/total)
+
+### Added
+* Golden Vector as starship type
+* `Synthesis Companion` tab for Quicksilver items, Season Rewards, and Twitch Rewards
+* Cross-save editing for all platforms **except** PlayStation (SaveWizard does not convert `SAVEDATA00`)
+* JSON Editor for account data
+* `General` tab to change game mode ([#12](https://github.com/cengelha/NomNom/issues/12))
+* `Companion` tab for editing companions
+    * Moods, Seeds, Traits, and more...
+### Changed
+* Updated name mapping to game version 3.74 (base on [MBINCompiler mapping file](https://github.com/monkeyman192/MBINCompiler/releases/download/v3.71.0-pre2/mapping.json))
+* Updated database to game version 3.74
+* Moved JSON editor to left side bar
+* Moved currencies to new general tab
+### Fixed
+* Knowledge tab now working as intended ([#30](https://github.com/cengelha/NomNom/issues/30) [#58](https://github.com/cengelha/NomNom/issues/58))
+* Set in-game save timestamp to when saved with NomNom (new PlayStation save format)
+    * `SAVEDATA??` has to be in the same directory as the `savedata??.hg` file
+* Various issues when accessing values from the save
+* Properly writing account data and settings back to containers.index (Microsoft platform only)
 
 ## 3.6.0.19-alpha.19 (2021-10-28)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.6.0.19-alpha.19/total)
 
 ### Added
-* Compatibility with the new save format on PlayStation
+* Compatibility with the new save format for PlayStation
 
 ### Changed
 * Updated name mapping to game version 3.6
@@ -70,7 +94,7 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 * Removed "Corrupted" checkbox as it is now merged into the "Compatible" one
 
 ### Fixed
-* Crashes that mostly occurred on startup ([#31](https://github.com/cengelha/NomNom/issues/31) [32](https://github.com/cengelha/NomNom/issues/32) [#34](https://github.com/cengelha/NomNom/issues/34) [#43](https://github.com/cengelha/NomNom/issues/43) [#45](https://github.com/cengelha/NomNom/issues/45) [#50](https://github.com/cengelha/NomNom/issues/50))
+* Crashes that mostly occurred on startup ([#31](https://github.com/cengelha/NomNom/issues/31) [#32](https://github.com/cengelha/NomNom/issues/32) [#34](https://github.com/cengelha/NomNom/issues/34) [#43](https://github.com/cengelha/NomNom/issues/43) [#45](https://github.com/cengelha/NomNom/issues/45) [#50](https://github.com/cengelha/NomNom/issues/50))
 * Vanishing data and other incompatibility issues ([#35](https://github.com/cengelha/NomNom/issues/35) [#41](https://github.com/cengelha/NomNom/issues/41) [#44](https://github.com/cengelha/NomNom/issues/44) [#49](https://github.com/cengelha/NomNom/issues/49))
 
 ## 3.1.0.15-alpha.15 (2020-11-12)

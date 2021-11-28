@@ -13,46 +13,13 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# Cross-save & Knowledge
-
-#### Cross-Save
-* [FET] Enable cross-save reward editing (#46)
-    * [FET] Twitch Rewards, Season Rewards, etc
-    * [FET] UnlockedTitles
-    * [FET] UnlockedWikiTopics
-    * [FET] SeenWikiTopics
-    * [FET] SeenProducts
-    * [FET] SeenTechnologies
-    * [FET] SeenSubstances
-* [IMP] Check for validity of XML (Steam/XGP)
-    * No editing otherwise
-    * Show note
-* [IMP] Toggle for read-only for user settings file
-
-#### General
-* [FET] Change gamemode of a save (#12)
-* [FIX] check path crash. `#` or in NMS install dir or different drive
-* [FIX] check settings to be kept as is and not modified
-    * https://discord.com/channels/762409407488720918/767096981897347075/881737453956898876
-* [FIX] no meta file = crash
-* [FIX] move save transfer platofrm to destionation column
-
-#### Editor - Ship
-* [FIX] Add Golden Vector
-
-#### Editor - Companions
-* [FET] Unlock slots
-* [FET] basic edit feature
+# Settlements & Expeditions
 
 #### Editor - Settlement
 * [FET] basic edit feature
 
-#### Editor - Knowledge
-* [FIX] Directly update UI in Discovery when changing a word
-* [IMP] learned/total and % complete for words for each race (https://github.com/goatfungus/NMSSaveEditor/issues/196)
-* [IMP] (un)learn all
-* [IMP] improve performance and fix oversized images
-* [FIX] "Is Known" checkbox not working, view related issues (#30)
+#### Editor - Expedition
+* [FET] edit expedition progress
 
 --------------------------------------------------------------------------------
 
@@ -73,7 +40,6 @@ of them might disappear unimplemented.
     * METADATA/GAMESTATE/PLAYERDATA/BOBBLEHEADCUSTOMISATIONDATA.EXML
     * METADATA/GAMESTATE/PLAYERDATA/THRUSTERCUSTOMISATIONDATA.EXML
 * [IMP] use https://github.com/nickbabcock/Pfim to display dds image without converting
-* [IMP] add Golden Vector as ship type
 * [INF] Language Properties
 * [INF] add logs to all actions, not just properties
 * [FET] store window position and size
@@ -94,6 +60,7 @@ of them might disappear unimplemented.
     * selected tab -> single session only when switching main sections, setting for default tab (bold name)
     * last loaded platform -> always (move from settings)
     * session count -> always (move from settings)
+    * windows size and postition
 * [IMP] create a first crash report before opening the window. update as before in case there is a user comment
 * [IMP] mode overhaul
     * Debug purely for debugging/programming related stuff
@@ -131,16 +98,18 @@ of them might disappear unimplemented.
     * json
     * collection
 * [IMP] transform "Save as json" to "import/export json"
-* [FET] consider lite version with just manager page + json editor
-* [IMP] cycle through dropdown by key press (eg "A" cycles throug galaxies starting with "A")
+* [IMP] cycle through dropdown by key press (eg "A" cycles through galaxies starting with "A")
     * https://discord.com/channels/215514623384748034/215514674869829633/887440399600328756
-
+* [FIX] check path crash. `#` or in NMS install dir or different drive
+* [FIX] no meta file = crash
+* [FET] wiki window and add to guide
+* [IMP] moce links button to left sidebar
 
 #### Manager
 * [IMP] pre-analysis with what is available
     * show those as button in path display
 * [VIS] Slot selection: Game Mode icon
-* [VIS] show GOG icon if "DefaultUser" in save path
+* [VIS] show GOG icon if "DefaultUser" in save path with valid save
 * [IMP] Info why an archive is not compatible
     * show all existing archives, not only valid ones (SaveSlot/Refresh)
 * [FET] Backup recovery
@@ -149,18 +118,39 @@ of them might disappear unimplemented.
     * button for additional list to load data in backup to current archive
     * button to restore backup to any archive (like move)
 * [IMP] platform transfer (#61)
-    * add default steam/ms selection to platform transfer
+    * add default steam/ms selection to platform transfer (see pre-analysis)
     * add selection which bases you want to keep (to avoid duplication/conflicts with uploaded bases)
+        * https://discord.com/channels/627059745160953866/720411261019619399/905098763171946586
     * check for same location in both save paths
     * check overwriting existing slots not working
     * show both platform icons in area
     * show done confirmation with asking for reloading of target platform
+    * show used slots on target
+    * update bytebeat, settlement, companion
+    * step by step wizard (maybe also other places)
 * [IMP] add catch for failing platforms: https://discord.com/channels/762409407488720918/767096981897347075/883122385367232522
+
+#### Cross-Save
+* [IMP] extract username from saves and use to display in account title unlock
+* [IMP] unlock all/each season via button
+
+#### Editor - General
+* [IMP] restore/delete mission (un)related to the new game mode
 
 #### Editor - Inventory
 * [IMP] add remaining images
 * [FIX] Min/Max Stats for procedural technology seems switched but has a technical background.
 * [FIX] re-check "enter" to execute search.
+* [FIX] Fill all chargeable slots isn't working for starships and exocraft.
+* [FIX] Ctrl+E is not working for starships, exocraft (Ctrl-F works fine)
+* [FIX] Add/replace item has greyed out after a while. Possibly after I expanded storage container capacities
+
+#### Editor - Knowledge/Synthesis Bot
+* [FIX] Directly update UI in Discovery when changing a word
+* [IMP] learned/total and % complete for words for each race (https://github.com/goatfungus/NMSSaveEditor/issues/196)
+* [IMP] (un)learn all
+* [IMP] add search
+* [IMP] unlock rewards for each season/twich drop
 
 --------------------------------------------------------------------------------
 
@@ -319,6 +309,7 @@ of them might disappear unimplemented.
 * [FET] move container/switch position
 * [INF] 400 is max bases you can have
 * [FET] re-order
+* [FET] add/remove SeenBaseBuildingObjects
 
 #### Editor - Settlement
 * [FET] Evaluate possibilities
