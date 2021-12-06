@@ -11,6 +11,16 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Fixed
 ### Regression
 
+## 3.7.0.21-alpha.21 (2021-12-06)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.21-alpha.21/total)
+
+### Changed
+* Editor button naming to avoid confusion
+* Tab order and naming
+### Fixed
+* Exception in get_IsAccountUnlocked
+* Some issues with the Microsoft platform
+
 ## 3.7.0.20-alpha.20 (2021-11-28)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.20-alpha.20/total)
 
@@ -23,14 +33,12 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 * `Companion` tab for editing companions
     * Moods, Seeds, Traits, and more...
 ### Changed
-* Updated name mapping to game version 3.74 (base on [MBINCompiler mapping file](https://github.com/monkeyman192/MBINCompiler/releases/download/v3.71.0-pre2/mapping.json))
+* Updated name mapping to game version 3.74 (base on [MBINCompiler mapping file](https://github.com/monkeyman192/MBINCompiler/releases/download/v3.73.0-pre1/mapping.json))
 * Updated database to game version 3.74
 * Moved JSON editor to left side bar
-* Moved currencies to new general tab
+* Moved currencies to new `General` tab
 ### Fixed
 * Knowledge tab now working as intended ([#30](https://github.com/cengelha/NomNom/issues/30) [#58](https://github.com/cengelha/NomNom/issues/58))
-* Set in-game save timestamp to when saved with NomNom (new PlayStation save format)
-    * `SAVEDATA??` has to be in the same directory as the `savedata??.hg` file
 * Various issues when accessing values from the save
 * Properly writing account data and settings back to containers.index (Microsoft platform only)
 

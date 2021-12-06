@@ -15,6 +15,9 @@ of them might disappear unimplemented.
 
 # Settlements & Expeditions
 
+#### Editor - Knowledge
+* [IMP] move words to milestone tab
+
 #### Editor - Settlement
 * [FET] basic edit feature
 
@@ -29,7 +32,7 @@ of them might disappear unimplemented.
 * [IMP] cli options
     * decompression save/meta
     * import/export json
-* [IMP] upgrade to .NET 5/6 (#51)
+* [IMP] upgrade to .NET 6
 * [FET] multi-game version-database
     * downloadable
 * [IMP] Use libMBIN JSON mapping when available (incl download of new ones) https://discord.com/channels/215514623384748034/215569790801018880/856544044392644608
@@ -74,6 +77,10 @@ of them might disappear unimplemented.
             * Disables various checks and limitations that can be changed via mods.
             * Unlimited stack size of inventory slots
             * Skip tech overload check
+            * extensible database
+                * modding.json
+                * extend products, etc and overwrite globals
+                * images loaded from modding path
 * [IMP] Notification is saving finished/progress bar load/save
 * [FET] Undo/Redo
     * Remember UpDown press/release states and not each increment (same for logging)
@@ -87,6 +94,7 @@ of them might disappear unimplemented.
     * modes
     * language
     * landing page
+    * start mode (pre-load all saves w/ high mem usage but fast change, load when selected)
 * [FET] add welcome/first-start window
     * supported platforms
     * select platform to start with
@@ -97,13 +105,16 @@ of them might disappear unimplemented.
     * backup
     * json
     * collection
+    * modding
 * [IMP] transform "Save as json" to "import/export json"
 * [IMP] cycle through dropdown by key press (eg "A" cycles through galaxies starting with "A")
     * https://discord.com/channels/215514623384748034/215514674869829633/887440399600328756
 * [FIX] check path crash. `#` or in NMS install dir or different drive
 * [FIX] no meta file = crash
 * [FET] wiki window and add to guide
-* [IMP] moce links button to left sidebar
+* [IMP] move links button to left sidebar
+* [IMP] Set in-game save timestamp to when saved with NomNom (new PlayStation save format)
+    * `???` has to be in the same directory as the `savedata??.hg` file
 
 #### Manager
 * [IMP] pre-analysis with what is available
@@ -151,6 +162,9 @@ of them might disappear unimplemented.
 * [IMP] (un)learn all
 * [IMP] add search
 * [IMP] unlock rewards for each season/twich drop
+
+#### JSON Editor
+* [FET] Performant TreeView
 
 --------------------------------------------------------------------------------
 
@@ -288,11 +302,24 @@ of them might disappear unimplemented.
 #### Editor - Exocraft
 * [FIX] Disable+change tab when last one is delete
 * [FIX] Disable context menu enable/disable option
+* [FET] reset customization
 
 #### Editor - Companions
 * [FET] Evaluate possibilities
 * [FET] re-order
 * [FET] Is it possible to pull discovered creature seeds from your save without adopting said creature first? https://discord.com/channels/627059745160953866/720411261019619399/853772131736748053
+* [IMP] Traits +-
+    * Playfulness/Helpfulness
+        * .../Cheeky [16/26]/Mischievous [33/45]/...
+        * .../Compliant [17]/...
+    * Agression [Red]/Gentleness [Green]
+        * .../Fierce [67]/...
+        * .../Tolerant [19]/Placid [75/76/79]/...
+    * Devotion [Green]/Independence [Blue]
+        * .../Attached [21/23/27]/Attentive [34]/Protective [69]/...
+        * .../Aloof [30]/...
+* [IMP] Mood
+    * Lively [Green]
 
 #### Editor - Base
 * [FET] Delete Base
@@ -318,6 +345,8 @@ of them might disappear unimplemented.
 #### Editor - Freighter
 * [FIX] Directly update UI in Frigates when syncing home seed
 * [FET] set freighter seeds to current system
+* [INF] The Upgrade Station on the freighter bridge can be used to recolour your freighter. Unlock new available colours with nanites. Unlocked colours are permanently available and can be reapplied for free.
+    * [FET] reset freighter color customization
 
 #### Editor - Frigates
 * [FET] Copy
@@ -339,15 +368,15 @@ of them might disappear unimplemented.
 * [FET] Add Recipe tab
 * [IMP] Group DataGrids
 
+#### Editor - Knowledge
+* [FET] Unlockable Item Tree (+total of CostType to unlock all)
+
 --------------------------------------------------------------------------------
 
 # Missions
 
-#### Editor - Expeditions
-* [FET] new tab do modify the expeditions progress https://www.reddit.com/r/NoMansSkyMods/comments/mp8qi3/how_to_get_golden_vector_plus_other_rewards_save/gv0jibr/
-
 #### Editor - Mission
-* [FET] new tab do modify missions
+* [FET] new tab `Log` do modify missions
 * [FET] "^BASE_UPGRADE6" BASE_UPGRADE-Missions have a 1:30h timer.
 * [FET] "^BASE_UPGRADE11"-12 (+?) BASE_UPGRADE-Missions have a 6:00h timer.
 * [FET] "^???" Living Ship-Missions have a max timer of 24:00h.
@@ -381,16 +410,12 @@ of them might disappear unimplemented.
 
 #### Editor - Exocraft
 * [FET] Customization
-* [FET] reset vehicle customization
 
 #### Editor - Freighter
 * [FET] Customization
-* [INF] The Upgrade Station on the freighter bridge can be used to recolour your freighter. Unlock new available colours with nanites. Unlocked colours are permanently available and can be reapplied for free.
-* [FET] reset freighter color customization
 
 #### Editor - Companions
 * [FET] Customization
-* [FET] reset Companions customization
 
 --------------------------------------------------------------------------------
 
@@ -417,15 +442,5 @@ of them might disappear unimplemented.
     * Is Anomaly in System
     * No of Planets/Moons in System
 * [FET] additional stats
-
---------------------------------------------------------------------------------
-
-# Finish Line
-
-#### Editor - Knowledge
-* [FET] Unlockable Item Tree (+total of CostType to unlock all)
-
-#### JSON Editor
-* [FET] Performant TreeView
 
 --------------------------------------------------------------------------------
