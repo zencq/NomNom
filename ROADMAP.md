@@ -13,16 +13,10 @@ of them might disappear unimplemented.
 
 --------------------------------------------------------------------------------
 
-# Settlements & Expeditions
-
-#### Editor - Knowledge
-* [IMP] move words to milestone tab
+# Settlements
 
 #### Editor - Settlement
 * [FET] basic edit feature
-
-#### Editor - Expedition
-* [FET] edit expedition progress
 
 --------------------------------------------------------------------------------
 
@@ -115,6 +109,7 @@ of them might disappear unimplemented.
 * [IMP] move links button to left sidebar
 * [IMP] Set in-game save timestamp to when saved with NomNom (new PlayStation save format)
     * `???` has to be in the same directory as the `savedata??.hg` file
+* [FIX] can't use PrtScr to open Snip/Sketch to grab a screenshot
 
 #### Manager
 * [IMP] pre-analysis with what is available
@@ -139,6 +134,7 @@ of them might disappear unimplemented.
     * show used slots on target
     * update bytebeat, settlement, companion
     * step by step wizard (maybe also other places)
+    * move account data (optional)
 * [IMP] add catch for failing platforms: https://discord.com/channels/762409407488720918/767096981897347075/883122385367232522
 
 #### Cross-Save
@@ -162,6 +158,14 @@ of them might disappear unimplemented.
 * [IMP] (un)learn all
 * [IMP] add search
 * [IMP] unlock rewards for each season/twich drop
+
+### Editor - Expedition
+* [IMP] set mission as pin
+* [IMP] set progress to done, button
+* [IMP] show remaining progress (like in milestones)
+
+### Editor - Milestones
+* [IMP] set progress to done, button
 
 #### JSON Editor
 * [FET] Performant TreeView

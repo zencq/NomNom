@@ -11,6 +11,17 @@ is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
 ### Fixed
 ### Regression
 
+## 3.7.0.22-alpha.22 (2021-12-11)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.22-alpha.22/total)
+
+### Added
+* `Expedition` tab for editing the progress
+### Changed
+* Moved learning words to `Milestones` tab incl. some optimizations
+### Fixed
+* Expedition `Beachhead Redux` and up not correctly displayed/handled
+* An issue when processing the meta file ([#63](https://github.com/cengelha/NomNom/issues/63) [#68](https://github.com/cengelha/NomNom/issues/68))
+
 ## 3.7.0.21-alpha.21 (2021-12-06)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.21-alpha.21/total)
 
