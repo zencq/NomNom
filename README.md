@@ -1,6 +1,6 @@
 # NomNom
 
-![Maintained](https://img.shields.io/maintenance/yes/2021)
+![Maintained](https://img.shields.io/maintenance/yes/2022)
 ![Pre-release](https://img.shields.io/github/v/release/cengelha/nomnom?include_prereleases)
 ![Pre-release Date](https://img.shields.io/github/release-date-pre/cengelha/nomnom)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
@@ -22,7 +22,7 @@ You can also easily look up each item individually to examine its
 attributes, independently of a savegame, or get other useful information that
 are not related to a specific one (but enhanced if one is loaded).
 
-You will most certainly notice the similarity to the editor by [goatfungus](https://github.com/goatfungus)
+You will most certainly notice a similarity to the editor by [goatfungus](https://github.com/goatfungus)
 but when this project started it was the only one and the general layout works
 well, so why reinventing the wheel? But there are features missing I'd like to
 have and (in my eyes) bad usability in some areas. I also wanted to have a place
@@ -34,7 +34,7 @@ online wiki or such. Therefore I started my own project for fun and here we are.
 **The source code will be available at the earliest by moving to the beta state.**
 
 <span style="color: orange;">**NomNom is currently in a alpha state.** This means
-for your that things may be a little buggy and the UI is definitely not final. If you
+for you that things may be a little buggy and the UI is definitely not final. If you
 encountered bugs or when you think something doesn't work as expected or could
 be improved, [let me know](#contact--support)!</span>
 
@@ -144,7 +144,7 @@ The versioning is oriented on the game version itself:
 
 * _Major_ mirrors the games major version.
 * _Minor_ mirrors the games initial minor version of named updates
-  (e.g. NEXT 1.5 or Synthesis 2.2).
+  (e.g. Synthesis 2.2).
 * _Patch_ includes new features, bug fixes, updated game assets, and such beside
   the named game updates.
 * _Revision_ serves as public release counter.
@@ -186,15 +186,15 @@ will of course also be addressed.
 
 Thanks to the following people for their help in one way or another.
 
-* [Dr. Kaii](https://www.nexusmods.com/nomanssky/mods/1879) - Collaboration to create a common import/export format
 * [goatfungus](https://github.com/goatfungus/NMSSaveEditor) - [Kevin0M16](https://github.com/Kevin0M16) - Inspiration and verifying my own implementation
-* [u/Gumsk](https://www.reddit.com/r/NoMansSkyTheGame/comments/lk6yk6/how_to_move_a_gamepass_save_to_steam/) - Working out how to properly move a save from Windows Store to Steam
 * [hbouma](https://github.com/goatfungus/NMSSaveEditor/issues/158) - Explaining how clearing TerrainEdit works
-* [jaszhix](https://github.com/jaszhix/NoMansConnect) - [rogerhnn](https://github.com/nmsportals/nmsportals.github.io) - Coordinate conversion
 * [jeffswt](https://github.com/goatfungus/NMSSaveEditor/issues/200) - Algorithm to properly move base computer
+* [jaszhix](https://github.com/jaszhix/NoMansConnect) - [rogerhnn](https://github.com/nmsportals/nmsportals.github.io) - Coordinate conversion
+* [zousug#0826](https://discord.gg/3VrAhJVGn7) - Setting up the Discord server
+* [Dr. Kaii](https://www.nexusmods.com/nomanssky/mods/1879) - Collaboration to create a common import/export format
+* [u/Gumsk](https://www.reddit.com/r/NoMansSkyTheGame/comments/lk6yk6/how_to_move_a_gamepass_save_to_steam/) - Working out how to properly move a save from Windows Store to Steam
 * [u/_lmonk](https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/) - Explaining how color customization for Starships and Multi-Tools works
 * [matthew-humphrey](https://github.com/matthew-humphrey/nmssavetool) - [MetaIdea](https://github.com/MetaIdea/nms-savetool) - Decrypt and encrypt Steam saves
 * [u/MegaGold_Fighter](https://www.reddit.com/r/NoMansSkyMods/comments/hhe2he/ps4_nms_save_editing_general_guide/) - [Storm21](https://psxtools.de/index.php?user/38756-storm21/) - Providing valuable data to make PlayStation support possible
 * [monkeyman192](https://github.com/monkeyman192/MBINCompiler) - MBINCompiler to extract data from the game files
 * [Moo#6953](https://discord.gg/22ZAU9H) - Helping and verifying to make Windows Store support possible
-* [zousug#0826](https://discord.gg/3VrAhJVGn7) - Setting up the Discord server

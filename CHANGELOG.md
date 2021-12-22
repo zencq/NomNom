@@ -1,15 +1,25 @@
 # CHANGELOG
 
-All notable changes to this project will be documented in this file. The format
-is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and uses its
+All notable changes to this project will be documented in this file. It uses the
+[Keep a Changelog](http://keepachangelog.com/en/1.0.0/) principles and its
 [own versioning](README.md#versioning).
 
 ## Unreleased
 
 ### Added
 ### Changed
+### Removed
 ### Fixed
-### Regression
+
+## 3.7.0.23-alpha.23 (2021-12-22)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.23-alpha.23/total)
+
+### Added
+* `Settlement` tab for editing settlements
+### Changed
+* New save format for PlayStation is loaded first now and old `memory.dat` only if no new is available
+### Fixed
+* Detecting/reading of older expedition save data
 
 ## 3.7.0.22-alpha.22 (2021-12-11)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.22-alpha.22/total)

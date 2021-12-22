@@ -1,5 +1,5 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
-    - name: Ask a Question (on Discord)
-      url: https://discord.com/
-      about: Please ask and answer questions for NomNom here (actual invite link will be added later).
+    - name: Ask a Question on Discord
+      url: https://discord.gg/3VrAhJVGn7
+      about: If you don't have something of the above but a general question, you can ask there to quickly get an answer.

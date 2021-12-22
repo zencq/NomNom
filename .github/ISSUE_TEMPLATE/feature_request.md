@@ -1,16 +1,17 @@
 ---
 name: Feature Request
-about: Suggest an idea for NomNom.
+about: Suggest an idea for this project.
 title: "[Feature Request] "
 labels: enhancement
 assignees: ''
 
 ---
 
-## Summary
+### Description
+A clear and concise description of what you want to happen.
 
-Please provide a brief summary of your proposal. One to three sentences is best here.
+### Alternatives
+A clear and concise description of any alternative solutions or features you've considered.
 
-## Details
-
-Please describe your idea here as detailed as possible, so everyone gets a good image what you suggest.
+### Additional Context
+Add any other context or screenshots about the feature request here.

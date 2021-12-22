@@ -5,18 +5,11 @@ Some points need validation to confirm that it's possible thing to do, so some
 of them might disappear unimplemented.
 
 ### Legend
-* [FET] = New features
-* [FIX] = Bugfixes
-* [IMP] = Improvements for existing features
+* [FET] = New feature
+* [FIX] = Bugfix
+* [IMP] = Improvement for existing features
 * [INF] = Informational or reminder for me
-* [VIS] = Visual enhancements
-
---------------------------------------------------------------------------------
-
-# Settlements
-
-#### Editor - Settlement
-* [FET] basic edit feature
+* [VIS] = Visual enhancement
 
 --------------------------------------------------------------------------------
 
@@ -89,6 +82,9 @@ of them might disappear unimplemented.
     * language
     * landing page
     * start mode (pre-load all saves w/ high mem usage but fast change, load when selected)
+        * all (like now)
+        * current + all previous (mixed; load selected and keep in mem)
+        * only current (keep only current in mem, unload previous)
 * [FET] add welcome/first-start window
     * supported platforms
     * select platform to start with
@@ -100,6 +96,7 @@ of them might disappear unimplemented.
     * json
     * collection
     * modding
+    * download
 * [IMP] transform "Save as json" to "import/export json"
 * [IMP] cycle through dropdown by key press (eg "A" cycles through galaxies starting with "A")
     * https://discord.com/channels/215514623384748034/215514674869829633/887440399600328756
@@ -278,6 +275,7 @@ of them might disappear unimplemented.
         * get list of class of seed for UP_FRCOM, UP_FREXP, UP_FRFUE, UP_FRHYP, UP_FRMIN, UP_FRSPE, UP_FRTRA
         * search Pi data with weighting
     * [IMP] refiner limits https://discord.com/channels/215514623384748034/215569912121262080/863293366794715136
+    * [FIX] proc details messed up https://discord.com/channels/215514623384748034/215514674869829633/919593839050760233
 * [FIX] some resources when you add to a ships inventory (or the base inventory) only lets you set 2 for example the gold.. it should be stacking to 500 in the ship
 * [IMP] Naming and handling of procedural items
 * [FET] Ctrl+C, Ctrl+V to copy inventory slots.
@@ -296,6 +294,7 @@ of them might disappear unimplemented.
 * [FIX] Editor view needs to be reloaded to apply the changed debug mode to the legacy color UI.
 * [FET] copy inventory to other ship
 * [FET] re-order
+* [FET] show which figurine will be visible in cockpit
 
 #### Editor - Multi-Tool
 * [FET] Generate Seed for all
