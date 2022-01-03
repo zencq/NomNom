@@ -10,6 +10,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Changed
 ### Removed
 ### Fixed
+### Security
+
+## 3.7.0.24-alpha.24 (2022-01-03)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.24-alpha.24/total)
+
+### Fixed
+* Crash related to expeditions saves
+* Tooltip for Companion actions (Delete + Reset Customization)
+* An issue with internationalization assets
 
 ## 3.7.0.23-alpha.23 (2021-12-22)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.23-alpha.23/total)
