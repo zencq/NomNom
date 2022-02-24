@@ -95,6 +95,17 @@ of them might disappear unimplemented.
     * backup
     * json
     * collection
+        * weapon
+        * ship
+        * pet
+        * freighter
+        * exocraft
+        * places
+        * settlement
+        * outfits
+        * frigates
+        * bytebeat
+        * ...
     * modding
     * download
 * [IMP] transform "Save as json" to "import/export json"
@@ -148,6 +159,7 @@ of them might disappear unimplemented.
 * [FIX] Fill all chargeable slots isn't working for starships and exocraft.
 * [FIX] Ctrl+E is not working for starships, exocraft (Ctrl-F works fine)
 * [FIX] Add/replace item has greyed out after a while. Possibly after I expanded storage container capacities
+* [FET] toggle sentinel drone via context menu/details window (3.8+)
 
 #### Editor - Knowledge/Synthesis Bot
 * [FIX] Directly update UI in Discovery when changing a word

@@ -12,6 +12,17 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 3.8.0.25-alpha.25 (2022-02-24)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.8.0.25-alpha.25/total)
+
+### Added
+* Royal as weapon type
+### Changed
+* Updated name mapping to game version 3.82
+* Updated database to game version 3.82
+### Fixed
+* Exocraft unlock logic (unintentionally checked only the Roamer)
+
 ## 3.7.0.24-alpha.24 (2022-01-03)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.7.0.24-alpha.24/total)
 
