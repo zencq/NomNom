@@ -12,6 +12,14 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 3.8.0.26-alpha.26 (2022-02-28)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.8.0.26-alpha.26/total)
+
+### Fixed
+* Crash when save does not contain the new weapon resource
+* `Extreme Survival` milestone not calculating correctly ([#78](https://github.com/cengelha/NomNom/issues/78))
+* Some Frigate types not being displayed and set correctly
+
 ## 3.8.0.25-alpha.25 (2022-02-24)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.8.0.25-alpha.25/total)
 
