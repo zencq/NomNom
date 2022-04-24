@@ -12,6 +12,16 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 3.85.0.27-alpha.27 (2022-04-24)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.85.0.27-alpha.27/total)
+
+### Added
+* Solar Sail as ship type ([#82](https://github.com/cengelha/NomNom/issues/82))
+* Cargo inventory for ships
+### Changed
+* Updated name mapping to game version 3.87
+* Updated database to game version 3.87
+
 ## 3.8.0.26-alpha.26 (2022-02-28)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.8.0.26-alpha.26/total)
 
