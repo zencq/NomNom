@@ -12,6 +12,12 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 3.85.0.28-alpha.28 (2022-05-19)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.85.0.28-alpha.28/total)
+
+### Fixed
+* Issues with the Microsoft platform including [#79](https://github.com/cengelha/NomNom/issues/79) and [#83](https://github.com/cengelha/NomNom/issues/83)
+
 ## 3.85.0.27-alpha.27 (2022-04-24)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.85.0.27-alpha.27/total)
 

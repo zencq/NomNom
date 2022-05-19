@@ -109,8 +109,8 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
     * [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)
         * Notes: Not directly supported but can easily achieved with cloud sync via the
           Microsoft Store. The synchronisation is triggered short after you close the game.
-* The latest version of NomNom is built with **Outlaws (3.85)** in
-  mind but is compatible with **Beyond (2.11)** and up. If you use it with a
+* The latest version of NomNom is built with **Outlaws 3.85** in
+  mind but is compatible with **Beyond 2.11** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be a breaking change. Watch out for notices about
   new game updates.
@@ -144,7 +144,7 @@ The versioning is oriented on the game version itself:
 
 * _Major_ mirrors the games major version.
 * _Minor_ mirrors the games initial minor version of named updates
-  (e.g. Synthesis 2.2).
+  (e.g. **Synthesis 2.20** or **Outlaws 3.85**).
 * _Patch_ includes new features, bug fixes, updated game assets, and such beside
   the named game updates.
 * _Revision_ serves as public release counter.
