@@ -12,6 +12,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 3.90.0.29-alpha.29 (2022-05-26)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.90.0.29-alpha.29/total)
+
+### Added
+* Leviathan frigate type
+### Changed
+* Updated name mapping to game version 3.90
+* Updated database to game version 3.90
+
 ## 3.85.0.28-alpha.28 (2022-05-19)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.85.0.28-alpha.28/total)
 
