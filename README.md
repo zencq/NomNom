@@ -109,7 +109,7 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
     * [Xbox One/Series X\|S](https://www.microsoft.com/p/no-mans-sky/bqvqtl3pch05)
         * Notes: Not directly supported but can easily achieved with cloud sync via the
           Microsoft Store. The synchronisation is triggered short after you close the game.
-* The latest version of NomNom is built with **Leviathan 3.90** in
+* The latest version of NomNom is built with **Endurance 3.94** in
   mind but is compatible with **Beyond 2.11** and up. If you use it with a
   game version branch above (e.g. **4.0**), things should work as usual in most
   cases but there can always be a breaking change. Watch out for notices about

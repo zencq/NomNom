@@ -12,6 +12,16 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 3.94.0.30-alpha.30 (2022-07-30)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.94.0.30-alpha.30/total)
+
+### Added
+* Organic frigate type
+* Cargo inventory for freighters
+### Changed
+* Updated name mapping to game version 3.97
+* Updated database to game version 3.98
+
 ## 3.90.0.29-alpha.29 (2022-05-26)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.90.0.29-alpha.29/total)
 
