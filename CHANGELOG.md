@@ -6,11 +6,86 @@ All notable changes to this project will be documented in this file. It uses the
 
 ## Unreleased
 
+### Known Issues
 ### Added
 ### Changed
 ### Removed
 ### Fixed
-### Security
+
+## 4.00.0.31-beta.1 (2022-10-31)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.00.0.31-beta.1/total)
+
+### Added
+* Support for **Waypoint 4.0** ([#95](https://github.com/cengelha/NomNom/issues/95) [#98](https://github.com/cengelha/NomNom/issues/98))
+* Name and Summary of a save
+* Difficulty Presets
+* Switch early adopter Starship and Multi-Tool
+* Maneuverability for Starships
+* Supercharged technology
+* Support for Nintendo Switch saves ([#96](https://github.com/cengelha/NomNom/issues/96))
+* Welcome window for first-time users
+* Mod support! Customize the look and feel/behavior according to the mods you use. See [here](https://github.com/cengelha/NomNom/wiki) for more information
+* Menu items to directly open most important directories in File Explorer
+* New settings (window) including loading strategy, window attributes (position and size), and more
+* Multi-language support starting with German and Korean
+* New setting for additional paths that will be checked like other default locations (useful for console saves)
+* Automatic detection of platforms in the default location of a platform
+* Built-in backup recovery ([#57](https://github.com/cengelha/NomNom/issues/57))
+* Button to show why a save is incompatible
+* Option to hide backups and incompatible saves from the list
+* JSON editor: Tree view including a search
+* JSON editor: Diff view (for performance reasons only for account data for now)
+* JSON editor: Export and import the current snippet
+* JSON editor: Search for the tree view
+* Integration of Inventory Transfer to the [Assistant for No Man's Sky](https://nmsassistant.com/) app
+* Duplicate inventory slots and cache last item added
+* Remaining images of all items
+* Live Community Research progress in the respective tabs
+* Username is now displayed in the title names if one was found in loaded saves
+* Filter and buttons to (un)lock multiple items at once
+* Buttons to increase currencies to its maximum
+* Tainted Metal to currencies (read-only)
+* The total play time is now editable in General tab
+* Manage your collections
+    * Open JSON of selection directly
+    * Pre-filled with pre-order, starter, expedition, and Twitch rewards
+* Integration of the Discord [Creative & Sharing Hub](https://discord.gg/RSGQFQv2pP)
+    * Open respective channels to share or find new things from/for your collections
+    * Open the Customizer directly in NomNom (you still have to use the Discord to get the seeds)
+* Resources can be edited via UI in Advanced Mode
+* Icons of are now displayed in technology overviews
+* Display which interior adornment and exhaust override is visible in a Starship
+* Squadrons can now be edited
+* Toggle Mech AI Pilot
+* Missing items in the catalogue (e.g. Shroud of Freedom) and filter options ([#84](https://github.com/cengelha/NomNom/issues/84))
+* Show total object count of all bases compared to allowed max ([#56](https://github.com/cengelha/NomNom/issues/56))
+* Single Base Building Objects added to the Teleporter list
+* Analysis of how many words are learned per category and race
+* Showing in-game descriptions for companion traits
+* Command line interface to convert files similar to the new import/export feature
+* and proably more...
+
+### Changed
+* Upgrade to .NET 6
+* Use libMBIN mapping.json including automatic (and manual) updates
+    * Updating the mapping automatically applies all new entries (if any) to all loaded files
+* Updated UI and code cleanup and optimization
+* Actions to delete/copy/move/swap slots are now available as individual buttons in the list
+* JSON editor available for saves older than Beyond 2.11
+* Save Transfer is now an independent wizard where you can select source and destination freely as well as what you want to transfer ([#61](https://github.com/cengelha/NomNom/issues/61))
+* Transformed "Save as JSON" to a import/export feature. You can import any valid human- or game-readable file
+* Max health is determined by game parameter and install tech (proc tech only approx if [Pi](https://github.com/zencq/Pi) isn't present)
+* Type of Multi-Tool is now pre-determined by collection, resource, and stats (based on the intended ranges) if possible
+* Exocraft tab always accessible and showing whether one was already deployed
+* Unlocked various seeds for companions even if currently not used
+* Amount to add to inventory slot can now be modified directly additional to the slider ([#85](https://github.com/cengelha/NomNom/issues/85))
+* Filtering for items to add to inventory slot ([#94](https://github.com/cengelha/NomNom/issues/94))
+* and proably more...
+
+### Fixed
+* Base selection did not update data properly ([#74](https://github.com/cengelha/NomNom/issues/74))
+* Multiple crashes should be resolved ([#76](https://github.com/cengelha/NomNom/issues/76) [#87](https://github.com/cengelha/NomNom/issues/87) [#92](https://github.com/cengelha/NomNom/issues/92))
+* and a lot of other things...
 
 ## 3.94.0.30-alpha.30 (2022-07-30)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/3.94.0.30-alpha.30/total)

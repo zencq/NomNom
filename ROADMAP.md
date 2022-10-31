@@ -7,51 +7,36 @@ of them might disappear unimplemented.
 ### Legend
 * [FET] = New feature
 * [FIX] = Bugfix
-* [IMP] = Improvement for existing features
-* [INF] = Informational or reminder for me
+* [IMP] = Improvement for existing feature
+* [INF] = Informational or reminder for developer
 * [VIS] = Visual enhancement
 
 --------------------------------------------------------------------------------
 
-# Technical Maintenance
+## beta.next
 
-#### General
-* [IMP] cli options
-    * decompression save/meta
-    * import/export json
-* [IMP] upgrade to .NET 6
-* [FET] multi-game version-database
-    * downloadable
-* [IMP] Use libMBIN JSON mapping when available (incl download of new ones) https://discord.com/channels/215514623384748034/215569790801018880/856544044392644608
-* [IMP] code cleanup and optimization
-* [FIX] not correctly updating UI (at least for ship and bases)
-* [IMP] Handling of customization technology
-    * add the "^T_<id>" in KnownTech and "^<id>" in KnownSpecials
-    * METADATA/GAMESTATE/PLAYERDATA/BOBBLEHEADCUSTOMISATIONDATA.EXML
-    * METADATA/GAMESTATE/PLAYERDATA/THRUSTERCUSTOMISATIONDATA.EXML
-* [IMP] use https://github.com/nickbabcock/Pfim to display dds image without converting
-* [INF] Language Properties
+### General
+* [VIS] Complete UI overhaul by switching to the modern Windows design language (Fluent Design)
+* [FET] Dark Mode
+* [FET] GamePad support
+* [IMP] New code editor for JSON
+* [IMP] anyedit search for JSON editor
+* [IMP] Notification is saving finished/progress bar loaded/saved
+* [IMP] Info when new assets are available to download: Pi, Mapping, etc
+* [IMP] Toggle checkboxes with space
+* [IMP] Cycle through dropdown by key press (eg "A" cycles through galaxies starting with "A")
+    * https://discord.com/channels/215514623384748034/215514674869829633/887440399600328756
+* [IMP] More details of specific entry in Collection Manager
+    * Editable
+    * Sort
+    * Filter
+* [IMP] Show only locked items (Synthesis, etc)
+* [FET] "Any Edit" JSON editing via dynamic UI dropdowns (also as search for JSON editor)
+* [FIX] Use different database versions
+* [FET] determine max stats for weapon, freighter
+* [FET] show maneuverability incl min/max stats
+* [FET] open details of item in synthesis/catalogue
 * [INF] add logs to all actions, not just properties
-* [FET] store window position and size
-* [IMP] hide unimplemented features instead of disabling them
-* [IMP] start multi language support again
-    * German
-    * Korean
-* [FET] ~~show supporters in a special window~~ add thanks to about
-* [FET] start for help database for all feature
-* [IMP] exception always english
-* [FIX] Proper message when selection an invalid path/catch excpetion
-    * System.UnauthorizedAccessException (Access to the path '...' is denied.)
-* [FIX] Check if valid json for single saves
-* [FET] new mode to select if the various states above should be remember across multiple sessions
-* [FET] remember various tool states
-    * last added item [inventory] -> single session only
-    * sidebars collapsed -> single/multi session selectable via mode
-    * selected tab -> single session only when switching main sections, setting for default tab (bold name)
-    * last loaded platform -> always (move from settings)
-    * session count -> always (move from settings)
-    * windows size and postition
-* [IMP] create a first crash report before opening the window. update as before in case there is a user comment
 * [IMP] mode overhaul
     * Debug purely for debugging/programming related stuff
     * restriction modes
@@ -65,380 +50,183 @@ of them might disappear unimplemented.
             * Unlimited stack size of inventory slots
             * Skip tech overload check
             * extensible database
-                * modding.json
-                * extend products, etc and overwrite globals
-                * images loaded from modding path
-* [IMP] Notification is saving finished/progress bar load/save
-* [FET] Undo/Redo
-    * Remember UpDown press/release states and not each increment (same for logging)
-* [IMP] Left/Right sidebars collapsible
 * [IMP] re-check various limitions
     * stats limit
     * freighter hyperdrive is much higher than 1k
-* [IMP] switch back to manager-view (or if possible reload current view on-the-fly)
-* [FET] add settings window to edit things at one place without multiple steps through menus
-    * paths
-    * modes
-    * language
-    * landing page
-    * start mode (pre-load all saves w/ high mem usage but fast change, load when selected)
-        * all (like now)
-        * current + all previous (mixed; load selected and keep in mem)
-        * only current (keep only current in mem, unload previous)
-* [FET] add welcome/first-start window
-    * supported platforms
-    * select platform to start with
-        * pre-analysis with what is available
-* [FET] remove output path setting and add "open in explorer" menu
-    * crash
-    * log
-    * backup
-    * json
-    * collection
-        * weapon
-        * ship
-        * pet
-        * freighter
-        * exocraft
-        * places
-        * settlement
-        * outfits
-        * frigates
-        * bytebeat
-        * ...
-    * modding
-    * download
-* [IMP] transform "Save as json" to "import/export json"
-* [IMP] cycle through dropdown by key press (eg "A" cycles through galaxies starting with "A")
-    * https://discord.com/channels/215514623384748034/215514674869829633/887440399600328756
-* [FIX] check path crash. `#` or in NMS install dir or different drive
-* [FIX] no meta file = crash
-* [FET] wiki window and add to guide
-* [IMP] move links button to left sidebar
-* [IMP] Set in-game save timestamp to when saved with NomNom (new PlayStation save format)
-    * `???` has to be in the same directory as the `savedata??.hg` file
-* [FIX] can't use PrtScr to open Snip/Sketch to grab a screenshot
+* [FET] Undo/Redo
+* [IMP] restore ship, etc to empty slots
+* [IMP] show files (ending) when selecting a path but take dir anyway
 
-#### Manager
-* [IMP] pre-analysis with what is available
-    * show those as button in path display
-* [VIS] Slot selection: Game Mode icon
-* [VIS] show GOG icon if "DefaultUser" in save path with valid save
-* [IMP] Info why an archive is not compatible
-    * show all existing archives, not only valid ones (SaveSlot/Refresh)
-* [FET] Backup recovery
-    * backup files for meta and data
-    * additional list for backups of slot and platform
-    * button for additional list to load data in backup to current archive
-    * button to restore backup to any archive (like move)
-* [IMP] platform transfer (#61)
-    * add default steam/ms selection to platform transfer (see pre-analysis)
-    * add selection which bases you want to keep (to avoid duplication/conflicts with uploaded bases)
-        * https://discord.com/channels/627059745160953866/720411261019619399/905098763171946586
-    * check for same location in both save paths
-    * check overwriting existing slots not working
-    * show both platform icons in area
-    * show done confirmation with asking for reloading of target platform
-    * show used slots on target
-    * update bytebeat, settlement, companion
-    * step by step wizard (maybe also other places)
-    * move account data (optional)
-* [IMP] add catch for failing platforms: https://discord.com/channels/762409407488720918/767096981897347075/883122385367232522
+### Catalogue
 
-#### Cross-Save
-* [IMP] extract username from saves and use to display in account title unlock
-* [IMP] unlock all/each season via button
+### Editor - General
+* [FET] QuickAction
 
-#### Editor - General
-* [IMP] restore/delete mission (un)related to the new game mode
+### Editor - Weapon
+* [FET] Legacy Color (3.3+)
+* [FET] Set Weapon modes
 
-#### Editor - Inventory
-* [IMP] add remaining images
-* [FIX] Min/Max Stats for procedural technology seems switched but has a technical background.
-* [FIX] re-check "enter" to execute search.
-* [FIX] Fill all chargeable slots isn't working for starships and exocraft.
-* [FIX] Ctrl+E is not working for starships, exocraft (Ctrl-F works fine)
-* [FIX] Add/replace item has greyed out after a while. Possibly after I expanded storage container capacities
-* [FET] toggle sentinel drone via context menu/details window (3.8+)
+### Editor - Frigate
+* [FET] change all the homes seeds of fleet at once
+* [FET] set freighter seeds to current system
 
-#### Editor - Knowledge/Synthesis Bot
-* [FIX] Directly update UI in Discovery when changing a word
-* [IMP] learned/total and % complete for words for each race (https://github.com/goatfungus/NMSSaveEditor/issues/196)
-* [IMP] (un)learn all
-* [IMP] add search
-* [IMP] unlock rewards for each season/twich drop
+### Editor - Catalogue
+* [FET] Add Recipe tab
+* [FET] Unlockable Item Tree (+total of CostType to unlock all)
 
-### Editor - Expedition
-* [IMP] set mission as pin
-* [IMP] set progress to done, button
-* [IMP] show remaining progress (like in milestones)
+### Editor - Mission (Log)
+* [FET] new tab `Log` do modify missions
+* [FET] "^BASE_UPGRADE6" BASE_UPGRADE-Missions have a 1:30h timer.
+* [FET] "^BASE_UPGRADE11"-12 (+?) BASE_UPGRADE-Missions have a 6:00h timer.
+* [FET] "^???" Living Ship-Missions have a max timer of 24:00h.
 
 ### Editor - Milestones
-* [IMP] set progress to done, button
+* [VIS] Add Icons
+* [FIX] Directly update UI in Discovery when changing a word
+* [FET] show all stats (UI generated like Expedition tab)
+    * [INF] generate current stats?
 
-#### JSON Editor
-* [FET] Performant TreeView
+### Editor - Discovery
+* [FET] manage/delete discoveries (animals,etc)
+* [FET] Show if nexus or freighter are in a system (discoveries)
+* distance to other location ?
+* add teleport desination for glaxies; https://discord.com/channels/627059745160953866/720411261019619399/1009155586895659109
+* [FET] Choose from list of unique (expedition rendezvous, etc)
+* [FET] calc hyperdrive range based on tech and Pi (default/min is 101.0 ly) => ship/freighter
+* [FET] Delete TerrainEdit of any planet/all
+* [IMP] trigger space battle in early game (< 3h/5 warps)
+    * set time/warps to 0
+    * if time < 3h then set time to 10800
+    * if warps < 5 then set warps to 5
+* [IMP] filter by galaxy
+* [IMP] sort by distance to center, etc
+* [FET] show map
+    * https://raw.githubusercontent.com/jaszhix/NoMansConnect/master/screenshot.png
+    * show path
+* [FET] Store current place
+    * [VIS] icon: DUI_PLANET.DDS, MISSION.PLANETS.OFF.DDS
+*[FET] https://github.com/andraemon/SystemNameCalculator
 
---------------------------------------------------------------------------------
-
-# Collections
-
-#### General
-* [FET] select/display screenshot/image of Starship/multi-tool/(exocraft)/freighter
-* [FET] Backup/Restore (of Inventory/Starship/Base/Compainions/etc) incl screenshot of NomNom
+### Editor - Base
+* [FET] NPC Worker Resources/Change model of hired NPCSs
+    * [FET] Seed of interactions -> base npc
+* [FET] Add cylidrical rooms again
+* [FIX] Move base (computer)
+* [FET] add/remove SeenBaseBuildingObjects
+* [FET] move container/switch position
+* [FET] Transfer base to other save
+* [FET] plant timer?
+* [IMP] detect duplicates (from platform transfer)
+* [INF] 400 is max bases you can have
+* [FET] Delete Base
+* [IMP] Backup/Restore
     * Import Base:
         * New (if not base at this coordinates),
         * append, replace -> base computer as anchor point and will not be replaced
     * Import other:
         * replace
     * https://github.com/charliebanks/nms-base-builder#how-to-use
-* [FET] NMSC feature set
-* [FET] Links to seed central Discord etc
-* [FET] store ship and pet seeds in a favourite list
+* [IMP] Load Base Image from Cache
 
-#### Editor - Starship
-* [FET] Choose from list of unique seeds (Pre-order/starter/expedition/twitch drops, https://discord.com/channels/627059745160953866/627143858094080030/820073927295762492)
-    * Alpha Vector, PS4 Preorder bonus ship (ALPHAVSHIP): 0x8E8E2193DD4A9EDA
-    * Horizon Omega, PC Preorder bonus ship (HORIZOSHIP): 0xC4C9C1AABCA59FE6
-    * Rasamama S36, original starter ship (1.0~1.2): 0x867BFFC553B294A8
-    * Yakomaku S79, Atlas Rises starter ship (1.3): 0xA547AB958C97E439
-    * Radiant Pillar BC1, current version / NEXT starter ship (1.5 ~ Current): 0xA547AB958C97E439
-    * ---
-    * Honmatan OQ5 (Explorer), Reward from Expedition Season 1 Phase 4 mission The Good ship, Acquire an A-class starship: 0x867BFFC553B294A8
-    * ---
-    * Hadach's Discovery KH3 (Fighter), Reward from Expedition Season 2 Phase 2 Completion: 0x94B00527B67F46EF
-    * ---
-    * Eokai's Prime Inquirer, Day1 Twitch Drops (Explorer): 0xF437579A7A76D819
-    * Hoshis HP7, Day2 Twitch Drops (Fighter): 0x6FF7793FBC58837
-    * Nemesis of the Kudama, Day3 Twitch Drops (Fighter): 0xBCEF59E1A64E28DC
-    * Ultimate Pride JB2, Day4 Twitch Drops (Hauler): 0x9557186C7D37C2EC
-    * Prime Song JZ4, Day5 Twitch Drops (Shuttle): 0x9E58062EEDC436B
-    * ---
-    * Hiwamiha of Destiny (Fighter), Day- Twitch Drops: 0x19036EFEDEA6E86D
-    * VV5 Ariyaz (Shuttle), Day- Twitch Drops: 0xEACE5BEA27F0A3CC
-    * Jirishi's Prospect (Explorer), Day- Twitch Drops: 0xAB8668AAA38F66CF
-    * Hadach's Discovery KH3 (Fighter), Day- Twitch Drops: 0x94B00527B67F46EF
-    * Ultimate Sleep LO1 (Hauler), Day- Twitch Drops: 0x3A8B8466974433AA
-
-
-#### Editor - Multi-Tool
-* [FET] Choose from list of unique seeds (Pre-order/starter/expedition/twitch drops, https://discord.com/channels/627059745160953866/627143858094080030/820073927295762492)
-    * Experiment C6/4 / Waveform Focuser N56-P (Multitool), Starter MT: 0x55907B79D95B675B
-    * Rezosu Z65 (REZOSUZ65), PS4 preorder bonus MT: 0xCDDB99E6DCE0749C
-    * Artios-VI (ENT_XOGUN1), Xbox preorder bonus MT:  0x5BA94DDC4D81618C
-    * Vertic-LX (ENT_XOGUN2), Microsoft store digital preorder bonus MT - 0xDEB7E483C1A3F7F8
-    * ---
-    * Surge of Storms B56-K1-6 (Experimental Compact Pistol), Reward from Expedition Season 1 Phase 2 Completion: 0xCF9858143BDCE787
-    * Geometric Dream Inverter (Alien Pistol), Reward from Expedition Season 1 Phase 5 mission Boundary Failure, Eliminate 50 sentinels: 0xE0AF6FA5D33EE25D
-    * ---
-    * Quantum Harmoniser Mark IV, Day1 Twitch Drops Rifle MT: 0x7E9896D06EF5510A
-    * Loop Scoop Mark IV, Day2 Twitch Drops Pistol MT: 0x33156C44DD934D25
-    * Arc Capacitor W/17I-15P, Day3 Twitch Drops Pistol MT: 0x8F2D0700120E1149
-    * Hunevar's Dream Charger, Day4 Twitch Drops Experimental Compact Pistol MT: 0xFB8D9BA3FC5021F
-    * Imperfect Loop Reflector, Day5 Twitch Drops Rifle MT: 0x73DD2FD7DE1FFD45
-* [FET] store Type selection (of seed) -> file
-
-
-#### Editor - Companions
-* [FET] Choose from list of unique pets (twitch drops, etc)
-
-#### Editor - Base
-* [FET] Seed of interactions -> base npc
+### Editor - ByteBeat
+* [VIS] icon: BYTEBEATINTERACTION.DDS, ICON.NOTE.DDS
 * [FET] import/export
-
-#### Editor - Discoveries
-* [FET] Unique locations
-    * expedition rendezvous points
-* [FET] Store manual TeleportEndpoint -> file
-* [FET] remember ly distance for jumps to center per ship -> file
-
-#### Editor - PLANETARY SETTLEMENTS
 * [FET] Evaluate possibilities
-    * https://discord.com/channels/627059745160953866/720411261019619399/883365755914182687
-* [FET] add new tab to modify your SETTLEMENTS
+* [FET] Choose from list of unique (twitch drops, etc)
+* https://discord.com/channels/627059745160953866/720411261019619399/966684265234448415
 
---------------------------------------------------------------------------------
+### Editor - Companions
+* [FET] Edit last...IncreaseTime
+    * https://discord.com/channels/627059745160953866/627110270418026506/948166170589134848
+    * Now i've modified "LastTrustIncreaseTime" from 1646123258 to 1046123258. After saving and launching the game, giving the thing 1 gently pat and 1 food treat it automatically reached 100% trust, triggering the milestone
 
-# Feature Polishing
+### Editor - Milstones
+* [IMP] set progress to done, button (for milestones)
 
-#### General
-* [IMP] separate button to set seed as name too
+### Editor - Settlement
+* [IMP] Class
+* [IMP] race based on production
+* [IMP] poor/neutral/rich based on production
 
-#### Editor - Inventory
-* [FET] Move between Inventories
-* [FET] copy ship inventories and technologies to other ships
-* [FET] integrate inventory backup into collections but also for exosuit
+### Editor - Inventory
 * [FIX] ingredient-only restriction to Ingredient Storage container (check current state)
     * not restricted in debug
-* [FET] change product multiplier
-* [IMP] cache last added item
+* [FET] Move between Inventories
+    * [FET] copy ship inventories and technologies to other ships
+* [FET] integrate inventory backup into collections but also for exosuit
 * [VIS] item name in slot move at the same speed and only move in one direction -> https://forums.nexusmods.com/index.php?/topic/8786978-nomnom/page-4#entry85873748
-* Item Details
-    * [IMP] Creation-Group: Rewards (Consumable, Mission, etc.)
-    * [FET] Base Building-Group
-    * [IMP] Collapse "Dismantle Return" for maintenance items
-    * [IMP] show time to make in refiner list
-    * [FET] Frigate-Group
-    * [FET] Learnable-group
-    * [IMP] personal refiner fuel?
-    * [IMP] Product tech module unlock cost in nanites
+* [IMP] Naming and handling of procedural items
+* [FET] Auto-Sort Inventories (#29)
+* [FIX] some resources when you add to a ships inventory (or the base inventory) only lets you set 2 for example the gold.. it should be stacking to 500 in the ship
+    * <4.0
+* [FIX] Min/Max Stats for procedural technology seems switched but has a technical background.
+* add repair cost to item details (eg SHIPSLOT_DMG2): https://discord.com/channels/215514623384748034/215514674869829633/928451303053598750
+* [IMP] Item Details
     * [FET] for proc items downloadable CSV per item with all visible stats (#24)
         * add versioning to Pi repo for downloading updates
         * get list of class of seed for UP_FRCOM, UP_FREXP, UP_FRFUE, UP_FRHYP, UP_FRMIN, UP_FRSPE, UP_FRTRA
         * search Pi data with weighting
-    * [IMP] refiner limits https://discord.com/channels/215514623384748034/215569912121262080/863293366794715136
-    * [FIX] proc details messed up https://discord.com/channels/215514623384748034/215514674869829633/919593839050760233
-* [FIX] some resources when you add to a ships inventory (or the base inventory) only lets you set 2 for example the gold.. it should be stacking to 500 in the ship
-* [IMP] Naming and handling of procedural items
-* [FET] Ctrl+C, Ctrl+V to copy inventory slots.
-    * [FET] right click drag-drop to duplicate slot
-    * [FET] multi-selection for add item/delete/move/etc
-* [FET] Auto-Sort Inventories (#29)
+        * built-in top 100 or so but allow doenload of full set nonethelss
+        * [FET] button in settings download all assets (proc upgrade CSVs)
+        * reverse proc tech names for translation
+        * Pi with delta updates
+        * [IMP] refiner limits https://discord.com/channels/215514623384748034/215569912121262080/863293366794715136
+        * [FIX] proc details messed up https://discord.com/channels/215514623384748034/215514674869829633/919593839050760233
+        * use to determine exactly the max health (UP_SHLD1, UP_SHLD2, UP_SHLDX, UP_SNSUIT)
+    * [IMP] Creation-Group: Rewards (Consumable, Mission, etc.)
+    * [FET] Base Building-Group
+    * [FET] Frigate-Group
+    * [FET] Learnable-group
+    * [IMP] Collapse "Dismantle Return" for maintenance items
+    * [IMP] show time to make in refiner list
+    * [IMP] personal refiner fuel?
+    * [IMP] Product tech module unlock cost in nanites
 * [FET] Add resources for building part x times
+* [FET] "id"s for tech packages
+* [FET] multi-selection for add item/delete/move/etc
+* [FET] fill free slots with item (add item window)
+* [FET] in add-item-window allow select of no of slots 1 to enabled-empty
+* [FET] Ctrl+C, Ctrl+V to copy inventory slots.
+* [IMP] open Assistant app dialog for this inventory (collection)
 
-#### Editor - Exosuit
-* [IMP] show max health
-* [FET] clear space station exosuit interaction
-* [VIS] Health/Currency icons
-
-#### Editor - Starship
-* [FET] Generate Seed for all
-* [FIX] Editor view needs to be reloaded to apply the changed debug mode to the legacy color UI.
-* [FET] copy inventory to other ship
-* [FET] re-order
-* [FET] show which figurine will be visible in cockpit
-
-#### Editor - Multi-Tool
-* [FET] Generate Seed for all
-* [FET] Set current weapon mode
-* [FET] Legacy Color (3.3+)
-* [FET] re-order
-
-#### Editor - Exocraft
-* [FIX] Disable+change tab when last one is delete
-* [FIX] Disable context menu enable/disable option
-* [FET] reset customization
-
-#### Editor - Companions
-* [FET] Evaluate possibilities
-* [FET] re-order
-* [FET] Is it possible to pull discovered creature seeds from your save without adopting said creature first? https://discord.com/channels/627059745160953866/720411261019619399/853772131736748053
-* [IMP] Traits +-
-    * Playfulness/Helpfulness
-        * .../Cheeky [16/26]/Mischievous [33/45]/...
-        * .../Compliant [17]/...
-    * Agression [Red]/Gentleness [Green]
-        * .../Fierce [67]/...
-        * .../Tolerant [19]/Placid [75/76/79]/...
-    * Devotion [Green]/Independence [Blue]
-        * .../Attached [21/23/27]/Attentive [34]/Protective [69]/...
-        * .../Aloof [30]/...
-* [IMP] Mood
-    * Lively [Green]
-
-#### Editor - Base
-* [FET] Delete Base
-    * detect duplicates (from platform transfer)
-* [IMP] Disable tab if now base or freighter / storage container to freighter ?
-* [FET] Change model of hired NPCSs
-* [FET] Transfer base to other save
-* [FIX] hide "clear terrain" when freighter is selected
-* [FIX] update base view to update UI when chaning the base selection
-* [FIX] move base comuputer selection is empty
-* [FET] Add single base objects to list of teleport destination
-* [FET] show "featured", "reported" flags
-* [IMP] Base part count information display (#56)
-* [FET] move container/switch position
-* [INF] 400 is max bases you can have
-* [FET] re-order
-* [FET] add/remove SeenBaseBuildingObjects
-
-#### Editor - Settlement
-* [FET] Evaluate possibilities
-* [FET] re-order
-
-#### Editor - Freighter
-* [FIX] Directly update UI in Frigates when syncing home seed
-* [FET] set freighter seeds to current system
-* [INF] The Upgrade Station on the freighter bridge can be used to recolour your freighter. Unlock new available colours with nanites. Unlocked colours are permanently available and can be reapplied for free.
-    * [FET] reset freighter color customization
-
-#### Editor - Frigates
-* [FET] Copy
-* [FET] Delete
-* [FET] tooltips for stats
-* [FET] max out expeditions
-* [FET] re-order
-
-#### Editor - Discoveries
-* [FET] Delete TerrainEdit of any planet/all
-* [FIX] Only rename own base endpoints
-* [FET] manage/delete discoveries (animals,etc)
-* [FET] Show if nexus or freighter are in a system (discoveries)
-
-#### Editor - Milestones
-* [VIS] Add Icons
-
-#### Catalogue
-* [FET] Add Recipe tab
-* [IMP] Group DataGrids
-
-#### Editor - Knowledge
-* [FET] Unlockable Item Tree (+total of CostType to unlock all)
-
---------------------------------------------------------------------------------
-
-# Missions
-
-#### Editor - Mission
-* [FET] new tab `Log` do modify missions
-* [FET] "^BASE_UPGRADE6" BASE_UPGRADE-Missions have a 1:30h timer.
-* [FET] "^BASE_UPGRADE11"-12 (+?) BASE_UPGRADE-Missions have a 6:00h timer.
-* [FET] "^???" Living Ship-Missions have a max timer of 24:00h.
-* [FET] show Community Mission progress (https://api.nmsassistant.com/index.html)
-    * GET "​/HelloGames​/CommunityMission" Get Latest Community Mission.
-
---------------------------------------------------------------------------------
-
-# Customization
+### Customization
 
 #### General
 * [INF] Added hover text to all colour, texture and armour style options to the buttons in the customiser, allowing players to know ahead of time what option they are selecting.
 
-#### Editor - Exosuit
-* [FET] Customization
-* Added the ability to add a custom Title to your player name.
-    * Titles can be selected at the Customiser.
-    * Titles are earned for a large variety in in-game achievements.
-    * The unlocked titles are listed in [NMS_installation_Path]\Binaries\SETTINGS\GCUSERSETTINGSDATA.MXML
-    * You can grab the title IDs from METADATA\GAMESTATE\PLAYERDATA\PLAYERTITLEDATA.MBIN and add them to the settings file.
+#### Exosuit
+* [FET] Outfit Customization
+    * Outfit
+    * Jetpack effect
+    * Banner (icon, colors)
+    * Titles
+    * make capes visible in multi-player
+        * https://www.reddit.com/r/NoMansSkyMods/comments/ycnubk/discovery_capes_can_show_in_multiplayer_heres_how/?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=share_button
+#### Starship
+* [FET] Color Customization
+* [FET] Reset ship color customization
 
-#### Editor - Starship
-* [FET] Customization (https://github.com/goatfungus/NMSSaveEditor/issues/231, https://www.reddit.com/r/NoMansSkyMods/comments/dkob5c/manual_ship_and_multitool_color_customization/)
-    * https://nmscd.github.io/nmscolorparser/
-* [FET] Custom Ship (https://discord.com/channels/627059745160953866/687350943859212312/687362600333345026)
-* [FET] reset ship color customization
-
-#### Editor - Multi-Tool
+#### Exocraft
 * [FET] Customization
-* [FET] reset MT color customization
+* [FET] Reset customization
 
-#### Editor - Exocraft
+#### Freighter
 * [FET] Customization
+* [FET] Reset customization
 
-#### Editor - Freighter
+#### Companions
 * [FET] Customization
-
-#### Editor - Companions
-* [FET] Customization
+* [FET] Reset customization
+* https://github.com/laanp/NMS-Creature-Builder
 
 --------------------------------------------------------------------------------
 
-# Guide
+--------------------------------------------------------------------------------
+
+# beta.next.next - Guide
 
 #### Guide
-* [FET] Exosuit
-    * in-game upgrade cost
+* in-game upgrade cost
 * [FET] Starship
     * Inventory when purchase
     * Price (calc by selection, compared to own ships/diff in units to purchase)
@@ -449,13 +237,10 @@ of them might disappear unimplemented.
         *   <Property name="ShuttleTakeOffMod" value="0.66" />
         *   <Property name="ExplorerTakeOffMod" value="0.5" />
         *   <Property name="RoyalTakeOffMod" value="1" />
-
 * [FET] Farming
     * Grow time
 * [FET] Star system
     * Biomes (incl. search for prefix, possible resources) -> METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIOME.MBIN
-    * Is Anomaly in System
-    * No of Planets/Moons in System
 * [FET] additional stats
 
 --------------------------------------------------------------------------------
