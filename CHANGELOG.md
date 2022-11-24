@@ -12,6 +12,19 @@ All notable changes to this project will be documented in this file. It uses the
 ### Removed
 ### Fixed
 
+## 4.00.0.32-beta.2 (2022-11-24)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.00.0.32-beta.2/total)
+
+### Changed
+* Database update to 4.07 including the 2022 Holiday Expeditions
+* Expedition tab now functional again
+### Removed
+* JSON editor: Diff view (will return again later)
+### Fixed
+* Crash when clearing external bases
+* Freighter type not changing via dropdown
+* Changing amount/seed in detail window having no effect ([#102](https://github.com/zencq/NomNom/discussions/102))
+
 ## 4.00.0.31-beta.1 (2022-10-31)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.00.0.31-beta.1/total)
 
