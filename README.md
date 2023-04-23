@@ -1,6 +1,6 @@
 # NomNom
 
-![Maintained](https://img.shields.io/maintenance/yes/2022)
+![Maintained](https://img.shields.io/maintenance/yes/2023)
 [![Release](https://img.shields.io/github/v/release/cengelha/nomnom?display_name=tag)](https://github.com/cengelha/nomnom/releases/latest)
 [![Release Date](https://img.shields.io/github/release-date/cengelha/nomnom)](https://github.com/cengelha/nomnom/releases/latest)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
