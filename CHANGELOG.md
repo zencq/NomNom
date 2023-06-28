@@ -12,6 +12,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Removed
 ### Fixed
 
+## 4.30.0.33-beta.3 (2023-06-28)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.30.0.33-beta.3/total)
+
+### Changed
+* Updated name mapping to game version 4.34
+* Updated database to game version 4.34
+### Fixed
+* A crash when changing an edited save file ([#129](https://github.com/zencq/NomNom/issues/129))
+
 ## 4.00.0.32-beta.2 (2022-11-24)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.00.0.32-beta.2/total)
 
