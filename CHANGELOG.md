@@ -12,12 +12,32 @@ All notable changes to this project will be documented in this file. It uses the
 ### Removed
 ### Fixed
 
+# 4.40.0.34-beta.4 (2023-09-11)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.40.0.34-beta.4/total)
+
+### Added
+* Additional milestones added in Waypoint (4.00)
+* New Guild milestones added in Echoes (4.40)
+* New weapon and frigate types
+
+### Changed
+* Updated name mapping to game version 4.43
+* Updated database to game version 4.44
+
+### Fixed
+* libNOM.io related bugs ([#99](https://github.com/zencq/NomNom/issues/99) [#105](https://github.com/zencq/NomNom/issues/105) [#106](https://github.com/zencq/NomNom/issues/106) [#107](https://github.com/zencq/NomNom/issues/107) [#111](https://github.com/zencq/NomNom/issues/111) [#114](https://github.com/zencq/NomNom/issues/114) [#116](https://github.com/zencq/NomNom/issues/116) [#119](https://github.com/zencq/NomNom/issues/119) [#120](https://github.com/zencq/NomNom/issues/120) [#125](https://github.com/zencq/NomNom/issues/125) [#127](https://github.com/zencq/NomNom/issues/127) [#132](https://github.com/zencq/NomNom/issues/132) [#133](https://github.com/zencq/NomNom/issues/133) [#134](https://github.com/zencq/NomNom/issues/134))
+* USN/UID/LID are empty in Save Transfer ([#124](https://github.com/zencq/NomNom/issues/124))
+* Crash without internet access ([#113](https://github.com/zencq/NomNom/issues/113))
+* Editing super slots in vehicles inventory should be disabled ([#110](https://github.com/zencq/NomNom/issues/110))
+* Some inconsistencies in the syntensis companion save editing UI
+
 ## 4.30.0.33-beta.3 (2023-06-28)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.30.0.33-beta.3/total)
 
 ### Changed
 * Updated name mapping to game version 4.34
 * Updated database to game version 4.34
+
 ### Fixed
 * A crash when changing an edited save file ([#129](https://github.com/zencq/NomNom/issues/129))
 
@@ -27,8 +47,10 @@ All notable changes to this project will be documented in this file. It uses the
 ### Changed
 * Database update to 4.07 including the 2022 Holiday Expeditions
 * Expedition tab now functional again
+
 ### Removed
 * JSON editor: Diff view (will return again later)
+
 ### Fixed
 * Crash when clearing external bases
 * Freighter type not changing via dropdown
@@ -115,6 +137,7 @@ All notable changes to this project will be documented in this file. It uses the
 ### Added
 * Organic frigate type
 * Cargo inventory for freighters
+
 ### Changed
 * Updated name mapping to game version 3.97
 * Updated database to game version 3.98
@@ -124,6 +147,7 @@ All notable changes to this project will be documented in this file. It uses the
 
 ### Added
 * Leviathan frigate type
+
 ### Changed
 * Updated name mapping to game version 3.90
 * Updated database to game version 3.90
@@ -140,6 +164,7 @@ All notable changes to this project will be documented in this file. It uses the
 ### Added
 * Solar Sail as ship type ([#82](https://github.com/cengelha/NomNom/issues/82))
 * Cargo inventory for ships
+
 ### Changed
 * Updated name mapping to game version 3.87
 * Updated database to game version 3.87
@@ -157,9 +182,11 @@ All notable changes to this project will be documented in this file. It uses the
 
 ### Added
 * Royal as weapon type
+
 ### Changed
 * Updated name mapping to game version 3.82
 * Updated database to game version 3.82
+
 ### Fixed
 * Exocraft unlock logic (unintentionally checked only the Roamer)
 
@@ -176,8 +203,10 @@ All notable changes to this project will be documented in this file. It uses the
 
 ### Added
 * `Settlement` tab for editing settlements
+
 ### Changed
 * New save format for PlayStation is loaded first now and old `memory.dat` only if no new is available
+
 ### Fixed
 * Detecting/reading of older expedition save data
 
@@ -186,8 +215,10 @@ All notable changes to this project will be documented in this file. It uses the
 
 ### Added
 * `Expedition` tab for editing the progress
+
 ### Changed
 * Moved learning words to `Milestones` tab incl. some optimizations
+
 ### Fixed
 * Expedition `Beachhead Redux` and up not correctly displayed/handled
 * An issue when processing the meta file ([#63](https://github.com/cengelha/NomNom/issues/63) [#68](https://github.com/cengelha/NomNom/issues/68))
@@ -198,6 +229,7 @@ All notable changes to this project will be documented in this file. It uses the
 ### Changed
 * Editor button naming to avoid confusion
 * Tab order and naming
+
 ### Fixed
 * Exception in get_IsAccountUnlocked
 * Some issues with the Microsoft platform
@@ -213,11 +245,13 @@ All notable changes to this project will be documented in this file. It uses the
 * `General` tab to change game mode ([#12](https://github.com/cengelha/NomNom/issues/12))
 * `Companion` tab for editing companions
     * Moods, Seeds, Traits, and more...
+
 ### Changed
 * Updated name mapping to game version 3.74 (base on [MBINCompiler mapping file](https://github.com/monkeyman192/MBINCompiler/releases/download/v3.73.0-pre1/mapping.json))
 * Updated database to game version 3.74
 * Moved JSON editor to left side bar
 * Moved currencies to new `General` tab
+
 ### Fixed
 * Knowledge tab now working as intended ([#30](https://github.com/cengelha/NomNom/issues/30) [#58](https://github.com/cengelha/NomNom/issues/58))
 * Various issues when accessing values from the save
