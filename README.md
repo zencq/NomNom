@@ -1,9 +1,9 @@
 # NomNom
 
 ![Maintained](https://img.shields.io/maintenance/yes/2024)
-[![Release](https://img.shields.io/github/v/release/cengelha/nomnom?display_name=tag)](https://github.com/cengelha/nomnom/releases/latest)
-[![Release Date](https://img.shields.io/github/release-date/cengelha/nomnom)](https://github.com/cengelha/nomnom/releases/latest)
-![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/total)
+[![Release](https://img.shields.io/github/v/release/zencq/NomNom?include_prereleases&display_name=tag)](https://github.com/zencq/nomnom/releases/latest)
+[![Release Date](https://img.shields.io/github/release-date-pre/zencq/nomnom)](https://github.com/zencq/nomnom/releases/latest)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/total)
 
 [![Platform](https://img.shields.io/badge/platform-windows-lightgrey)](https://www.microsoft.com/en-us/windows)
 [![.NET 6](https://img.shields.io/badge/.NET-6-lightgrey)](https://dotnet.microsoft.com/en-us/)
