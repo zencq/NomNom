@@ -9,8 +9,30 @@ All notable changes to this project will be documented in this file. It uses the
 ### Known Issues
 ### Added
 ### Changed
+### Deprecated
 ### Removed
 ### Fixed
+### Security
+
+# 4.50.0.35-beta.5 (2024-02-18)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.50.0.35-beta.5/total)
+
+### Known Issues
+* pre-Omega saves are currently not supported and will crash if you try to load them
+* Expedition saves will only work if you started it from an existing save and even then, it is only possible to edit the primary save data
+* Omega saves will be displayed as Echoes
+* The collections feature is not working
+
+### Added
+* Support for the save file format ([#147](https://github.com/zencq/NomNom/issues/147) [#149](https://github.com/zencq/NomNom/issues/149))
+* New freighter, weapon, and ship types
+
+### Changed
+* Updated name mapping to game version 4.50
+* Updated database to game version 4.50
+
+### Fixed
+* The `UpdateRegionsException`/`OutOfMemoryException` that appeared for some sometimes ([#137](https://github.com/zencq/NomNom/issues/137))
 
 # 4.40.0.34-beta.4 (2023-09-11)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.40.0.34-beta.4/total)

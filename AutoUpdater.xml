@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <item>
-  <version>4.40.0.34</version>
-  <url>https://github.com/zencq/NomNom/releases/download/4.40.0.34-beta.4/NomNom.zip</url>
+  <version>4.50.0.35</version>
+  <url>https://github.com/zencq/NomNom/releases/download/4.50.0.35-beta.5/NomNom.zip</url>
   <changelog>https://github.com/zencq/NomNom/releases</changelog>
-  <checksum algorithm="SHA256">BFF93E1B1E501A0130E98BD143473CDE2962C3F5B6410D999491C39CDEEC8B44</checksum>
+  <checksum algorithm="SHA256">0FDC2B40F0810AA8EFF661B8A832D09C909372FE1CD25B1780A54BEF4EE587AE</checksum>
 </item>

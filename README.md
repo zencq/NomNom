@@ -53,20 +53,6 @@ to have and (in my eyes) bad usability in some areas. I also wanted to have a pl
 where I can directly see how good my stats are, without searching through an online
 wiki or such. Therefore I started my own project for fun and here we are.
 
-## State of Development
-
-**The source code will propably be made available with the next big beta release.**
-
-<span style="color: orange;">**NomNom is currently in a beta state.** This means
-that now most things should run smoothly and stable. The UI will significantly change
-with the next big beta release though, as I will be switching the UI framework.
-This will also enable some exiting new things, so stay tuned for more information soon.
-If you still encounter anything not working correctly or still have suggestions,
-[let me know](#contact--support)!</span>
-
-The current roadmap contains new features that are to add before releasing NomNom
-as stable and calling it feature-complete.
-
 ## Features
 
 The features of NomNom can be divided into the different main parts you will see
