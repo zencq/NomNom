@@ -88,8 +88,8 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
 
 ### Compatibility
 
-The latest version of NomNom is built with **Echoes 4.40**
-in mind but is compatible with **Beyond 2.11** and up. If you use it with a game
+The latest version of NomNom is built with **Omega 4.50**
+in mind. Previous versions are compatible with **Beyond 2.11** and up. If you use it with a game
 version branch above (e.g. **5.00**), things should work as usual in most cases
 but there can always be a breaking change.
 

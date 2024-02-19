@@ -14,6 +14,20 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 4.50.1.36-beta.6 (2024-02-19)
+![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.50.1.36-beta.6/total)
+
+### Known Issues
+* pre-Omega saves are currently not supported and will crash if you try to load them
+* Expedition saves will only work if you started it from an existing save and even then, it is only possible to edit the primary save data
+* Omega saves will be displayed as Echoes
+* The collections feature is not working
+
+### Fixed
+* Crash when a stored path is not available (current, detected platform, stored defaults)
+* Crash when using one of the new types (`Couldn't find any enum member that matches the string ...`) ([#150](https://github.com/zencq/NomNom/issues/150))
+* Arithmetic overflow when values used to calculated WarpsToNextSpaceBattle are to far off
+
 # 4.50.0.35-beta.5 (2024-02-18)
 ![Downloads](https://img.shields.io/github/downloads/cengelha/nomnom/4.50.0.35-beta.5/total)
 
