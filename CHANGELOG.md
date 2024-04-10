@@ -14,6 +14,17 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 4.60.0.38-beta.8 (2024-04-10)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.60.0.38-beta.8/total)
+
+### Known Issues
+* Expedition saves will only work if you started it from an existing save and even
+  then, it is only possible to edit the primary save data
+* Not all parts of the *collections* feature are working
+
+### Changed
+* Updated database to game version 4.64
+
 # 4.50.2.37-beta.7 (2024-03-09)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.50.2.37-beta.7/total)
 
