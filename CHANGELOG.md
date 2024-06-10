@@ -14,6 +14,20 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 4.70.0.39-beta.9 (2024-06-10)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.0.39-beta.9/total)
+
+### Known Issues
+* Not all parts of the *collections* feature are working
+
+### Added
+* New ghostly frigate type
+
+### Changed
+* Updated database to game version 4.71
+* Expedition-only saves are now shown as incompatible until properly supported again
+* Tweaked the *Save Transfer* window a bit to improve UX
+
 # 4.60.0.38-beta.8 (2024-04-10)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.60.0.38-beta.8/total)
 
