@@ -1,8 +1,7 @@
 # CHANGELOG
 
 All notable changes to this project will be documented in this file. It uses the
-[Keep a Changelog](http://keepachangelog.com/en/1.0.0/) principles and its
-[own versioning](README.md#versioning).
+[Keep a Changelog](http://keepachangelog.com/en/1.0.0/) principles and its [own versioning](https://github.com/zencq/NomNom?tab=readme-ov-file#versioning).
 
 ## Unreleased
 
@@ -13,6 +12,23 @@ All notable changes to this project will be documented in this file. It uses the
 ### Removed
 ### Fixed
 ### Security
+
+# 4.70.1.40-beta.10 (2024-06-14)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.1.40-beta.10/total)
+
+### Known Issues
+* Not all parts of the *collections* feature are working
+* With the new save format, if saved with NomNom, save metadata are not correctly
+  shown in the *Manager* before loading a save if you do not use *Full* loading
+  strategy and restart NomNom without having the edited one saved in the game in
+  the meanwhile
+
+### Added
+* Experimental support for new save format
+
+### Fixed
+* Crash when opening *Add/Replace Item* and *Item Details* from an inventory ([#175](https://github.com/zencq/NomNom/issues/175))
+* Crash when the Atlas Staff is the selected weapon
 
 # 4.70.0.39-beta.9 (2024-06-10)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.0.39-beta.9/total)
@@ -38,6 +54,9 @@ All notable changes to this project will be documented in this file. It uses the
 
 ### Changed
 * Updated database to game version 4.64
+
+### Fixed
+* `RocketLockerInventory` is labeled `FireteamSessionCount` in JSON ([#165](https://github.com/zencq/NomNom/issues/165))
 
 # 4.50.2.37-beta.7 (2024-03-09)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.50.2.37-beta.7/total)
