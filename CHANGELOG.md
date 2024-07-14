@@ -13,6 +13,20 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 4.70.2.41-beta.11 (2024-07-14)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.2.41-beta.11/total)
+
+### Known Issues
+* Not all parts of the *collections* feature are working
+* With the new save format, if saved with NomNom, save metadata are not correctly
+  shown in the *Manager* before loading a save if you do not use *Full* loading
+  strategy and restart NomNom without having the edited one saved in the game in
+  the meanwhile
+
+### Fixed
+* Crash when Iron Vulture is the primary ship
+* Missing categories in the *Add/Replace Item* window ([#176](https://github.com/zencq/NomNom/issues/176))
+
 # 4.70.1.40-beta.10 (2024-06-14)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.1.40-beta.10/total)
 
