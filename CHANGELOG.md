@@ -13,6 +13,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 4.70.3.42-beta.12 (2024-07-21)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.3.42-beta.12/total)
+
+### Known Issues
+* Not all parts of the *collections* feature are working
+
+### Fixed
+* Changes made to account data not visible in-game ([#180](https://github.com/zencq/NomNom/issues/180))
+
 # 4.70.2.41-beta.11 (2024-07-14)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.2.41-beta.11/total)
 
