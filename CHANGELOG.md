@@ -13,6 +13,24 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 5.00.0.44-beta.13 (2024-07-26)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.0.44-beta.13/total)
+
+### Known Issues
+* Not all parts of the *collections* feature are working
+
+### Added
+* Support for changed save format on the Microsoft platform ([#186](https://github.com/zencq/NomNom/issues/186))
+
+### Changed
+* Improved UX for Synthesis Companion (Save)
+* Updated database to game version 5.01
+
+### Fixed
+* Rewards in Synthesis Companion not properly removed (could not redeem again)
+* Crash when clicking "Lock All" somewhere ([#181](https://github.com/zencq/NomNom/issues/181))
+* Crash when transferring saves between game version with different format ([#182](https://github.com/zencq/NomNom/issues/182))
+
 # 4.70.3.42-beta.12 (2024-07-21)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.3.42-beta.12/total)
 
