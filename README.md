@@ -74,8 +74,8 @@ Each version of NomNom is built with the latest game version (at that time) in m
 and the [version number](#versioning) is reflecting that. Each one is also backwards
 compatible down to **Beyond 2.11** and even saves before that can still be edited
 via the build-in JSON editor. If you use it with a newer game version branch than
-the one it was build for (e.g. **6.00**), things should work as usual in most cases
-but there can always be a breaking change.
+the one it was build for (e.g. you are using a NomNom 4.60 but your game is **4.72**),
+things should work as usual in most cases but there can always be a breaking change.
 
 Each game version is properly supported with its own set of available items and
 features so you do not have to worry about adding unavailable items.

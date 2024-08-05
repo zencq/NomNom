@@ -13,6 +13,23 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 5.00.1.45-beta.14 (2024-08-05)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.1.45-beta.14/total)
+
+### Changed
+* "Edit -> Export JSON" now also saves the output to "./json" ([#192](https://github.com/zencq/NomNom/issues/192))
+
+### Fixed
+* Collection features restored ([#103](https://github.com/zencq/NomNom/issues/103) [#172](https://github.com/zencq/NomNom/issues/172))
+* Crash when selecting first save directory ([#179](https://github.com/zencq/NomNom/issues/179))
+* Portal glyphs unlock order reversed ([#188](https://github.com/zencq/NomNom/issues/188))
+* Crash when opening transfer to Assistant for No Man's Sky app ([#173](https://github.com/zencq/NomNom/issues/173))
+* Crash with "Memory stream is not expandable." when trying to save ([#194](https://github.com/zencq/NomNom/issues/194))
+* Not getting the correct metadata size when transferring saves ([#189](https://github.com/zencq/NomNom/issues/189))
+* A few fields were not updated correctly in UI when changing something (e.g. Multi-Tool type)
+* Settlement perks not updating ([#167](https://github.com/zencq/NomNom/issues/167))
+* Changing a Frigate removes all traits ([#196](https://github.com/zencq/NomNom/issues/196))
+
 # 5.00.0.44-beta.13 (2024-07-26)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.0.44-beta.13/total)
 
