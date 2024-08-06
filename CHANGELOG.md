@@ -13,11 +13,17 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+# 5.00.2.46-beta.15 (2024-08-06)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.2.46-beta.15/total)
+
+### Fixed
+* Save *Edit* button being unresponsive ([#197](https://github.com/zencq/NomNom/issues/197))
+
 # 5.00.1.45-beta.14 (2024-08-05)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.1.45-beta.14/total)
 
 ### Changed
-* "Edit -> Export JSON" now also saves the output to "./json" ([#192](https://github.com/zencq/NomNom/issues/192))
+* The menu *Edit -> Export JSON* now also saves the output to `./json` ([#192](https://github.com/zencq/NomNom/issues/192))
 
 ### Fixed
 * Collection features restored ([#103](https://github.com/zencq/NomNom/issues/103) [#172](https://github.com/zencq/NomNom/issues/172))
