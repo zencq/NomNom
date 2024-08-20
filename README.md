@@ -73,9 +73,10 @@ More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree
 Each version of NomNom is built with the latest game version (at that time) in mind
 and the [version number](#versioning) is reflecting that. Each one is also backwards
 compatible down to **Beyond 2.11** and even saves before that can still be edited
-via the build-in JSON editor. If you use it with a newer game version branch than
-the one it was build for (e.g. you are using a NomNom 4.60 but your game is **4.72**),
-things should work as usual in most cases but there can always be a breaking change.
+via the built-in JSON editor. If you use NomNom with a newer game version branch
+than the one it was build for (e.g. your NomNom version starts with **4.60** but
+your game is **Adrift 4.72**), things should work as usual in most cases but there
+can always be a breaking change.
 
 Each game version is properly supported with its own set of available items and
 features so you do not have to worry about adding unavailable items.
@@ -88,8 +89,28 @@ or, for platforms on PC, one level above if you have multiple accounts.
 
 ### Requirements
 
-You just need to install the **[.NET 6 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)**
-and that is it.
+You need to install the **[.NET 6 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)**
+and the [WebView2 Runtime](https://developer.microsoft.com/de-de/microsoft-edge/webview2).
+That is it.
+
+If you choose to download the setup, all requirements will be automatically installed
+if missing.
+
+NomNom is signed with a (self-signed) certificate. As this is a free app, it is
+currently way to expensive to purchase one from an official source but if you install
+this one manually, it has the same effect: Getting rid of the Windows security
+warnings.
+
+You can install it as follows:
+* Download the `zencq.cer` file from [here](https://github.com/zencq/NomNom/blob/master/zencq.cer)
+* Open the downloaded file
+* Click *Install Certificate*
+* Follow the wizard to install it. Use the suggested config below or adjust as you
+  like.
+  * Select *Current User* then Next
+  * Click *Place all certificates in the following store* then *Browse*
+  * Select *Trusted People* then OK
+  * Click Next, then Finish
 
 ### Download
 
@@ -112,14 +133,19 @@ and that is it.
 
 ## Versioning
 
-The versioning is oriented on the game version itself:
+The versioning is oriented on/a mix of the game version itself and [SemVer](https://semver.org/):
 
 * _Major_ mirrors the games major version.
 * _Minor_ mirrors the games initial minor version of named updates
   (e.g. **Synthesis 2.20** or **Outlaws 3.85**).
-* _Patch_ is for every release between two named updates, including new features,
-  bug fixes, updated game assets, etc.
-* _Revision_ serves as public release counter.
+* _Patch_ is for every release between two named updates and can include everything
+  from new features, to bug fixes, and other updated stuff.
+
+This is for stable releases but there can also be pre-releases with following
+suffix schema that indicates its maturity.
+
+* _Beta_ will increase the first digit and be resets the second one to 0 (e.g. `-pre.1.0`)
+* _Development_ will just increase the second digit of the previous release (e.g. `-pre.1.1`)
 
 ## History
 

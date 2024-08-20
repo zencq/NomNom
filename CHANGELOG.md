@@ -13,6 +13,28 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.00.3 (2024-08-20)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.3/total)
+
+### Added
+* Code is now signed with a (self-signed) certificate
+  * Check the [requirements](https://github.com/zencq/NomNom?tab=readme-ov-file#requirements) to learn more about it
+
+### Changed
+* Using a new updater
+  * Multiple release channels (relevant soon™)
+  * [Delta updates](https://en.wikipedia.org/wiki/Delta_update)
+  * Choose between portable (as before) and installation
+    * Path for installation is `%LocalAppData%\NomNom\`
+    * When updating, portable is used
+* Migrated settings file from `.\portable.config` to `%LocalAppData%\NomNom\config\settings.json`
+
+### Fixed
+* *Import JSON* via *Edit* menu for plaintext files ([#198](https://github.com/zencq/NomNom/issues/198))
+* A crash when clicking *Clear Terrain Edit* ([#199](https://github.com/zencq/NomNom/issues/199))
+* Multi-Tool types not displayed correctly for newer types
+* Catalogue Items wont select ([#203](https://github.com/zencq/NomNom/issues/203))
+
 # 5.00.2.46-beta.15 (2024-08-06)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.2.46-beta.15/total)
 
