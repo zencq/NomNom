@@ -13,6 +13,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.10.0 (2024-09-04)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.10.0/total)
+
+### Changed
+* Updated database to game version 5.10
+
+### Fixed
+* *Lock/Unlock All** for Portal Glyphs modifies Crafted Products ([#208](https://github.com/zencq/NomNom/issues/208))
+
 ## 5.00.3 (2024-08-20)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.3/total)
 
