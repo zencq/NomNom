@@ -13,6 +13,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.10.1 (2024-09-05)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.10.1/total)
+
+### Fixed
+* Settings being reset after an update
+* Crash/Unresponsive when clicking on *Edit* ([#211](https://github.com/zencq/NomNom/issues/211))
+* Save file shows "GAMEMODE_Invalid" after editing JSON ([#207](https://github.com/zencq/NomNom/issues/207))
+* Expedition name not shown properly in *Manager*
+
 ## 5.10.0 (2024-09-04)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.10.0/total)
 
