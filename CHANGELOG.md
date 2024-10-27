@@ -13,6 +13,19 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.20.0 (2024-10-27)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.0/total)
+
+### Known Issues
+* Collection feature will only work properly when using the primary context
+
+### Changed
+* Updated database to game version 5.20
+* Save editing now uses the current context (primary/expedition)
+    * You can now edit expedition (only) saves again
+    * It shows you at the top which context is used
+    * Switching contexts on the fly will be added in a future version
+
 ## 5.10.1 (2024-09-05)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.10.1/total)
 
