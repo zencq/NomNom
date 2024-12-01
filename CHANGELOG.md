@@ -13,6 +13,19 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.20.1 (2024-12-01)
+
+### Added
+* New settings to underfill inventory slots ([Discord](https://discord.com/channels/762409407488720918/1296885281957347398))
+* Showing saves names in save selection ([#222](https://github.com/zencq/NomNom/issues/222) [Discord](https://discord.com/channels/762409407488720918/1084919302358061086))
+
+### Changed
+* Updated database to game version 5.27
+
+### Fixed
+* Technology packages gone from the inventory after editing ([#210](https://github.com/zencq/NomNom/issues/210))
+* Some `Couldn't find any enum member that matches the integer -1` errors ([#216](https://github.com/zencq/NomNom/issues/216) [#221](https://github.com/zencq/NomNom/issues/221))
+
 ## 5.20.0 (2024-10-27)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.0/total)
 
@@ -20,7 +33,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Collection feature will only work properly when using the primary context
 
 ### Changed
-* Updated database to game version 5.20
+* Updated database to game version 5.20 ([#218](https://github.com/zencq/NomNom/issues/218))
 * Save editing now uses the current context (primary/expedition)
     * You can now edit expedition (only) saves again
     * It shows you at the top which context is used
