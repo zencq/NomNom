@@ -1,6 +1,6 @@
 # NomNom
 
-![Maintained](https://img.shields.io/maintenance/yes/2024)
+![Maintained](https://img.shields.io/maintenance/yes/2025)
 ![Platform](https://img.shields.io/badge/platform-windows-lightgrey)
 [![GitHub Release](https://img.shields.io/github/v/release/zencq/NomNom?logo=github)](https://github.com/zencq/nomnom/releases/latest)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/total)
