@@ -13,11 +13,32 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
-## 5.20.1 (2024-12-01)
+## 5.20.3 (2025-01-17)
 
 ### Added
-* New settings to underfill inventory slots ([Discord](https://discord.com/channels/762409407488720918/1296885281957347398))
-* Showing saves names in save selection ([#222](https://github.com/zencq/NomNom/issues/222) [Discord](https://discord.com/channels/762409407488720918/1084919302358061086))
+* Starborn Phoenix starship
+
+### Changed
+* Updated database to game version 5.29
+* Changed Boundary Herald starship from fighter to explorer type (see [nomanssky.fandom.com](https://nomanssky.fandom.com/wiki/Boundary_Herald))
+
+### Fixed
+* Some packaged technology that was not properly detected still disappeared ([#122](https://github.com/zencq/NomNom/issues/122))
+* Portable version could not handle `=` in the path ([#215](https://github.com/zencq/NomNom/issues/215))
+* Crash when `api.github.com` is not accessible ([#227](https://github.com/zencq/NomNom/issues/227))
+
+## 5.20.2 (2024-12-01)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.2/total)
+
+### Fixed
+* Program not starting after updated to 5.20.1 (corrupted package)
+
+## 5.20.1 (2024-12-01)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.1/total)
+
+### Added
+* New settings to underfill inventory slots ([Discord#1296885281957347398](https://discord.com/channels/762409407488720918/1296885281957347398))
+* Showing saves names in save selection ([#222](https://github.com/zencq/NomNom/issues/222) [Discord#1084919302358061086](https://discord.com/channels/762409407488720918/1084919302358061086))
 
 ### Changed
 * Updated database to game version 5.27
