@@ -112,6 +112,10 @@ You can install it as follows:
   * Select *Trusted People* then OK
   * Click Next, then Finish
 
+Currently NomNom is only officially supported on Windows but a confirmed way of
+using it with _Linux_ is to go to [flathub.org](https://flathub.org/), install [WineZGUI](https://flathub.org/apps/io.github.fastrizwaan.WineZGUI)
+, and then just launching the NomNom installer.
+
 ### Download
 
 * [GitHub](https://github.com/zencq/NomNom/releases)

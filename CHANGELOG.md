@@ -13,7 +13,22 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.50.0 (2025-02-09)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.50.0/total)
+
+### Added
+* The Wraith starship
+* Pillar of Titan staff
+
+### Changed
+* Updated database to game version 5.53
+* A few things under the hood to adapt to the changes in **Worlds Part II 5.50**
+
+### Fixed
+* Crash when using Microsoft platform with 5.50 and up ([#232](https://github.com/zencq/NomNom/issues/232))
+
 ## 5.20.3 (2025-01-17)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.3/total)
 
 ### Added
 * Starborn Phoenix starship
