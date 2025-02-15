@@ -13,6 +13,16 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.50.1 (2025-02-15)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.50.1/total)
+
+### Added
+* Proper support for Worlds Part II patch 5.53+ with updated save format
+
+### Fixed
+* Crash when having a really high play time (`Value was either too large or too small for an Int32.`)
+* Hotfix for the disabled scrollbar in areas where it is needed (e.g. *Milestones*) by limiting the height
+
 ## 5.50.0 (2025-02-09)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.50.0/total)
 
