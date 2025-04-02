@@ -13,6 +13,15 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.60.0 (2025-04-02)
+![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.60.0/total)
+
+### Added
+* Basilisk Crown staff
+
+### Changed
+* Updated database to game version 5.61
+
 ## 5.50.1 (2025-02-15)
 ![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.50.1/total)
 
