@@ -27,9 +27,6 @@ on:
       - Generate Badges
     types:
       - completed
-    jobs:
-      - build-site
-      - generate-badges-downloads
 
 jobs:
   deploy:
@@ -44,32 +41,44 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Debug (1/2)
-        uses: actions/download-artifact@v4
-        with:
-          path: _debug/
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Debug (2/2)
-        run: |
-          ls -R _debug/
-
-      - name: Download (Content)
-        uses: actions/download-artifact@v4
+      - name: Restore Previous WASM Cache
+        uses: actions/cache@v4
         with:
-          name: pages-content
           path: site/html/
+          # TODO: later use csproj? it contains the version
+          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
+          restore-keys: |
+            wasm-
 
-      - name: Download (Badges)
-        uses: actions/download-artifact@v4
+      - name: Restore Previous Badge Cache
+        uses: actions/cache@v4
         with:
-          name: pages-badges
           path: site/badges/
+          key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
+          restore-keys: |
+            badges-downloads-
 
-      - name: Merge and Prepare Pages
-        run: |
-          mkdir site
-          cp -r site/html/* site/
-          cp -r site/badges/* site/
+
+      # - name: Download (Content)
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: pages-content
+      #     path: site/html/
+
+      # - name: Download (Badges)
+      #   uses: actions/download-artifact@v4
+      #   with:
+      #     name: pages-badges
+      #     path: site/badges/
+
+      # - name: Merge and Prepare Pages
+      #   run: |
+      #     mkdir site
+      #     cp -r site/html/* site/
+      #     cp -r site/badges/* site/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -77,7 +77,6 @@ jobs:
           key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
           restore-keys: |
             badges-downloads-
-            badges-
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -117,9 +116,9 @@ jobs:
           mkdir -p .cache
           cp site/badges/downloads/*.json .cache/
 
-      - name: Upload
-        if: env.skip_deploy != 'true'
-        uses: actions/upload-artifact@v4
-        with:
-          name: pages-badges
-          path: site/badges/
+      # - name: Upload
+      #   if: env.skip_deploy != 'true'
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: pages-badges
+      #     path: site/badges/
