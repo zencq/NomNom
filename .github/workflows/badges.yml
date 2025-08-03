@@ -94,6 +94,7 @@ jobs:
             echo "skip_deploy=true" >> $GITHUB_ENV
           else
             echo "skip_deploy=false" >> $GITHUB_ENV
+          fi
 
       - name: Upload
         if: env.skip_deploy != 'true'
