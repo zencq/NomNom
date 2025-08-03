@@ -27,6 +27,9 @@ on:
       - Generate Badges
     types:
       - completed
+    jobs:
+      - build-site
+      - generate-badges-downloads
 
 jobs:
   deploy:
