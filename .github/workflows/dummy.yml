@@ -1,0 +1,17 @@
+name: Build Site Dummy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: echo "<html><h1>NomNom</h1></html>" > site/html/index.html
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-content
+          path: site/html

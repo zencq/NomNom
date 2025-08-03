@@ -1,4 +1,4 @@
-name: Generate badges and deploy to GitHub Pages
+name: Generate Badges
 
 on:
   schedule:
@@ -30,22 +30,52 @@ on:
 #           publish_dir: ./badges
 #           destination_dir: badges
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+# # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: false
+
+# jobs:
+#   # Build job
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+
+#       - name: Setup (Pages)
+#         uses: actions/configure-pages@v5
+
+#       - name: Setup (Python)
+#         uses: actions/setup-python@v5
+#         with:
+#           python-version: '3.x'
+
+#       - name: Dependencies
+#         run: pip install numerize requests
+
+#       - name: Generate
+#         run: python ./.github/workflows/scripts/generate_downloads_badges.py
+
+#       - name: Upload artifact
+#         uses: actions/upload-pages-artifact@v3
+#         with:
+#           path: ./output/
 
 jobs:
-  # Build job
-  build:
+  generate-badges:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup (Pages)
-        uses: actions/configure-pages@v5
+      - name: Cache
+        uses: actions/cache@v4
+        with:
+          path: site/badges
+          key: badge-json-${{ hashFiles('.github/workflows/scripts/generate_downloads_badges.py') }}
+          restore-keys: badge-json-
 
       - name: Setup (Python)
         uses: actions/setup-python@v5
@@ -53,30 +83,21 @@ jobs:
           python-version: '3.x'
 
       - name: Dependencies
-        run: pip install requests
+        run: pip install numerize requests
 
       - name: Generate
-        run: python ./.github/workflows/scripts/generate_download_badges.py
+        run: python .github/workflows/scripts/generate_downloads_badges.py
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Detect
+        run: |
+          if git diff --quiet site/badges; then
+            echo "skip_deploy=true" >> $GITHUB_ENV
+          else
+            echo "skip_deploy=false" >> $GITHUB_ENV
+
+      - name: Upload
+        if: env.skip_deploy != 'true'
+        uses: actions/upload-artifact@v4
         with:
-          path: ./badges/
-
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-
-    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          name: pages-badges
+          path: site/badges/

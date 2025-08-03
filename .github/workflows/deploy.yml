@@ -1,0 +1,72 @@
+# jobs:
+#   # Deployment job
+#   deploy:
+#     environment:
+#       name: github-pages
+#       url: ${{ steps.deployment.outputs.page_url }}
+#     runs-on: ubuntu-latest
+#     needs: build
+
+#     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+#     permissions:
+#       pages: write      # to deploy to Pages
+#       id-token: write   # to verify the deployment originates from an appropriate source
+
+#     steps:
+#       - name: Deploy to GitHub Pages
+#         id: deployment
+#         uses: actions/deploy-pages@v4
+
+
+name: Deploy Pages
+
+on:
+  workflow_run:
+    workflows:
+      - Build Site Dummy
+      - Generate Badges
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Download (Content)
+        uses: actions/download-artifact@v4
+        with:
+          name: pages-content
+          path: site/html/
+
+      - name: Download (Badges)
+        uses: actions/download-artifact@v4
+        with:
+          name: pages-badges
+          path: site/badges/
+
+      - name: Merge and Prepare Pages
+        run: |
+          mkdir site
+          cp -r site/html/* site/
+          cp -r site/badges/* site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
