@@ -49,21 +49,22 @@ jobs:
         id: cache-restore-wasm
         uses: actions/cache/restore@v4
         with:
-          fail-on-cache-miss: true
+          # fail-on-cache-miss: true
           path: site/html/
           key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
-          # restore-keys: |
-          #   wasm-
+          restore-keys: |
+            wasm-
 
       - name: Restore Previous Badge Cache
         id: cache-restore-badges
         uses: actions/cache/restore@v4
         with:
-          fail-on-cache-miss: true
+          # fail-on-cache-miss: true
+          lookup-only: true
           path: site/badges/
           key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
-          # restore-keys: |
-          #   badges-downloads-
+          restore-keys: |
+            badges-downloads-
 
       - name: Validate folder presence
         run: |
