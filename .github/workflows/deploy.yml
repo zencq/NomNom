@@ -47,23 +47,43 @@ jobs:
 
       - name: Restore Previous WASM Cache
         id: cache-restore-wasm
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
+          fail-on-cache-miss: true
           path: site/html/
           key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
-          restore-keys: |
-            wasm-
+          # restore-keys: |
+          #   wasm-
 
       - name: Restore Previous Badge Cache
         id: cache-restore-badges
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
+          fail-on-cache-miss: true
           path: site/badges/
           key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
-          restore-keys: |
-            badges-downloads-
+          # restore-keys: |
+          #   badges-downloads-
 
-      # TODO: check if both caches were restored, if so, continue
+      - name: Validate folder presence
+        run: |
+          missing=false
+
+          if [ ! -d "site/html" ]; then
+            echo "❌ site/html is missing"
+            missing=true
+          fi
+
+          if [ ! -d "site/badges" ]; then
+            echo "❌ site/badges is missing"
+            missing=true
+          fi
+
+          if [ "$missing" = true ]; then
+            exit 1
+          else
+            echo "✅ Both folders are present"
+          fi
 
       # - name: Download (Content)
       #   uses: actions/download-artifact@v4
