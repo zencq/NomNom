@@ -1,0 +1,31 @@
+name: Generate badges and deploy to GitHub Pages
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # daily at midnight
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup (Python)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Dependencies
+        run: pip install requests
+
+      - name: Generate
+        run: python scripts/generate_download_badges.py
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./badges
+          destination_dir: badges
