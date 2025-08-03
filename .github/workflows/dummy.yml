@@ -10,6 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug
+        run: |
+          echo "REF: $GITHUB_REF_NAME"
+
+
       - name: Restore Previous Badge Cache
         uses: actions/cache/restore@v4
         with:
