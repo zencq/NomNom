@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run: echo "<html><h1>NomNom</h1></html>" > site/html/index.html
+        run: |
+          mkdir -p site/html
+          echo "<html><h1>NomNom</h1></html>" > site/html/index.html
 
       - name: Upload
         uses: actions/upload-artifact@v4
