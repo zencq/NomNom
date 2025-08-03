@@ -21,7 +21,7 @@ jobs:
         run: pip install requests
 
       - name: Generate
-        run: python scripts/generate_download_badges.py
+        run: python ./.github/workflows/scripts/generate_download_badges.py
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
