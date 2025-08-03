@@ -45,6 +45,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Restore Previous WASM Cache
+        id: cache-restore-wasm
         uses: actions/cache@v4
         with:
           path: site/html/
@@ -54,6 +55,7 @@ jobs:
             wasm-
 
       - name: Restore Previous Badge Cache
+        id: cache-restore-badges
         uses: actions/cache@v4
         with:
           path: site/badges/
@@ -81,13 +83,16 @@ jobs:
       #     cp -r site/badges/* site/
 
       - name: Setup Pages
+        if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages Artifact
+        if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
       - name: Deploy to GitHub Pages
+        if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
         id: deployment
         uses: actions/deploy-pages@v4

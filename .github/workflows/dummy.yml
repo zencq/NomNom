@@ -24,7 +24,7 @@ jobs:
       - name: Save New Badge Files to Cache
         run: |
           mkdir -p .cache
-          cp site/html/ .cache/
+          cp -r site/html/ .cache/
 
       # - name: Upload
       #   uses: actions/upload-artifact@v4
