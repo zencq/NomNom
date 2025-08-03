@@ -42,22 +42,26 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      # - name: Checkout
-      #   uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Restore Previous WASM Cache
         id: cache-restore-wasm
         uses: actions/cache@v4
         with:
           path: site/html/
-          key: wasm-
+          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
+          restore-keys: |
+            wasm-
 
       - name: Restore Previous Badge Cache
         id: cache-restore-badges
         uses: actions/cache@v4
         with:
           path: site/badges/
-          key: badges-downloads-
+          key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
+          restore-keys: |
+            badges-downloads-
 
       # TODO: check if both caches were restored, if so, continue
 

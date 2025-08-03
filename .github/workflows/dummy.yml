@@ -7,13 +7,18 @@ jobs:
   build-site:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Restore Previous Badge Cache
         uses: actions/cache@v4
         with:
           path: .cache
           # TODO: later use csproj? it contains the version
           # TODO: no hashFiles? only runs if release
-          key: wasm-
+          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
+          restore-keys: |
+            wasm-
 
       - name: Build
         run: |
