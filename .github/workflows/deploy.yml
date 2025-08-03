@@ -44,6 +44,15 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
+      - name: Debug (1/2)
+        uses: actions/download-artifact@v4
+        with:
+          path: _debug/
+
+      - name: Debug (2/2)
+        run: |
+          ls -R _debug/
+
       - name: Download (Content)
         uses: actions/download-artifact@v4
         with:
