@@ -21,12 +21,13 @@
 name: Deploy Pages
 
 on:
-  workflow_run:
-    workflows:
-      - Build Site Dummy
-      - Generate Badges
-    types:
-      - completed
+  workflow_call:
+  # workflow_run:
+  #   workflows:
+  #     - Build Site Dummy
+  #     - Generate Badges
+  #   types:
+  #     - completed
 
 jobs:
   deploy:
@@ -41,28 +42,24 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      # - name: Checkout
+      #   uses: actions/checkout@v4
 
       - name: Restore Previous WASM Cache
         id: cache-restore-wasm
         uses: actions/cache@v4
         with:
           path: site/html/
-          # TODO: later use csproj? it contains the version
-          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
-          restore-keys: |
-            wasm-
+          key: wasm-
 
       - name: Restore Previous Badge Cache
         id: cache-restore-badges
         uses: actions/cache@v4
         with:
           path: site/badges/
-          key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
-          restore-keys: |
-            badges-downloads-
+          key: badges-downloads-
 
+      # TODO: check if both caches were restored, if so, continue
 
       # - name: Download (Content)
       #   uses: actions/download-artifact@v4
@@ -83,16 +80,16 @@ jobs:
       #     cp -r site/badges/* site/
 
       - name: Setup Pages
-        if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
+        # if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages Artifact
-        if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
+        # if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
       - name: Deploy to GitHub Pages
-        if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
+        # if: steps.cache-restore-wasm.outputs.cache-hit == 'true' && steps.cache-restore-badges.outputs.cache-hit == 'true'
         id: deployment
         uses: actions/deploy-pages@v4

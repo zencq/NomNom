@@ -122,3 +122,8 @@ jobs:
       #   with:
       #     name: pages-badges
       #     path: site/badges/
+
+
+  deploy:
+    needs: [generate-badges-downloads]
+    uses: ./.github/workflows/deploy.yml

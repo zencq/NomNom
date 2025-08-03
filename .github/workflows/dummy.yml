@@ -12,14 +12,13 @@ jobs:
         with:
           path: .cache
           # TODO: later use csproj? it contains the version
-          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
-          restore-keys: |
-            wasm-
+          # TODO: no hashFiles? only runs if release
+          key: wasm-
 
       - name: Build
         run: |
           mkdir -p site/html
-          echo "<html><h1>NomNom (1)</h1></html>" > site/html/index.html
+          echo "<html><h1>NomNom (2)</h1></html>" > site/html/index.html
 
       - name: Save New Badge Files to Cache
         run: |
@@ -31,3 +30,7 @@ jobs:
       #   with:
       #     name: pages-content
       #     path: site/html
+
+  deploy:
+    needs: [build-site]
+    uses: ./.github/workflows/deploy.yml
