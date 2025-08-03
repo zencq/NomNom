@@ -64,37 +64,58 @@ on:
 #           path: ./output/
 
 jobs:
-  generate-badges:
+  generate-badges-downloads:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cache
+      - name: Restore Previous Badge Cache
         uses: actions/cache@v4
         with:
-          path: site/badges
-          key: badge-json-${{ hashFiles('.github/workflows/scripts/generate_downloads_badges.py') }}
-          restore-keys: badge-json-
+          path: .cache
+          key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
+          restore-keys: |
+            badges-downloads-
+            badges-
 
-      - name: Setup (Python)
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Dependencies
+      - name: Install Python Dependencies
         run: pip install numerize requests
 
-      - name: Generate
-        run: python .github/workflows/scripts/generate_downloads_badges.py
+      # script creates directory site/badges/downloads
+      - name: Generate Badges
+        run: python .github/workflows/scripts/generate_badges_downloads.py
 
-      - name: Detect
+      - name: Detect Changes in Badge Files
         run: |
-          if git diff --quiet site/badges; then
-            echo "skip_deploy=true" >> $GITHUB_ENV
-          else
-            echo "skip_deploy=false" >> $GITHUB_ENV
-          fi
+          mkdir -p .cache
+          skip=true
+          for file in site/badges/downloads/*.json; do
+            filename=$(basename "$file")
+            if [ -f ".cache/$filename" ]; then
+              if cmp -s ".cache/$filename" "$file"; then
+                echo "$filename: No change."
+              else
+                echo "$filename: Changed."
+                skip=false
+              fi
+            else
+              echo "$filename: No cache found. Will deploy."
+              skip=false
+            fi
+          done
+          echo "skip_deploy=$( $skip )" >> $GITHUB_ENV
+
+      - name: Save New Badge Files to Cache
+        if: env.skip_deploy != 'true'
+        run: |
+          mkdir -p .cache
+          cp site/badges/downloads/*.json .cache/
 
       - name: Upload
         if: env.skip_deploy != 'true'
