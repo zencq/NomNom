@@ -22,9 +22,6 @@ jobs:
           merge-multiple: true
           path: ${{ inputs.identifier }}
 
-      - name: Display structure of downloaded files
-        run: ls -R ${{ inputs.identifier }}
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v4

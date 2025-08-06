@@ -12,14 +12,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Restore Previous Badge Cache
-        uses: actions/cache@v4
-        with:
-          path: .cache
-          key: badges-downloads-${{ hashFiles('.github/workflows/scripts/generate_badges_downloads.py') }}
-          restore-keys: |
-            badges-downloads-
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -32,63 +24,36 @@ jobs:
       - name: Generate Badges
         run: python .github/workflows/scripts/generate_badges_downloads.py
 
-      - name: Detect Changes in Badge Files
-        run: |
-          mkdir -p .cache  # ensure cache directory exists
-          do_deployment=false
-          for file in gh-pages/badges/downloads/*.json; do
-            filename=$(basename "$file")
-            if [ -f ".cache/$filename" ]; then
-              if ! cmp -s ".cache/$filename" "$file"; then
-                echo "$filename: Cache differs."
-                do_deployment=true
-              fi
-            else
-              echo "$filename: Cache not found."
-                do_deployment=true
-            fi
-          done
-          echo "do_deployment=$do_deployment" >> $GITHUB_ENV
-
-      - name: Update Cache
-        if: env.do_deployment == 'true'
-        run: |
-          mkdir -p .cache
-          cp gh-pages/badges/downloads/*.json .cache/
-
       - name: Upload Artifact
-        if: env.do_deployment == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: gh-pages-badges-downloads
           path: gh-pages/badges/
 
-  generate-badges-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # Example job for generating a second set of badges. Do not forget to add to "needs" of the actual deploy job below.
+  # generate-badges-test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+  #     - name: Setup Python
+  #       uses: actions/setup-python@v5
+  #       with:
+  #         python-version: '3.x'
 
-      - name: Build
-        run: mkdir -p gh-pages/badges
+  #     # script creates directory gh-pages/badges/test
+  #     - name: Generate Badges
+  #       run: python .github/workflows/scripts/generate_badges_test.py
 
-      # script creates directory gh-pages/badges/test
-      - name: Generate Badges
-        run: python .github/workflows/scripts/generate_badges_test.py
+  #     - name: Upload Artifact
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: gh-pages-badges-test
+  #         path: gh-pages/badges/
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: gh-pages-badges-test
-          path: gh-pages/badges/
-
-  deploy:
-    needs: [generate-badges-downloads, generate-badges-test]
+  deploy-pages:
+    needs: [generate-badges-downloads]
     uses: ./.github/workflows/deploy-pages.yml
     with:
       identifier: "badges"
