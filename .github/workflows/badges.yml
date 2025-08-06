@@ -39,8 +39,7 @@ jobs:
           for file in gh-pages/badges/downloads/*.json; do
             filename=$(basename "$file")
             if [ -f ".cache/$filename" ]; then
-              if cmp -s ".cache/$filename" "$file"; then
-              else
+              if ! [ cmp -s ".cache/$filename" "$file" ]; then
                 echo "$filename: Cache differs."
                 do_deployment=true
               fi
