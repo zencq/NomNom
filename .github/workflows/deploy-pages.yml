@@ -13,9 +13,10 @@ concurrency:
 
 jobs:
   deploy:
+    name: Deployment
     runs-on: ubuntu-latest
     steps:
-      - name: Download Artifact
+      - name: Download artifacts
         uses: actions/download-artifact@v5
         with:
           pattern: gh-pages-${{ inputs.identifier }}*  # not -* as releases do not have a suffix
@@ -23,7 +24,6 @@ jobs:
           path: ${{ inputs.identifier }}
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

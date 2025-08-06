@@ -7,24 +7,25 @@ on:
 
 jobs:
   generate-badges-downloads:
+    name: Downloads
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install Python Dependencies
+      - name: Install Python dependencies
         run: pip install numerize requests
 
       # script creates directory gh-pages/badges/downloads
-      - name: Generate Badges
+      - name: Generate badges
         run: python .github/workflows/scripts/generate_badges_downloads.py
 
-      - name: Upload Artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: gh-pages-badges-downloads
@@ -37,22 +38,23 @@ jobs:
   #     - name: Checkout
   #       uses: actions/checkout@v4
 
-  #     - name: Setup Python
+  #     - name: Set up Python
   #       uses: actions/setup-python@v5
   #       with:
   #         python-version: '3.x'
 
   #     # script creates directory gh-pages/badges/test
-  #     - name: Generate Badges
+  #     - name: Generate badges
   #       run: python .github/workflows/scripts/generate_badges_test.py
 
-  #     - name: Upload Artifact
+  #     - name: Upload artifact
   #       uses: actions/upload-artifact@v4
   #       with:
   #         name: gh-pages-badges-test
   #         path: gh-pages/badges/
 
   deploy-pages:
+    name: Deploy Badges
     needs: [generate-badges-downloads]
     uses: ./.github/workflows/deploy-pages.yml
     with:

@@ -19,6 +19,7 @@ jobs:
           path: gh-pages/wwwroot
 
   deploy:
+    name: Deploy Site
     needs: [build]
     uses: ./.github/workflows/deploy-pages.yml
     with:
