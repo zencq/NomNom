@@ -7,7 +7,7 @@ from numerize import numerize
 OWNER = "zencq"
 REPO = "NomNom"
 
-OUTPUT_DIR = "site/badges/downloads"
+OUTPUT_DIR = "gh-pages/badges/downloads"
 PER_PAGE = 100  # max allowed by GitHub
 
 

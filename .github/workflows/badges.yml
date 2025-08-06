@@ -5,76 +5,12 @@ on:
     - cron: '0 0 * * *'  # daily at midnight
   workflow_dispatch:
 
-# jobs:
-#   build-and-deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v4
-
-#       - name: Setup (Python)
-#         uses: actions/setup-python@v5
-#         with:
-#           python-version: '3.x'
-
-#       - name: Dependencies
-#         run: pip install requests
-
-#       - name: Generate
-#         run: python ./.github/workflows/scripts/generate_download_badges.py
-
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v4
-#         with:
-#           github_token: ${{ secrets.GITHUB_TOKEN }}
-#           publish_dir: ./badges
-#           destination_dir: badges
-
-# # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-# concurrency:
-#   group: "pages"
-#   cancel-in-progress: false
-
-# jobs:
-#   # Build job
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v4
-
-#       - name: Setup (Pages)
-#         uses: actions/configure-pages@v5
-
-#       - name: Setup (Python)
-#         uses: actions/setup-python@v5
-#         with:
-#           python-version: '3.x'
-
-#       - name: Dependencies
-#         run: pip install numerize requests
-
-#       - name: Generate
-#         run: python ./.github/workflows/scripts/generate_downloads_badges.py
-
-#       - name: Upload artifact
-#         uses: actions/upload-pages-artifact@v3
-#         with:
-#           path: ./output/
-
 jobs:
   generate-badges-downloads:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-
-      - name: Debug
-        run: |
-          echo "REF: $GITHUB_REF_NAME"
-
 
       - name: Restore Previous Badge Cache
         uses: actions/cache@v4
@@ -92,7 +28,7 @@ jobs:
       - name: Install Python Dependencies
         run: pip install numerize requests
 
-      # script creates directory site/badges/downloads
+      # script creates directory gh-pages/badges/downloads
       - name: Generate Badges
         run: python .github/workflows/scripts/generate_badges_downloads.py
 
@@ -100,7 +36,7 @@ jobs:
         run: |
           mkdir -p .cache
           skip=true
-          for file in site/badges/downloads/*.json; do
+          for file in gh-pages/badges/downloads/*.json; do
             filename=$(basename "$file")
             if [ -f ".cache/$filename" ]; then
               if cmp -s ".cache/$filename" "$file"; then
@@ -116,20 +52,42 @@ jobs:
           done
           echo "skip_deploy=$( $skip )" >> $GITHUB_ENV
 
-      - name: Save New Badge Files to Cache
+      - name: Update Cache
         if: env.skip_deploy != 'true'
         run: |
           mkdir -p .cache
-          cp site/badges/downloads/*.json .cache/
+          cp gh-pages/badges/downloads/*.json .cache/
 
-      # - name: Upload
-      #   if: env.skip_deploy != 'true'
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: pages-badges
-      #     path: site/badges/
+      - name: Upload Artifact
+        if: env.skip_deploy != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: gh-pages-badges-downloads
+          path: gh-pages/badges/
 
+  generate-badges-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # script creates directory gh-pages/badges/test
+      - name: Generate Badges
+        run: python .github/workflows/scripts/generate_badges_test.py
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: gh-pages-badges-test
+          path: gh-pages/badges/
 
   deploy:
     needs: [generate-badges-downloads]
     uses: ./.github/workflows/deploy.yml
+    with:
+      identifier: "badges"

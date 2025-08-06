@@ -1,52 +1,28 @@
-name: Build Site Dummy
+name: Build Dummy Site
 
 on:
   workflow_dispatch:
 
 jobs:
-  build-site:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Debug
-        run: |
-          echo "REF: $GITHUB_REF_NAME"
-
-
-      - name: Restore Previous Badge Cache
-        uses: actions/cache/restore@v4
-        with:
-          path: .cache
-          # TODO: later use csproj? it contains the version
-          # TODO: no hashFiles? only runs if release
-          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
-          restore-keys: |
-            wasm-
+      # - name: Checkout
+      #   uses: actions/checkout@v4
 
       - name: Build
         run: |
-          mkdir -p site/html
-          echo "<html><h1>NomNom (2)</h1></html>" > site/html/index.html
+          mkdir -p gh-pages/wwwroot
+          echo "<html><h1>NomNom (2)</h1></html>" > gh-pages/wwwroot/index.html
 
-      - name: Save New Badge Files to Cache
-        run: |
-          mkdir -p .cache
-          cp -r site/html/ .cache/
-
-      - name: Save Badge Cache
-        uses: actions/cache/save@v4
+      - name: Upload
+        uses: actions/upload-artifact@v4
         with:
-          path: .cache
-          key: wasm-${{ hashFiles('.github/workflows/dummy.yml') }}
-
-      # - name: Upload
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: pages-content
-      #     path: site/html
+          name: gh-pages-wwwroot
+          path: gh-pages/wwwroot
 
   deploy:
-    needs: [build-site]
+    needs: [build]
     uses: ./.github/workflows/deploy.yml
+    with:
+      identifier: "wwwroot"

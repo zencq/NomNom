@@ -1,0 +1,34 @@
+name: Deploy Pages
+
+on:
+  workflow_call:
+    inputs:
+      identifier:
+        required: true
+        type: string
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: gh-pages-${{ inputs.identifier }}*  # not -* as releases do not have a suffix
+          merge-multiple: true
+          path: ${{ inputs.identifier }}
+
+      - name: Display structure of downloaded files
+        run: ls -R ${{ inputs.identifier }}
+
+      # - name: Deploy to GitHub Pages
+      #   id: deployment
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ${{ inputs.identifier }}
+      #     destination_dir: ${{ inputs.identifier }}
