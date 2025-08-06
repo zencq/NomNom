@@ -87,7 +87,7 @@ jobs:
           path: gh-pages/badges/
 
   deploy:
-    needs: [generate-badges-downloads]
-    uses: ./.github/workflows/deploy.yml
+    needs: [generate-badges-downloads, generate-badges-test]
+    uses: ./.github/workflows/deploy-pages.yml
     with:
       identifier: "badges"
