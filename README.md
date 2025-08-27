@@ -3,7 +3,7 @@
 ![Maintained](https://img.shields.io/maintenance/yes/2025)
 ![Platform](https://img.shields.io/badge/platform-windows-lightgrey)
 [![GitHub Release](https://img.shields.io/github/v/release/zencq/NomNom?logo=github)](https://github.com/zencq/nomnom/releases/latest)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/total)
+![Downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2Ftotal.json&cacheSeconds=86400)
 
 [![Discord Server](https://img.shields.io/discord/762409407488720918?color=5865F2&label=discord)](https://discord.gg/nomnom-762409407488720918)
 [![Supported by the No Man's Sky Community Developers & Designers](https://raw.githubusercontent.com/NMSCD/About/master/badge/purple.svg)](https://nmscd.com/)
@@ -62,7 +62,7 @@ below. A detailed list can be found in the [FEATURES](FEATURES.md) file.
 [<img alt="Manager" src=".github/images/manager.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/4.00.0.31-beta.1/.github/images/manager.png) [<img alt="Starship" src=".github/images/editor_starship.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/4.00.0.31-beta.1/.github/images/editor_starship.png)
 [<img alt="Manage Fleet" src=".github/images/editor_frigate.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/4.00.0.31-beta.1/.github/images/editor_frigate.png) [<img alt="Base" src=".github/images/editor_base.png" width="49.68%"/>](https://raw.githubusercontent.com/cengelha/NomNom/4.00.0.31-beta.1/.github/images/editor_base.png)
 
-The images are from version
+These images are from version
 [4.00.0.31-beta.1](CHANGELOG.md#400031-beta1-2022-10-31).
 More and maybe newer can be found [here](https://github.com/cengelha/NomNom/tree/master/.github/images).
 
@@ -89,7 +89,7 @@ or, for platforms on PC, one level above if you have multiple accounts.
 
 ### Requirements
 
-You need to install the **[.NET 6 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/6.0)**
+You need to install the **[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)**
 and the [WebView2 Runtime](https://developer.microsoft.com/de-de/microsoft-edge/webview2).
 That is it.
 
@@ -118,7 +118,7 @@ using it with _Linux_ is to go to [flathub.org](https://flathub.org/), install [
 
 ### Download
 
-* [GitHub](https://github.com/zencq/NomNom/releases)
+* [GitHub](https://github.com/zencq/NomNom/releases) (`Portable.zip` or `Setup.exe`)
 * [Nexus Mods](https://www.nexusmods.com/nomanssky/mods/1566?tab=files)
 
 ### Instructions

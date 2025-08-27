@@ -15,7 +15,7 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: gh-pages-wwwroot
+          name: gh-pages-app
           path: gh-pages/wwwroot
 
   deploy:
@@ -23,4 +23,4 @@ jobs:
     needs: [build]
     uses: ./.github/workflows/deploy-pages.yml
     with:
-      identifier: "wwwroot"
+      identifier: "app"

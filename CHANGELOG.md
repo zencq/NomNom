@@ -13,8 +13,19 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 5.70.0 (2025-08-27)
+[![Downloads Version 5.70.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.70.0.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.70.0)
+
+### Known Issues
+* libNOM.io has not been updated yet, saves are still shown as Relics
+
+### Changed
+* Upgrade to .NET 8
+* Updated database to game version 5.75
+* Enable multiple settlements ([#260](https://github.com/zencq/NomNom/issues/260) [#263](https://github.com/zencq/NomNom/issues/263))
+
 ## 5.60.0 (2025-04-02)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.60.0/total)
+[![Downloads Version 5.60.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.60.0.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.60.0)
 
 ### Added
 * Basilisk Crown staff
@@ -23,7 +34,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Updated database to game version 5.61
 
 ## 5.50.1 (2025-02-15)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.50.1/total)
+[![Downloads Version 5.50.1](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.50.1.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.50.1)
 
 ### Added
 * Proper support for Worlds Part II patch 5.53+ with updated save format
@@ -33,7 +44,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Hotfix for the disabled scrollbar in areas where it is needed (e.g. *Milestones*) by limiting the height
 
 ## 5.50.0 (2025-02-09)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.50.0/total)
+[![Downloads Version 5.50.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.50.0.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.50.0)
 
 ### Added
 * The Wraith starship
@@ -47,7 +58,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Crash when using Microsoft platform with 5.50 and up ([#232](https://github.com/zencq/NomNom/issues/232))
 
 ## 5.20.3 (2025-01-17)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.3/total)
+[![Downloads Version 5.20.3](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.20.3.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.20.3)
 
 ### Added
 * Starborn Phoenix starship
@@ -62,13 +73,13 @@ All notable changes to this project will be documented in this file. It uses the
 * Crash when `api.github.com` is not accessible ([#227](https://github.com/zencq/NomNom/issues/227))
 
 ## 5.20.2 (2024-12-01)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.2/total)
+[![Downloads Version 5.20.2](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.20.2.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.20.2)
 
 ### Fixed
 * Program not starting after updated to 5.20.1 (corrupted package)
 
 ## 5.20.1 (2024-12-01)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.1/total)
+[![Downloads Version 5.20.21](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.20.1.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.20.1)
 
 ### Added
 * New settings to underfill inventory slots ([Discord#1296885281957347398](https://discord.com/channels/762409407488720918/1296885281957347398))
@@ -82,7 +93,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Some `Couldn't find any enum member that matches the integer -1` errors ([#216](https://github.com/zencq/NomNom/issues/216) [#221](https://github.com/zencq/NomNom/issues/221))
 
 ## 5.20.0 (2024-10-27)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.20.0/total)
+[![Downloads Version 5.20.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.20.0.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.20.0)
 
 ### Known Issues
 * Collection feature will only work properly when using the primary context
@@ -95,7 +106,7 @@ All notable changes to this project will be documented in this file. It uses the
     * Switching contexts on the fly will be added in a future version
 
 ## 5.10.1 (2024-09-05)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.10.1/total)
+[![Downloads Version 5.10.1](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.10.1.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.10.1)
 
 ### Fixed
 * Settings being reset after an update
@@ -104,7 +115,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Expedition name not shown properly in *Manager*
 
 ## 5.10.0 (2024-09-04)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.10.0/total)
+[![Downloads Version 5.10.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.10.0.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.10.0)
 
 ### Changed
 * Updated database to game version 5.10
@@ -113,7 +124,7 @@ All notable changes to this project will be documented in this file. It uses the
 * *Lock/Unlock All** for Portal Glyphs modifies Crafted Products ([#208](https://github.com/zencq/NomNom/issues/208))
 
 ## 5.00.3 (2024-08-20)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.3/total)
+[![Downloads Version 5.00.3](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.00.3.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.00.3)
 
 ### Added
 * Code is now signed with a (self-signed) certificate
@@ -135,13 +146,13 @@ All notable changes to this project will be documented in this file. It uses the
 * Catalogue Items wont select ([#203](https://github.com/zencq/NomNom/issues/203))
 
 # 5.00.2.46-beta.15 (2024-08-06)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.2.46-beta.15/total)
+[![Downloads Version 5.00.2.46-beta.15](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.00.2.46-beta.15.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.00.2.46-beta.15)
 
 ### Fixed
 * Save *Edit* button being unresponsive ([#197](https://github.com/zencq/NomNom/issues/197))
 
 # 5.00.1.45-beta.14 (2024-08-05)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.1.45-beta.14/total)
+[![Downloads Version 5.00.1.45-beta.14](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.00.1.45-beta.14.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.00.1.45-beta.14)
 
 ### Changed
 * The menu *Edit -> Export JSON* now also saves the output to `./json` ([#192](https://github.com/zencq/NomNom/issues/192))
@@ -158,7 +169,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Changing a Frigate removes all traits ([#196](https://github.com/zencq/NomNom/issues/196))
 
 # 5.00.0.44-beta.13 (2024-07-26)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/5.00.0.44-beta.13/total)
+[![Downloads Version 5.00.0.44-beta.13](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F5.00.0.44-beta.13.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/5.00.0.44-beta.13)
 
 ### Known Issues
 * Not all parts of the *collections* feature are working
@@ -176,7 +187,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Crash when transferring saves between game version with different format ([#182](https://github.com/zencq/NomNom/issues/182))
 
 # 4.70.3.42-beta.12 (2024-07-21)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.3.42-beta.12/total)
+[![Downloads Version 4.70.3.42-beta.12](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.70.3.42-beta.12.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.70.3.42-beta.12)
 
 ### Known Issues
 * Not all parts of the *collections* feature are working
@@ -185,7 +196,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Changes made to account data not visible in-game ([#180](https://github.com/zencq/NomNom/issues/180))
 
 # 4.70.2.41-beta.11 (2024-07-14)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.2.41-beta.11/total)
+[![Downloads Version 4.70.2.41-beta.11](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.70.2.41-beta.11.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.70.2.41-beta.11)
 
 ### Known Issues
 * Not all parts of the *collections* feature are working
@@ -199,7 +210,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Missing categories in the *Add/Replace Item* window ([#176](https://github.com/zencq/NomNom/issues/176))
 
 # 4.70.1.40-beta.10 (2024-06-14)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.1.40-beta.10/total)
+[![Downloads Version 4.70.1.40-beta.10](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.70.1.40-beta.10.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.70.1.40-beta.10)
 
 ### Known Issues
 * Not all parts of the *collections* feature are working
@@ -216,7 +227,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Crash when the Atlas Staff is the selected weapon
 
 # 4.70.0.39-beta.9 (2024-06-10)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.70.0.39-beta.9/total)
+[![Downloads Version 4.70.0.39-beta.9](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.70.0.39-beta.9.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.70.0.39-beta.9)
 
 ### Known Issues
 * Not all parts of the *collections* feature are working
@@ -230,7 +241,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Tweaked the *Save Transfer* window a bit to improve UX
 
 # 4.60.0.38-beta.8 (2024-04-10)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.60.0.38-beta.8/total)
+[![Downloads Version 4.60.0.38-beta.8](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.60.0.38-beta.8.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.60.0.38-beta.8)
 
 ### Known Issues
 * Expedition saves will only work if you started it from an existing save and even
@@ -244,7 +255,7 @@ All notable changes to this project will be documented in this file. It uses the
 * `RocketLockerInventory` is labeled `FireteamSessionCount` in JSON ([#165](https://github.com/zencq/NomNom/issues/165))
 
 # 4.50.2.37-beta.7 (2024-03-09)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.50.2.37-beta.7/total)
+[![Downloads Version 4.50.2.37-beta.7](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.50.2.37-beta.7.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.50.2.37-beta.7)
 
 ### Known Issues
 * Expedition saves will only work if you started it from an existing save and even
@@ -269,7 +280,7 @@ All notable changes to this project will be documented in this file. It uses the
 * *Edit* button does nothing when clicked ([#154](https://github.com/zencq/NomNom/issues/154))
 
 # 4.50.1.36-beta.6 (2024-02-19)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.50.1.36-beta.6/total)
+[![Downloads Version 4.50.1.36-beta.6](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.50.1.36-beta.6.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.50.1.36-beta.6)
 
 ### Known Issues
 * pre-Omega saves are currently not supported and will crash if you try to load them
@@ -283,7 +294,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Arithmetic overflow when values used to calculated WarpsToNextSpaceBattle are to far off
 
 # 4.50.0.35-beta.5 (2024-02-18)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.50.0.35-beta.5/total)
+[![Downloads Version 4.50.0.35-beta.5](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.50.0.35-beta.5.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.50.0.35-beta.5)
 
 ### Known Issues
 * pre-Omega saves are currently not supported and will crash if you try to load them
@@ -303,7 +314,7 @@ All notable changes to this project will be documented in this file. It uses the
 * The `UpdateRegionsException`/`OutOfMemoryException` that appeared for some sometimes ([#137](https://github.com/zencq/NomNom/issues/137))
 
 # 4.40.0.34-beta.4 (2023-09-11)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.40.0.34-beta.4/total)
+[![Downloads Version 4.40.0.34-beta.4](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.40.0.34-beta.4.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.40.0.34-beta.4)
 
 ### Added
 * Additional milestones added in Waypoint (4.00)
@@ -322,7 +333,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Some inconsistencies in the syntensis companion save editing UI
 
 ## 4.30.0.33-beta.3 (2023-06-28)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.30.0.33-beta.3/total)
+[![Downloads Version 4.30.0.33-beta.3](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.30.0.33-beta.3.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.30.0.33-beta.3)
 
 ### Changed
 * Updated name mapping to game version 4.34
@@ -332,7 +343,7 @@ All notable changes to this project will be documented in this file. It uses the
 * A crash when changing an edited save file ([#129](https://github.com/zencq/NomNom/issues/129))
 
 ## 4.00.0.32-beta.2 (2022-11-24)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.00.0.32-beta.2/total)
+[![Downloads Version 4.00.0.32-beta.2](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.00.0.32-beta.2.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.00.0.32-beta.2)
 
 ### Changed
 * Database update to 4.07 including the 2022 Holiday Expeditions
@@ -347,7 +358,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Changing amount/seed in detail window having no effect ([#102](https://github.com/zencq/NomNom/discussions/102))
 
 ## 4.00.0.31-beta.1 (2022-10-31)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/4.00.0.31-beta.1/total)
+[![Downloads Version 4.00.0.31-beta.1](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F4.00.0.31-beta.1.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/4.00.0.31-beta.1)
 
 ### Added
 * Support for **Waypoint 4.0** ([#95](https://github.com/zencq/NomNom/issues/95) [#98](https://github.com/zencq/NomNom/issues/98))
@@ -422,7 +433,7 @@ All notable changes to this project will be documented in this file. It uses the
 * and a lot of other things...
 
 ## 3.94.0.30-alpha.30 (2022-07-30)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.94.0.30-alpha.30/total)
+[![Downloads Version 3.94.0.30-alpha.30](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.94.0.30-alpha.30.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.94.0.30-alpha.30)
 
 ### Added
 * *Organic* frigate type
@@ -433,7 +444,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Updated database to game version 3.98
 
 ## 3.90.0.29-alpha.29 (2022-05-26)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.90.0.29-alpha.29/total)
+[![Downloads Version 3.90.0.29-alpha.29](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.90.0.29-alpha.29.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.90.0.29-alpha.29)
 
 ### Added
 * *Leviathan* frigate type
@@ -443,13 +454,13 @@ All notable changes to this project will be documented in this file. It uses the
 * Updated database to game version 3.90
 
 ## 3.85.0.28-alpha.28 (2022-05-19)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.85.0.28-alpha.28/total)
+[![Downloads Version 3.85.0.28-alpha.28](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.85.0.28-alpha.28.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.85.0.28-alpha.28)
 
 ### Fixed
 * Issues with the Microsoft platform including [#79](https://github.com/zencq/NomNom/issues/79) and [#83](https://github.com/zencq/NomNom/issues/83)
 
 ## 3.85.0.27-alpha.27 (2022-04-24)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.85.0.27-alpha.27/total)
+[![Downloads Version 3.85.0.27-alpha.27](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.85.0.27-alpha.27.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.85.0.27-alpha.27)
 
 ### Added
 * *Solar Sail* as ship type ([#82](https://github.com/zencq/NomNom/issues/82))
@@ -460,7 +471,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Updated database to game version 3.87
 
 ## 3.8.0.26-alpha.26 (2022-02-28)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.8.0.26-alpha.26/total)
+[![Downloads Version 3.8.0.26-alpha.26](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.8.0.26-alpha.26.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.8.0.26-alpha.26)
 
 ### Fixed
 * Crash when save does not contain the new weapon resource
@@ -468,7 +479,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Some Frigate types not being displayed and set correctly
 
 ## 3.8.0.25-alpha.25 (2022-02-24)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.8.0.25-alpha.25/total)
+[![Downloads Version 3.8.0.25-alpha.25](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.8.0.25-alpha.25.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.8.0.25-alpha.25)
 
 ### Added
 * *Royal* as weapon type
@@ -481,7 +492,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Exocraft unlock logic (unintentionally checked only the Roamer)
 
 ## 3.7.0.24-alpha.24 (2022-01-03)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.7.0.24-alpha.24/total)
+[![Downloads Version 3.7.0.24-alpha.24](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.7.0.24-alpha.24.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.7.0.24-alpha.24)
 
 ### Fixed
 * Crash related to expeditions saves
@@ -489,7 +500,7 @@ All notable changes to this project will be documented in this file. It uses the
 * An issue with internationalization assets
 
 ## 3.7.0.23-alpha.23 (2021-12-22)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.7.0.23-alpha.23/total)
+[![Downloads Version 3.7.0.23-alpha.23](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.7.0.23-alpha.23.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.7.0.23-alpha.23)
 
 ### Added
 * **Settlement** tab for editing settlements
@@ -501,7 +512,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Detecting/reading of older expedition save data
 
 ## 3.7.0.22-alpha.22 (2021-12-11)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.7.0.22-alpha.22/total)
+[![Downloads Version 3.7.0.22-alpha.22](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.7.0.22-alpha.22.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.7.0.22-alpha.22)
 
 ### Added
 * `Expedition` tab for editing the progress
@@ -514,7 +525,7 @@ All notable changes to this project will be documented in this file. It uses the
 * An issue when processing the meta file ([#63](https://github.com/zencq/NomNom/issues/63) [#68](https://github.com/zencq/NomNom/issues/68))
 
 ## 3.7.0.21-alpha.21 (2021-12-06)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.7.0.21-alpha.21/total)
+[![Downloads Version 3.7.0.21-alpha.21](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.7.0.21-alpha.21.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.7.0.21-alpha.21)
 
 ### Changed
 * Editor button naming to avoid confusion
@@ -525,7 +536,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Some issues with the Microsoft platform
 
 ## 3.7.0.20-alpha.20 (2021-11-28)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.7.0.20-alpha.20/total)
+[![Downloads Version 3.7.0.20-alpha.20](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.7.0.20-alpha.20.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.7.0.20-alpha.20)
 
 ### Added
 * *Golden Vector* as starship type
@@ -548,7 +559,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Properly writing account data and settings back to containers.index (Microsoft platform only)
 
 ## 3.6.0.19-alpha.19 (2021-10-28)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.6.0.19-alpha.19/total)
+[![Downloads Version 3.6.0.19-alpha.19](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.6.0.19-alpha.19.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.6.0.19-alpha.19)
 
 ### Added
 * Compatibility with the new save format for PlayStation
@@ -562,7 +573,7 @@ All notable changes to this project will be documented in this file. It uses the
 * An issue on Microsoft platform with a high slot count
 
 ## 3.6.0.18-alpha.18 (2021-09-04)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.6.0.18-alpha.18/total)
+[![Downloads Version 3.6.0.18-alpha.18](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.6.0.18-alpha.18.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.6.0.18-alpha.18)
 
 ### Added
 * Compatibility with the new save streaming system on Steam
@@ -571,7 +582,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Not changing ship seed
 
 ## 3.5.0.17-alpha.17 (2021-08-25)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.5.0.17-alpha.17/total)
+[![Downloads Version 3.5.0.17-alpha.17](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.5.0.17-alpha.17.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.5.0.17-alpha.17)
 
 ### Added
 * Button to remove all external/visited bases from your save
@@ -592,7 +603,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Wrong max amount when adding an item to an inventory
 
 ## 3.1.0.16-alpha.16 (2021-06-26)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.1.0.16-alpha.16/total)
+[![Downloads Version 3.1.0.16-alpha.16](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.1.0.16-alpha.16.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.1.0.16-alpha.16)
 
 ### Added
 * Create/Delete operations for Microsoft Store saves
@@ -612,33 +623,33 @@ All notable changes to this project will be documented in this file. It uses the
 * Vanishing data and other incompatibility issues ([#35](https://github.com/zencq/NomNom/issues/35) [#41](https://github.com/zencq/NomNom/issues/41) [#44](https://github.com/zencq/NomNom/issues/44) [#49](https://github.com/zencq/NomNom/issues/49))
 
 ## 3.1.0.15-alpha.15 (2020-11-12)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.1.0.15-alpha.15/total)
+[![Downloads Version 3.1.0.15-alpha.15](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.1.0.15-alpha.15.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.1.0.15-alpha.15)
 
 ### Changed
 * Updated the internal database to game version 3.10
 
 ## 3.0.0.14-alpha.14 (2020-10-29)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.14-alpha.14/total)
+[![Downloads Version 3.0.0.14-alpha.14](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.14-alpha.14.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.14-alpha.14)
 
 ### Changed
 * Updated the internal database to game version 3.05
 
 ## 3.0.0.13-alpha.13 (2020-10-13)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.13-alpha.13/total)
+[![Downloads Version 3.0.0.13-alpha.13](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.13-alpha.13.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.13-alpha.13)
 
 ### Fixed
 * Even more incompatibility issues ([#28](https://github.com/zencq/NomNom/issues/28))
 * A bug that caused procedural tech to be added as not fully installed
 
 ## 3.0.0.12-alpha.12 (2020-10-09)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.12-alpha.12/total)
+[![Downloads Version 3.0.0.12-alpha.12](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.12-alpha.12.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.12-alpha.12)
 
 ### Fixed
 * Some incompatibilities for older versions and some saves which have the newly added
   *PlanetaryMappingData* key in it ([#26](https://github.com/zencq/NomNom/issues/26))
 
 ## 3.0.0.11-alpha.11 (2020-10-07)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.11-alpha.11/total)
+[![Downloads Version 3.0.0.11-alpha.11](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.11-alpha.11.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.11-alpha.11)
 
 ### Fixed
 * More incompatibility issues ([#18](https://github.com/zencq/NomNom/issues/18) [#19](https://github.com/zencq/NomNom/issues/19) [#20](https://github.com/zencq/NomNom/issues/20))
@@ -646,20 +657,20 @@ All notable changes to this project will be documented in this file. It uses the
 * A crash when viewing item details ([#23](https://github.com/zencq/NomNom/issues/23))
 
 ## 3.0.0.10-alpha.10 (2020-10-04)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.10-alpha.10/total)
+[![Downloads Version 3.0.0.10-alpha.10](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.10-alpha.10.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.10-alpha.10)
 
 ### Fixed
 * A bug introduced while fixing the previous incompatibility issues ([#17](https://github.com/zencq/NomNom/issues/17))
 
 ## 3.0.0.9-alpha.9 (2020-10-04)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.9-alpha.9/total)
+[![Downloads Version 3.0.0.9-alpha.9](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.9-alpha.9.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.9-alpha.9)
 
 ### Fixed
 * Incompatibility issues ([#13](https://github.com/zencq/NomNom/issues/13) [#16](https://github.com/zencq/NomNom/issues/16))
 * A crash that could occur on startup
 
 ## 3.0.0.8-alpha.8 (2020-10-04)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/3.0.0.8-alpha.8/total)
+[![Downloads Version 3.0.0.8-alpha.8](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F3.0.0.8-alpha.8.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/3.0.0.8-alpha.8)
 
 ### Changed
 * Updated the internal database to game version 3.02
@@ -670,7 +681,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Changing starship type to *Living* now works properly
 
 ## 2.6.0.7-alpha.7 (2020-09-29)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/2.6.0.7-alpha.7/total)
+[![Downloads Version 2.6.0.7-alpha.7](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F2.6.0.7-alpha.7.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/2.6.0.7-alpha.7)
 
 ### Added
 * Support for the following platforms:
@@ -691,7 +702,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Loading unsupported files should no longer crash ([#9](https://github.com/zencq/NomNom/issues/9))
 
 ## 2.4.0.6-alpha.6 (2020-08-28)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/2.4.0.6-alpha.6/total)
+[![Downloads Version 2.4.0.6-alpha.6](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F2.4.0.6-alpha.6.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/2.4.0.6-alpha.6)
 
 ### Added
 * Indicator if a new update is available but you choose to update later
@@ -716,7 +727,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Crashes on startup or when opening the editor ([#1](https://github.com/zencq/NomNom/issues/1) [#2](https://github.com/zencq/NomNom/issues/2) [#3](https://github.com/zencq/NomNom/issues/3) [#5](https://github.com/zencq/NomNom/issues/5))
 
 ## 2.4.0.5-alpha.5 (2020-06-13)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/2.4.0.5-alpha.5/total)
+[![Downloads Version 2.4.0.5-alpha.5](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F2.4.0.5-alpha.5.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/2.4.0.5-alpha.5)
 
 ### Added
 * Re-added **Discoveries** tab with new features:
@@ -734,7 +745,7 @@ All notable changes to this project will be documented in this file. It uses the
 * Updated the internal database to game version 2.52
 
 ## 2.2.0.4-alpha.4 (2020-05-17)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/2.2.0.4-alpha.4/total)
+[![Downloads Version 2.2.0.4-alpha.4](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F2.2.0.4-alpha.4.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/2.2.0.4-alpha.4)
 
 ### Added
 * For Starships "Set as current" and "Delete"
@@ -754,7 +765,7 @@ All notable changes to this project will be documented in this file. It uses the
     * Show adjacent bonus colors
 
 ## 2.2.0.3-alpha.3 (2020-04-26)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/2.2.0.3-alpha.3/total)
+[![Downloads Version 2.2.0.3-alpha.3](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F2.2.0.3-alpha.3.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/2.2.0.3-alpha.3)
 
 ### Added
 * Integrated updater
@@ -773,12 +784,13 @@ All notable changes to this project will be documented in this file. It uses the
   save file objects that [could corrupt a save](https://www.reddit.com/r/NoMansSkyMods/comments/g4e3zv/new_savegame_editor/fo60ja1/)
 
 ## 2.2.0.0-alpha.2 (2020-04-19)
-![Downloads](https://img.shields.io/github/downloads/zencq/nomnom/2.2.0.0-alpha.2/total)
+[![Downloads Version 2.2.0.0-alpha.2](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F2.2.0.0-alpha.2.json&cacheSeconds=86400)](https://github.com/zencq/NomNom/releases/tag/2.2.0.0-alpha.2)
 
 ### Added
 * Logging
 * **Milestone** tab with all milestones you see in game
 
 ## 2.2.0.0-alpha.1 (2020-04-12)
+![Downloads Version 2.2.0.0-alpha.1](https://img.shields.io/badge/downloads%402.2.0.0--alpha.1-%3F-lightgrey?logo=github)
 
 * First public release
