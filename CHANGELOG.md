@@ -13,6 +13,21 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 6.00.1 (2025-09-05)
+[![Downloads Version 6.00.1](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.00.1.json)](https://github.com/zencq/NomNom/releases/tag/6.00.1)
+
+### Changed
+* Update database to game version 6.03
+
+### Fixed
+* Underfill only working on individually items
+* The Wraith now being recognized as living ship
+* Buttons only clickable on actual lines of the graphic ([#253](https://github.com/zencq/NomNom/issues/253) [Discord#26](https://discord.com/channels/762409407488720918/1304242868499517594) [Discord#35](https://discord.com/channels/762409407488720918/1360947473262313552))
+* Crash when sending inventory to Assistant for No Man's Sky app was not successful ([#270](https://github.com/zencq/NomNom/issues/270))
+* Corvette base data is now included in the ship export (and import)
+* Crash that could occur when loading teleport endpoints (found via [#269](https://github.com/zencq/NomNom/issues/269))
+* Crash if the freighter inventory has more than 120 slots
+
 ## 6.00.0 (2025-09-01)
 [![Downloads Version 6.00.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.00.0.json)](https://github.com/zencq/NomNom/releases/tag/6.00.0)
 
