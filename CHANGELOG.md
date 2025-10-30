@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 6.10.0 (2025-10-30)
+[![Downloads Version 6.10.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.10.0.json)](https://github.com/zencq/NomNom/releases/tag/6.10.0)
+
+### Changed
+* Update database to game version 6.10
+
 ## 6.00.1 (2025-09-05)
 [![Downloads Version 6.00.1](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.00.1.json)](https://github.com/zencq/NomNom/releases/tag/6.00.1)
 

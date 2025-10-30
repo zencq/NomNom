@@ -173,7 +173,7 @@ file for details.
 
 ## Authors
 
-* **Christian Engelhardt** (zencq) - [GitHub](https://github.com/cengelha) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048) - [Reddit](https://www.reddit.com/user/zencq)
+* **zencq** - [GitHub](https://github.com/zencq) - [Nexus Mods](https://www.nexusmods.com/nomanssky/users/73645048)
 
 ## Credits
 
