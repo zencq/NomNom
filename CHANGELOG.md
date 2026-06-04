@@ -13,6 +13,21 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 6.40.0 (2026-06-04)
+[![Downloads Version 6.40.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.40.0.json)](https://github.com/zencq/NomNom/releases/tag/6.40.0)
+
+### Added
+* Arena League milestones
+* Direwasp Disintegrator rifle
+* Update QS ShopNumber/ShopTier when unlocking QS items ([Discord#20](https://discord.com/channels/762409407488720918/1139549755781947496))
+
+### Changed
+* Upgraded to .NET 10
+* Update database to game version 6.40 ([#316](https://github.com/zencq/NomNom/issues/316) [#318](https://github.com/zencq/NomNom/issues/318) [#319](https://github.com/zencq/NomNom/issues/319))
+
+### Fixed
+* Crash when the "OK" button in the "Welcome" window was clicked ([#299](https://github.com/zencq/NomNom/issues/299) [#301](https://github.com/zencq/NomNom/issues/301) [#314](https://github.com/zencq/NomNom/issues/314) [#320](https://github.com/zencq/NomNom/issues/320))
+
 ## 6.30.0 (2026-04-20)
 [![Downloads Version 6.30.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.30.0.json)](https://github.com/zencq/NomNom/releases/tag/6.30.0)
 
