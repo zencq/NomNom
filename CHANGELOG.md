@@ -13,6 +13,12 @@ All notable changes to this project will be documented in this file. It uses the
 ### Fixed
 ### Security
 
+## 6.40.1 (2026-06-05)
+[![Downloads Version 6.40.1](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.40.1.json)](https://github.com/zencq/NomNom/releases/tag/6.40.1)
+
+### Fixed
+* Broken view in the Expedition tab ([#321](https://github.com/zencq/NomNom/issues/321))
+
 ## 6.40.0 (2026-06-04)
 [![Downloads Version 6.40.0](https://img.shields.io/endpoint?url=https%3A%2F%2Fzencq.github.io%2FNomNom%2Fbadges%2Fdownloads%2F6.40.0.json)](https://github.com/zencq/NomNom/releases/tag/6.40.0)
 
